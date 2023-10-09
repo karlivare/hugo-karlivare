@@ -1,0 +1,13 @@
+baseURL: "https://karlivare.com/"
+languageCode: en-us
+title: Karli Vare
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  slogan: "Super Fast!"
+
+

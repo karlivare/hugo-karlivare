@@ -1,0 +1,58 @@
+//////SKILLS//////
+#skills-list {
+    list-style-type: none;
+    gap: 2rem;
+  }
+  #skills-list li {
+    position: relative;
+    text-align: initial; /*this was messing up positioning of pseudo element*/
+  }
+  #skills-list a {
+    text-decoration: none;
+    color: inherit;
+  }
+  #skills-list li::before {
+    position: absolute;
+    content: "";
+    height: 30.5px;
+    width: 4px;
+    left: -1rem;
+    background-color: #473d33;
+  }
+  #skills-list li::after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -1.5rem;
+    transform: translateY(135%) rotate(270deg);
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: $brown transparent transparent transparent;
+    margin-right: 10px;
+  }
+  /*animating the lines to create an arrow*/
+  #skills-list li,
+  #skills-list li::before,
+  #skills-list li::after {
+    transition: all 0.2s ease-in-out;
+  }
+  #skills-list li:hover::before {
+    transform: rotate(90deg);
+    left: -1.75rem;
+  }
+  #skills-list li:hover::after {
+    opacity: 1;
+    left: -1rem;
+  }
+  #skills-list li:hover {
+    transform: translateX(5px);
+  }
+
+@include media-breakpoint-up(md) {
+  #skills-list {
+    gap: 4rem;
+  }
+}

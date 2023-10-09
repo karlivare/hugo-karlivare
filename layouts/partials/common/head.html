@@ -1,0 +1,11 @@
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+{{ $bundleCSS := resources.Get "css/bundle.css" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" text="text/css" href="{{ $bundleCSS.RelPermalink}}" integrity="{{ $bundleCSS.Data.Integrity}}">
+<link rel="stylesheet" href="https://use.typekit.net/yxz0ome.css">
+<title>
+  {{- .Title }} - {{ .Site.Title -}}
+</title>

@@ -1,0 +1,21 @@
+//////NUTMEG SPREADS//////
+#nutmeg-spreads-section {
+  background-image: url("/jpg/nutmeg-spreads.jpg");
+  background-position: center;
+  background-size: 350%;
+  background-repeat: no-repeat;
+}
+#nutmeg-spreads-container {
+  gap: 20rem;
+}
+//////MEDIA QUERIES//////
+@include media-breakpoint-up(lg) {
+  #nutmeg-spreads-section {
+    background-position: center;
+    background-size: cover;
+  }
+  #nutmeg-spreads-container {
+    gap: 30rem;
+  }
+}
+

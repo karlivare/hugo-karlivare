@@ -1,0 +1,25 @@
+#card-container{
+    gap: 2rem;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-snap-type: x proximity;
+}
+
+.portfolio-card{
+    scroll-snap-align: start;
+}
+
+.portfolio-card-img{
+    max-width: 350px;
+    border-radius: 8px;
+}
+
+h3.portfolio-card-title, p.portfolio-card-medium{
+    text-wrap: wrap;
+    max-width: 350px;
+}
+
+
+
+
+

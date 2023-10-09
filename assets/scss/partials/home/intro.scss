@@ -1,0 +1,27 @@
+//////WELCOME SECTION//////
+/*#region*/
+#flower-mask-img {
+  width: 250px;
+}
+
+@include media-breakpoint-up(lg) {
+  #intro-header {
+    overflow: hidden;
+  }
+  #flower-mask-img-container {
+    position: relative;
+  }
+  #flower-mask-img {
+    width: 500px;
+    position: absolute;
+    top: -15rem;
+    right: -2rem;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  #flower-mask-img {
+    right: 4rem;
+  }
+}
+/*#endregion*/

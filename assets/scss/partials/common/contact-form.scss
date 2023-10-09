@@ -1,0 +1,54 @@
+//////CONTACT FORM//////
+#contact-form-section {
+  overflow: hidden;
+}
+#form-graphic-container {
+  background-image: url(/svg/contact-form-graphic.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: $brown;
+}
+#contact-form input, textarea#messageInput{
+  padding-left: 0;
+}
+.form-control:focus{
+  padding-left: 1rem !important;
+}
+#contact-form label {
+  padding: 6px 12px;
+}
+#form-graphic-container {
+  height: 200px;
+  overflow: hidden;
+}
+#submit-btn {
+  align-self: start;
+}
+#messageInput {
+  resize: none;
+  height: 8rem;
+}
+
+.form-control {
+  background-color: $beige;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid $blue-hover;
+  border-radius: 0;
+}
+
+@include media-breakpoint-up(md) {
+  #form-graphic-container {
+    height: auto;
+    overflow: visible;
+  }
+}

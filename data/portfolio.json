@@ -1,0 +1,121 @@
+[
+    {
+        "title": "BFA Senior Exhibition Posters",
+        "image": "/portfolio-img/BFAposter-day.jpg",
+        "year": 2021,
+        "medium": "Adobe Illustrator",
+        "category": "Graphic Design"
+    },
+    {
+        "title": "Ocean Collages",
+        "image": "/portfolio-img/oceancollage-no1.jpg",
+        "year": 2020,
+        "medium": "Adobe Photoshop, Illustrator",
+        "category": "Graphic Design"
+    },
+    {
+        "title": "Holiday Card",
+        "image": "/portfolio-img/holidaycard.jpg",
+        "year": 2020,
+        "medium": "Adobe Photoshop, Wacom tablet",
+        "category": "Graphic Design"
+    },
+    {
+        "title": "Typographical Exploration",
+        "image": "/portfolio-img/typographical-exploration-1.jpg",
+        "year": 2022,
+        "medium": "Adobe Illustrator, Photoshop",
+        "category": "Graphic Design"
+    },
+    {
+        "title": "Greenhouse",
+        "image": "/portfolio-img/nutmeg-greenhousespread.jpg",
+        "year": 2021,
+        "medium": "Adobe InDesign, Procreate",
+        "category": "Nutmeg"
+    },
+    {
+        "title": "Random Recipe Generator",
+        "image": "/portfolio-img/recipegenerator.jpg",
+        "year": 2021,
+        "medium": "Spoonacular API, JavaScript, HTML, CSS",
+        "category": "Web"
+    },
+    {
+        "title": "Meditation Email Campaign",
+        "image": "/portfolio-img/email-campaign-cover.jpg",
+        "year": 2022,
+        "medium": "Adobe XD, Illustrator, InDesign",
+        "category": "UI/UX"
+    },
+    {
+        "title": "News Publication Redesign",
+        "image": "/portfolio-img/dailycampus-cover.jpeg",
+        "year": 2022,
+        "medium": "Adobe XD, Illustrator, InDesign",
+        "category": "UI/UX"
+    },
+    {
+        "title": "Elite Brain & Spine of Connecticut “Specialties” Page Redesigns",
+        "image": "/portfolio-img/ebs-cover.jpeg",
+        "year": 2023,
+        "medium": "Divi, HTML, CSS, JavaScript",
+        "category": "Web"
+    },
+    {
+        "title": "LC Talks",
+        "image": "/portfolio-img/nutmeg-lctalks.jpg",
+        "year": 2021,
+        "medium": "Adobe InDesign, Illustrator",
+        "category": "Nutmeg"
+    },
+    {
+        "title": "Late Night Carnival",
+        "image": "/portfolio-img/nutmeg-latenightcarnival.jpg",
+        "year": 2021,
+        "medium": "Adobe InDesign, Illustrator",
+        "category": "Nutmeg"
+    },
+    {
+        "title": "Huskython",
+        "image": "/portfolio-img/nutmeg-huskython1.jpg",
+        "year": 2021,
+        "medium": "Adobe InDesign",
+        "category": "Nutmeg"
+    },
+    {
+        "title": "Senior Quotes",
+        "image": "/portfolio-img/nutmeg-seniorquote1.jpg",
+        "year": 2021,
+        "medium": "Adobe InDesign, Illustrator",
+        "category": "Nutmeg"
+    },
+    {
+        "title": "Ted's Concept Spread",
+        "image": "/portfolio-img/nutmeg-tedspread.jpg",
+        "year": 2022,
+        "medium": "Adobe InDesign, Illustrator",
+        "category": "Nutmeg"
+    },
+    {
+        "title": "Biden at UConn",
+        "image": "/portfolio-img/nutmeg-biden.jpg",
+        "year": 2022,
+        "medium": "Adobe InDesign, Procreate",
+        "category": "Nutmeg"
+    },
+    {
+        "title": "Covid-19 Timeline",
+        "image": "/portfolio-img/covid-timeline1.jpg",
+        "year": 2021,
+        "medium": "Adobe InDesign, Photoshop, Illustrator",
+        "category": "Nutmeg"
+    },
+    {
+        "title": "Winter Scenery",
+        "image": "/portfolio-img/nutmeg-winter.jpg",
+        "year": 2021,
+        "medium": "Adobe InDesign, Illustrator",
+        "category": "Nutmeg"
+    }
+]

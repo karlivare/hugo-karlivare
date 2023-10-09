@@ -1,0 +1,29 @@
+{{ $portfolioData := getJSON "/data/portfolio.json" }}
+
+{{ $targetCategory := "Nutmeg" }}
+
+{{ with $portfolioData }}
+<section id="portfolio-content-container" class="bg-light container-fluid header">
+    <div id="portfolio-content" class="container">
+        <section class="row" id="nutmeg-content">
+            <div class="col-lg-2">
+                <h2 class="subtitle">Nutmeg</h2>
+            </div>
+            <div id="card-container" class="col-lg-10 d-lg-flex">
+                {{ range . }}
+                {{ if eq .category $targetCategory }}
+
+                <!-- Each portfolio card as an <article> -->
+                <article class="portfolio-card">
+                    <img class="portfolio-card-img" src="{{ .image }}" alt="{{ .title }}">
+                    <h3 class="portfolio-card-title thirdtitle">{{ .title }} ({{ .year }})</h3>
+                    <p class="portfolio-card-medium body">{{ .medium }}</p>
+                    <!-- Add other card content here (image, year, medium) -->
+                </article>
+                {{ end }}
+                {{ end }}
+            </div>
+        </section>
+    </div>
+</section>
+{{ end }}

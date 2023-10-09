@@ -1,0 +1,124 @@
+/*main styles*/
+nav{
+  background-color: $beige;
+}
+.modal-backdrop{
+  width: 0vw;
+}
+.offcanvas.offcanvas-end{
+  width: 100vw;
+}
+.bg-light{
+  background-color: $beige;
+}
+#offcanvasNavbar{
+  background-color: $beige !important;
+}
+.navbar-nav .nav-link.active{
+  color: $brown;
+}
+button.btn-close{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+  padding: 0.75rem !important;
+  margin: 1rem !important;
+}
+
+/*logo*/
+svg.logo,
+#offcanvasNavbarLabel {
+  width: 80px;
+}
+
+/*navbar*/
+.nav-item {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.nav-item a {
+  transition: transform 0.25s ease-in-out;
+}
+.navbar-nav {
+  gap: 4rem;
+}
+
+/*animating the nav links with an underline*/
+a.nav-link{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.nav-item a:hover {
+  transform: translateY(5px);
+}
+
+.nav-item a {
+  position: relative; /*we will position border element in relation to this*/
+}
+.nav-item a::after {
+  /*making an underline pseudo-element of the navlink*/
+  content: ""; /*this needs to be blank bc there is only decorative content*/
+  position: absolute; /*positioned relative to the nearest positioned ancestor*/
+  width: 100%;
+  opacity: 0.5;
+  height: 8px;
+  top: 5rem;
+  left: 0;
+  background-color: $brown;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+  transform-origin: top left; /*this is what makes it go from left to right*/
+}
+.nav-item a:hover::after {
+  transform: scaleX(1);
+}
+
+/*offcanvas*/
+#offcanvasNavbar {
+  gap: 4rem;
+}
+
+/*animation on hover*/
+svg.logo {
+  transform: scale(1);
+  transition: transform 0.25s ease-in-out;
+  overflow: visible; /*setting overflow to visible prevents svg from being cut off during rotation animation*/
+}
+svg.logo:hover {
+  transform: scale(1.25);
+  transition: transform 0.25s ease-in-out;
+}
+g#kv {
+  opacity: 100%;
+  transition: opacity 0.25s ease-in-out;
+}
+svg.logo:hover > g#big-flower {
+  transform-origin: 45% 55%;
+  transform: rotate(360deg);
+  transition: transform 0.75s ease-in-out;
+}
+svg.logo:hover > g#small-flower {
+  transform-origin: 85% 15%;
+  transform: rotate(-360deg);
+  transition: transform 0.75s ease-in-out;
+}
+svg.logo:hover > g#kv {
+  opacity: 0%;
+}
+
+/*media queries*/
+/*change the text style of the navlinks for larger screens*/
+@include media-breakpoint-up(md) {
+  .nav-link {
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  .nav-item a::after {
+    height: 5px;
+    top: 2rem;
+  }
+  .nav-link.active{
+    font-weight: 500;
+  }
+}
