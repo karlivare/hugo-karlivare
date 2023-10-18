@@ -12294,5 +12294,15 @@ h3.portfolio-card-title, .portfolio-card-title.h3, p.portfolio-card-medium {
 }
 
 /*#endregion*/
+/*Senior Project*/
+/*#region*/
+iframe {
+  width: 80vw;
+  height: 80vh;
+  border: 1px solid #F04B50;
+  border-radius: 8px;
+}
+
+/*#endregion*/
 
 /*# sourceMappingURL=bundle.css.map */
