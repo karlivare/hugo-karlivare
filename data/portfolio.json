@@ -4,28 +4,32 @@
         "image": "/portfolio-img/BFAposter-day.jpg",
         "year": 2021,
         "medium": "Adobe Illustrator",
-        "category": "Graphic Design"
+        "category": "Graphic Design",
+        "url": "/blog/bfa-senior-exhibition-posters/"
     },
     {
         "title": "Ocean Collages",
         "image": "/portfolio-img/oceancollage-no1.jpg",
         "year": 2020,
         "medium": "Adobe Photoshop, Illustrator",
-        "category": "Graphic Design"
+        "category": "Graphic Design",
+        "url": "/blog/ocean-collages/"
     },
     {
         "title": "Holiday Card",
         "image": "/portfolio-img/holidaycard.jpg",
         "year": 2020,
         "medium": "Adobe Photoshop, Wacom tablet",
-        "category": "Graphic Design"
+        "category": "Graphic Design",
+        "url": "/blog/holiday-card/"
     },
     {
         "title": "Typographical Exploration",
         "image": "/portfolio-img/typographical-exploration-1.jpg",
         "year": 2022,
         "medium": "Adobe Illustrator, Photoshop",
-        "category": "Graphic Design"
+        "category": "Graphic Design",
+        "url": "/blog/typographical-exploration/"
     },
     {
         "title": "Greenhouse",
@@ -39,28 +43,32 @@
         "image": "/portfolio-img/recipegenerator.jpg",
         "year": 2021,
         "medium": "Spoonacular API, JavaScript, HTML, CSS",
-        "category": "Web"
+        "category": "Web",
+        "url": "https://github.uconn.edu/pages/kav19006/dmd3475-finalproject/home.html"
     },
     {
         "title": "Meditation Email Campaign",
         "image": "/portfolio-img/email-campaign-cover.jpg",
         "year": 2022,
         "medium": "Adobe XD, Illustrator, InDesign",
-        "category": "UI/UX"
+        "category": "UI/UX",
+        "url": "/blog/meditation-email-campaign/"
     },
     {
         "title": "News Publication Redesign",
         "image": "/portfolio-img/dailycampus-cover.jpeg",
         "year": 2022,
         "medium": "Adobe XD, Illustrator, InDesign",
-        "category": "UI/UX"
+        "category": "UI/UX",
+        "url": "/blog/news-publication-redesign/"
     },
     {
-        "title": "Elite Brain & Spine of Connecticut “Specialties” Page Redesigns",
+        "title": "Elite Brain & Spine of Connecticut Specialties Page Redesigns",
         "image": "/portfolio-img/ebs-cover.jpeg",
         "year": 2023,
         "medium": "Divi, HTML, CSS, JavaScript",
-        "category": "Web"
+        "category": "Web",
+        "url": "/blog/ebs-specialties/"
     },
     {
         "title": "LC Talks",

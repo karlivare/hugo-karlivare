@@ -14,12 +14,14 @@
                 {{ if eq .category $targetCategory }}
 
                 <!-- Each portfolio card as an <article> -->
-                <article class="portfolio-card">
-                    <img class="portfolio-card-img" src="{{ .image }}" alt="{{ .title }}">
-                    <h3 class="portfolio-card-title thirdtitle">{{ .title }} ({{ .year }})</h3>
-                    <p class="portfolio-card-medium body">{{ .medium }}</p>
-                    <!-- Add other card content here (image, year, medium) -->
-                </article>
+                    <a class="portfolio-link" href="{{ .url }}">
+                    <article class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{ .image }}" alt="{{ .title }}">
+                        <h3 class="portfolio-card-title thirdtitle">{{ .title }} ({{ .year }})</h3>
+                        <p class="portfolio-card-medium body">{{ .medium }}</p>
+                        <!-- Add other card content here (image, year, medium) -->
+                    </article>
+                    </a>
                 {{ end }}
                 {{ end }}
             </div>

@@ -27,7 +27,17 @@
 @import "partials/blog/blog-content.scss";
 /*#endregion*/
 
+/*Blog content/Portfolio Items*/
+/*#region*/
+@import "blog/single.scss";
+/*#endregion*/
+
 /*Senior Project*/
 /*#region*/
 @import "partials/senior-project/yarn-over-midterm.scss";
+/*#endregion*/
+
+/*Short code, used for individual portfolio pages*/
+/*#region*/
+@import "shortcode/portfolio-shortcode.scss";
 /*#endregion*/
