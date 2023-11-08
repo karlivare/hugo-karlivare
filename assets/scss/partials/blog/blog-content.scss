@@ -32,6 +32,17 @@ a:hover .portfolio-card-img{
     cursor: pointer;
 }
 
+/*need to add hover effect for the nutmeg section that no longer has the anchor tag*/
+article.portfolio-card:hover .portfolio-card-img{
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 3px 0px rgba(71, 61, 51, 0.35);
+    cursor: pointer;
+}
+
+#portfolioModal{
+    background-color: rgba(71, 61, 51, 0.5);
+}
+
 
 
 
