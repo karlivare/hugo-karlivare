@@ -12176,25 +12176,35 @@ img#footer-graphic {
   }
 }
 /*#endregion*/
-#nutmeg-spreads-section {
-  background-image: url("/jpg/nutmeg-spreads.jpg");
-  background-position: center;
-  background-size: 350%;
-  background-repeat: no-repeat;
+.nutmeg-section {
   background-color: #fff3e8;
 }
 
-#nutmeg-spreads-container {
-  gap: 20rem;
+#nutmeg-spreads-bg {
+  background-image: url("/jpg/nutmeg-spreads.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+#nutmeg-spreads-title {
+  padding-top: 2rem;
+}
+
+#nutmeg-spreads-button {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 @media (min-width: 992px) {
-  #nutmeg-spreads-section {
-    background-position: center;
-    background-size: cover;
+  #nutmeg-spreads-bg {
+    height: 500px;
   }
-  #nutmeg-spreads-container {
-    gap: 30rem;
+}
+@media (min-width: 1200px) {
+  #nutmeg-spreads-bg {
+    height: 600px;
   }
 }
 #skills-list {
