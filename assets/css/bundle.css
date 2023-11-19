@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+html {
+  background-color: #fff3e8;
+}
+
 button, a.btn {
   font-weight: 500 !important;
 }

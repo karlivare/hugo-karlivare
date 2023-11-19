@@ -5,16 +5,16 @@
   margin: 0;
 }
 
-html{
-  background-color: $beige;
-}
-
 //////COLORS//////
 $blue: #487c89;
 $brown: #473d33;
 $beige: #fff3e8;
 $light-blue: #d1f7ff;
 $blue-hover: #38616b;
+
+html{
+  background-color: $beige;
+}
 
 //////VARIABLE OVERRIDES//////
 $primary:$blue;
