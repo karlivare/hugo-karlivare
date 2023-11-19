@@ -117,7 +117,8 @@
         "image": "/portfolio-img/covid-timeline1.jpg",
         "year": 2021,
         "medium": "Adobe InDesign, Photoshop, Illustrator",
-        "category": "Nutmeg"
+        "category": "Nutmeg",
+        "url": "/blog/covid-timeline/"
     },
     {
         "title": "Winter Scenery",

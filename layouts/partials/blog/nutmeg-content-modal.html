@@ -13,13 +13,13 @@
                 {{ range . }}
                 {{ if eq .category $targetCategory }}
 
+                {{ if ne .title "Covid-19 Timeline" }}
                 <!-- Each portfolio card as an <article> -->
                 <article class="portfolio-card" data-bs-toggle="modal" data-bs-target="#portfolioModal" data-title="{{ .title }}" data-image="{{ .image }}">
                     <img class="portfolio-card-img" src="{{ .image }}" alt="{{ .title }}">
                     <h3 class="portfolio-card-title thirdtitle">{{ .title }} ({{ .year }})</h3>
                     <p class="portfolio-card-medium body">{{ .medium }}</p>
                 </article>
-
                 <!-- Single Bootstrap Modal -->
                 <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -30,6 +30,16 @@
                         </div>
                     </div>
                 </div>
+                {{ else }}
+                <!-- Only Covid Timeline gets a link -->
+                <a class="portfolio-link" href="{{ .url }}">
+                    <article class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{ .image }}" alt="{{ .title }}">
+                        <h3 class="portfolio-card-title thirdtitle">{{ .title }} ({{ .year }})</h3>
+                        <p class="portfolio-card-medium body">{{ .medium }}</p>
+                    </article>
+                </a>
+                {{ end }}
 
                 {{ end }}
                 {{ end }}
