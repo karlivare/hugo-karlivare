@@ -12338,7 +12338,7 @@ a.card-link {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: start;
+  justify-content: center;
 }
 
 .portfolio-card {
@@ -12380,6 +12380,7 @@ article.portfolio-card:hover .portfolio-card-img {
 @media (min-width: 992px) {
   #cards-inner-container {
     gap: 4rem;
+    justify-content: start;
   }
 }
 /*#endregion*/

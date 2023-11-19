@@ -7,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: start;
+    justify-content: center;
 }
 
 .portfolio-card{
@@ -50,6 +50,7 @@ article.portfolio-card:hover .portfolio-card-img{
 @include media-breakpoint-up(lg) {
     #cards-inner-container{
         gap: 4rem;
+        justify-content: start;
     }
 }
 
