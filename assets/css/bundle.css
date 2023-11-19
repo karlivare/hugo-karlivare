@@ -12189,12 +12189,12 @@ img#footer-graphic {
 }
 
 #nutmeg-spreads-title {
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 #nutmeg-spreads-button {
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 @media (min-width: 992px) {
@@ -12272,8 +12272,15 @@ img#footer-graphic {
     gap: 4rem;
   }
 }
-#skills-section {
+#featured-section {
   background-color: rgba(72, 124, 137, 0.15);
+}
+
+#featured-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 a.card-link {
