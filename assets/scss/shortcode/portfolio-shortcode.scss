@@ -1,5 +1,5 @@
 .portfolio-shortcode-img{
-    max-width: 50%;
+    border-radius: 8px;
 }
 
 .portfolio-shortcode-container{
@@ -16,3 +16,9 @@
     border: 1px solid $brown;
     border-radius: 8px;
 }
+
+@include media-breakpoint-up(lg) { 
+    .portfolio-shortcode-img{
+        max-width: 50%;
+    }
+ }

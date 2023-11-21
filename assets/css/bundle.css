@@ -12425,7 +12425,7 @@ article.portfolio-card:hover .portfolio-card-img {
 /*Short code, used for individual portfolio pages*/
 /*#region*/
 .portfolio-shortcode-img {
-  max-width: 50%;
+  border-radius: 8px;
 }
 
 .portfolio-shortcode-container {
@@ -12443,6 +12443,11 @@ article.portfolio-card:hover .portfolio-card-img {
   border-radius: 8px;
 }
 
+@media (min-width: 992px) {
+  .portfolio-shortcode-img {
+    max-width: 50%;
+  }
+}
 /*#endregion*/
 
 /*# sourceMappingURL=bundle.css.map */
