@@ -25,7 +25,7 @@
     },
     {
         "title": "Typographical Exploration",
-        "image": "/portfolio-img/typographical-exploration.jpg",
+        "image": "/portfolio-img/typographical-exploration-thumbnail.png",
         "year": 2022,
         "medium": "Adobe Illustrator, Photoshop",
         "category": "Graphic Design",
@@ -48,7 +48,7 @@
     },
     {
         "title": "Meditation Email Campaign",
-        "image": "/portfolio-img/email-campaign-cover.jpg",
+        "image": "/portfolio-img/emailcampaign-mockup.jpg",
         "year": 2022,
         "medium": "Adobe XD, Illustrator, InDesign",
         "category": "UI/UX",
@@ -56,7 +56,7 @@
     },
     {
         "title": "News Publication Redesign",
-        "image": "/portfolio-img/dailycampus-cover.jpeg",
+        "image": "/portfolio-img/DC-mockup.jpg",
         "year": 2022,
         "medium": "Adobe XD, Illustrator, InDesign",
         "category": "UI/UX",
@@ -64,7 +64,7 @@
     },
     {
         "title": "Elite Brain & Spine of Connecticut Specialties Page Redesigns",
-        "image": "/portfolio-img/ebs-cover.jpeg",
+        "image": "/portfolio-img/ebs-cover.png",
         "year": 2023,
         "medium": "Divi, HTML, CSS, JavaScript",
         "category": "Web",
@@ -86,7 +86,7 @@
     },
     {
         "title": "Huskython",
-        "image": "/portfolio-img/nutmeg-huskython1.jpg",
+        "image": "/portfolio-img/nutmeg-huskython1-thumbnail.png",
         "year": 2021,
         "medium": "Adobe InDesign",
         "category": "Nutmeg"
