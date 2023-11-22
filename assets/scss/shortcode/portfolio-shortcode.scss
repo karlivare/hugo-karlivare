@@ -17,6 +17,17 @@
     border-radius: 8px;
 }
 
+#portfolio-item-title{
+    font-size: 2.5rem;
+}
+
+@include media-breakpoint-up(md) { 
+    #portfolio-item-title{
+        font-size: 3rem;
+    }
+ }
+
+
 @include media-breakpoint-up(lg) { 
     .portfolio-shortcode-img{
         max-width: 50%;

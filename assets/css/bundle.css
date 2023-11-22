@@ -12443,6 +12443,15 @@ article.portfolio-card:hover .portfolio-card-img {
   border-radius: 8px;
 }
 
+#portfolio-item-title {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  #portfolio-item-title {
+    font-size: 3rem;
+  }
+}
 @media (min-width: 992px) {
   .portfolio-shortcode-img {
     max-width: 50%;
