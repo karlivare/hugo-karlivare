@@ -11962,7 +11962,7 @@ svg.logo,
 /*navbar*/
 .nav-item {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -11995,7 +11995,7 @@ a.nav-link {
   width: 100%;
   opacity: 0.5;
   height: 8px;
-  top: 5rem;
+  top: 3.5rem;
   left: 0;
   background-color: #473d33;
   transform: scaleX(0);
