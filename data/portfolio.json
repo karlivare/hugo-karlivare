@@ -126,5 +126,13 @@
         "year": 2021,
         "medium": "Adobe InDesign, Illustrator",
         "category": "Nutmeg"
+    },
+    {
+        "title": "Barber Product Brand Redesign",
+        "image": "/portfolio-img/TheBossLaptopMockups.png",
+        "year": 2023,
+        "medium": "Figma",
+        "category": "UI/UX",
+        "url": "/blog/the-boss/"
     }
 ]
