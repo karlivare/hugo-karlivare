@@ -5,22 +5,49 @@
         </div>
         <div class="col-12 col-md-7 p-5">
           <h2 class="subtitle">Contact Me</h2>
-          <form action="https://formsubmit.co/kmvare@gmail.com" method="POST" id="contact-form">
-            <input type="hidden" name="_subject" value="Karli Vare Portfolio - New Message">
-              <div class="form-group">
-                <label style="display: none;" for="nameInput">Name</label>
-                <input name="name" placeholder="Name" type="text" class="form-control" id="nameInput">
+          <div class="form-contactinfo-container d-flex flex-column flex-lg-row">
+            <div class="col-12 col-lg-6">
+              <form action="https://formsubmit.co/kmvare@gmail.com" method="POST" id="contact-form">
+                <input type="hidden" name="_subject" value="Karli Vare Portfolio - New Message">
+                  <div class="form-group">
+                    <label style="display: none;" for="nameInput">Name</label>
+                    <input name="name" placeholder="Name" type="text" class="form-control" id="nameInput">
+                  </div>
+                  <div class="form-group">
+                    <label style="display: none;" for="emailInput">Email</label>
+                    <input name="email" placeholder="Email" type="email" class="form-control" id="emailInput">
+                  </div>
+                  <div class="form-group">
+                    <label style="display: none;" for="messageInput">Message</label>
+                    <textarea name="message" placeholder="Message" class="form-control" name="messageInput" id="messageInput" maxlength="500"></textarea>
+                  </div>
+                  <button id="submit-btn" type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="col-12 col-lg-6 info-container">
+              <div class="contact-info d-flex flex-row align-items-start">
+                <img style="height: 25px;" src="/svg/envelope-solid.svg" alt="">
+                <div class="contact-text-info d-flex flex-column">
+                  <p class=".body" style="margin-bottom: 0rem;">Email</p>
+                  <a href="mailto:kmvare@gmail.com"><strong><p class=".body">kmvare@gmail.com</p></strong></a>
+                </div>
               </div>
-              <div class="form-group">
-                <label style="display: none;" for="emailInput">Email</label>
-                <input name="email" placeholder="Email" type="email" class="form-control" id="emailInput">
+              <div class="contact-info d-flex flex-row align-items-start">
+                <img style="height: 25px;" src="/svg/linkedin.svg" alt="">
+                <div class="contact-text-info d-flex flex-column">
+                  <p class=".body" style="margin-bottom: 0rem;">LinkedIn</p>
+                  <a href="https://www.linkedin.com/in/karli-vare/"><strong><p class=".body">https://www.linkedin.com/in/karli-vare/</p></strong></a>
+                </div>
               </div>
-              <div class="form-group">
-                <label style="display: none;" for="messageInput">Message</label>
-                <textarea name="message" placeholder="Message" class="form-control" name="messageInput" id="messageInput" maxlength="500"></textarea>
+              <div class="contact-info d-flex flex-row align-items-start">
+                <img style="height: 25px;" src="/svg/file-solid.svg" alt="">
+                <div class="contact-text-info d-flex flex-column">
+                  <p class=".body" style="margin-bottom: 0rem;">Resume</p>
+                  <a href="https://drive.google.com/file/d/1rpfxTPp1D_GMm6cb1yVGIgd9Sj86KfBU/view?usp=sharing" target="_blank"><strong><p class=".body">PDF File</p></strong></a>
+                </div>
               </div>
-              <button id="submit-btn" type="submit" class="btn btn-primary">Submit</button>
-          </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>

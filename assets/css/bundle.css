@@ -12142,6 +12142,19 @@ img#footer-graphic {
   border-radius: 0;
 }
 
+.form-contactinfo-container {
+  gap: 3rem;
+}
+
+.info-container {
+  padding-top: 1rem;
+}
+
+.contact-info {
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 768px) {
   #form-graphic-container {
     height: auto;

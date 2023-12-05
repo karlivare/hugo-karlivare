@@ -46,6 +46,19 @@
   border-radius: 0;
 }
 
+.form-contactinfo-container{
+  gap: 3rem;
+}
+
+.info-container{
+  padding-top: 1rem;
+}
+
+.contact-info{
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
 @include media-breakpoint-up(md) {
   #form-graphic-container {
     height: auto;
