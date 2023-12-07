@@ -12161,6 +12161,12 @@ img#footer-graphic {
     overflow: visible;
   }
 }
+@media (max-width: 430px) {
+  #linkedin-link {
+    width: 181px;
+    word-wrap: break-word;
+  }
+}
 /*#endregion*/
 /*Home*/
 /*#region*/
