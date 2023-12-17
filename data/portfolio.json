@@ -32,6 +32,69 @@
         "url": "/blog/typographical-exploration/"
     },
     {
+        "title": "Lip Sync",
+        "image": "/portfolio-img/lipsync-thumbnail.jpg",
+        "year": 2023,
+        "medium": "Adobe InDesign, Photoshop",
+        "category": "Nutmeg"
+    },
+    {
+        "title": "Gunk House",
+        "image": "/portfolio-img/gunkhouse-thumbnail.jpg",
+        "year": 2023,
+        "medium": "Adobe InDesign, Photoshop",
+        "category": "Nutmeg"
+    },
+    {
+        "title": "Bomba Celebration",
+        "image": "/portfolio-img/bomba-celebration-thumbnail.jpg",
+        "year": 2023,
+        "medium": "Adobe InDesign, Photoshop",
+        "category": "Nutmeg"
+    },
+    {
+        "title": "Block Party",
+        "image": "/portfolio-img/block-party-thumbnail.jpg",
+        "year": 2023,
+        "medium": "Adobe InDesign, Photoshop",
+        "category": "Nutmeg"
+    },
+    {
+        "title": "Battle of the Bands",
+        "image": "/portfolio-img/battle-of-the-bands-thumbnail.jpg",
+        "year": 2023,
+        "medium": "Adobe InDesign, Photoshop",
+        "category": "Nutmeg"
+    },
+    {
+        "title": "Fall Magazine - Staff/Letter from the Editor",
+        "image": "/portfolio-img/Staff-LetterFromEditor-thumbnail.jpg",
+        "year": 2023,
+        "medium": "Adobe InDesign, Photoshop",
+        "category": "Nutmeg"
+    },
+    {
+        "title": "Fall Magazine - Our Spaces",
+        "image": "/portfolio-img/OurSpaces-thumbnail.jpg",
+        "year": 2023,
+        "medium": "Adobe InDesign",
+        "category": "Nutmeg"
+    },
+    {
+        "title": "Ted's Concept Spread",
+        "image": "/portfolio-img/nutmeg-tedspread.jpg",
+        "year": 2022,
+        "medium": "Adobe InDesign, Illustrator",
+        "category": "Nutmeg"
+    },
+    {
+        "title": "Biden at UConn",
+        "image": "/portfolio-img/nutmeg-biden.jpg",
+        "year": 2022,
+        "medium": "Adobe InDesign, Procreate",
+        "category": "Nutmeg"
+    },
+    {
         "title": "Greenhouse",
         "image": "/portfolio-img/nutmeg-greenhousespread-thumbnail.jpg",
         "year": 2021,
@@ -96,20 +159,6 @@
         "image": "/portfolio-img/nutmeg-seniorquote1-thumbnail.jpg",
         "year": 2021,
         "medium": "Adobe InDesign, Illustrator",
-        "category": "Nutmeg"
-    },
-    {
-        "title": "Ted's Concept Spread",
-        "image": "/portfolio-img/nutmeg-tedspread.jpg",
-        "year": 2022,
-        "medium": "Adobe InDesign, Illustrator",
-        "category": "Nutmeg"
-    },
-    {
-        "title": "Biden at UConn",
-        "image": "/portfolio-img/nutmeg-biden.jpg",
-        "year": 2022,
-        "medium": "Adobe InDesign, Procreate",
         "category": "Nutmeg"
     },
     {
