@@ -18,7 +18,7 @@
 @import "partials/home/intro.scss";
 @import "partials/home/nutmeg.scss";
 @import "partials/home/skills.scss";
-@import "partials/home/featured.scss";
+@import "partials/home/new-featured.scss";
 
 /*#endregion*/
 
@@ -30,11 +30,6 @@
 /*Blog content/Portfolio Items*/
 /*#region*/
 @import "blog/single.scss";
-/*#endregion*/
-
-/*Senior Project*/
-/*#region*/
-@import "partials/senior-project/yarn-over-midterm.scss";
 /*#endregion*/
 
 /*Short code, used for individual portfolio pages*/

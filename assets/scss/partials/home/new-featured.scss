@@ -1,0 +1,29 @@
+#featured-section {
+    background-color: rgba($color: $blue, $alpha: 0.15);
+}
+
+#featured-container{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+img.card-img-top{
+    height: 275px;
+    object-fit: cover;
+}
+
+#featured-work-row{
+    gap:1rem;
+}
+
+div.card.h-100{
+    border: 1.5px solid rgba(71, 61, 51, 0.15) !important;
+}
+
+@include media-breakpoint-up(md) {
+    #featured-work-row{
+        gap:0rem;
+    }
+}
