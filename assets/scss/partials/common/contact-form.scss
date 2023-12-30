@@ -1,6 +1,7 @@
 //////CONTACT FORM//////
 #contact-form-section {
   overflow: hidden;
+  background-color: rgba($color: #E4EFF1, $alpha: 1.0)
 }
 #form-graphic-container {
   background-image: url(/svg/contact-form-graphic.svg);
@@ -38,7 +39,7 @@
 }
 
 .form-control {
-  background-color: $beige;
+  background-color: rgba($color: #E4EFF1, $alpha: 1.0);
   border-top: none;
   border-left: none;
   border-right: none;
