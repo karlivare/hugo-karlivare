@@ -27,9 +27,10 @@
 @import "partials/blog/blog-content-noscroll.scss";
 /*#endregion*/
 
-/*Blog content/Portfolio Items*/
+/*Blog single content/Portfolio Items*/
 /*#region*/
 @import "blog/single.scss";
+@import "blog/portfolio-carousel.scss";
 /*#endregion*/
 
 /*Short code, used for individual portfolio pages*/

@@ -12384,11 +12384,25 @@ article.portfolio-card:hover .portfolio-card-img {
   }
 }
 /*#endregion*/
-/*Blog content/Portfolio Items*/
+/*Blog single content/Portfolio Items*/
 /*#region*/
 #portfolio-metadata {
   gap: 3rem;
   padding: 4rem 4rem 8rem 4rem;
+}
+
+#swiper-wrapper-c34d44c25139cdcb {
+  height: 50vh;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+div.swiper-button-next, div.swiper-button-prev {
+  color: #487c89;
 }
 
 /*#endregion*/
