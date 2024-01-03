@@ -76,14 +76,16 @@
         "image": "/portfolio-img/Staff-LetterFromEditor-thumbnail.jpg",
         "year": 2023,
         "medium": "Adobe InDesign, Photoshop",
-        "category": "Nutmeg"
+        "category": "Nutmeg",
+        "url": "/blog/staff-letter/"
     },
     {
         "title": "Fall Magazine - Our Spaces",
         "image": "/portfolio-img/OurSpaces-thumbnail.jpg",
         "year": 2023,
         "medium": "Adobe InDesign",
-        "category": "Nutmeg"
+        "category": "Nutmeg",
+        "url": "/blog/our-spaces/"
     },
     {
         "title": "Ted's Concept Spread",
