@@ -17,12 +17,15 @@
 }
 
 #portfolio-item-title{
-    font-size: 2.5rem;
+    font-size: 2.0rem;
 }
 
 @include media-breakpoint-up(md) { 
     #portfolio-item-title{
         font-size: 3rem;
+    }
+    #portfolio-item-title{
+        font-size: 2.5rem;
     }
 }
 

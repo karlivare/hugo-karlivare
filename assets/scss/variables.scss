@@ -60,7 +60,7 @@ button, a.btn{
   font-style: normal;
   color: $brown;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.75rem;
   // border-bottom: 4px solid rgb(71, 61, 51, 0.5);
   margin-bottom: 1.5rem; /*this accounts for a smaller underline*/
 }
@@ -89,5 +89,15 @@ button, a.btn{
 /////////SECTION STYLES/////////
 .header {
   background-color: $blue;
-  padding: 3rem !important;
+  padding: 1.5rem 1rem 1rem 1rem !important;
+}
+
+//This is a medium screen breakpoint. Couldn't use bootstrap here
+@media(min-width: 768px){
+  .header {
+    padding: 3rem !important;
+  }
+  .subtitle{
+    font-size: 2rem;
+  }
 }
