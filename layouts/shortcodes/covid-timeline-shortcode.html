@@ -1,5 +1,5 @@
 <section class="portfolio-shortcode-section bg-light">
-  <div class="portoflio-shortcode-container container mx-auto d-flex flex-column flex-lg-row justify-content-between">
+  <div class="portfolio-shortcode-container container">
     <!-- Slider main container -->
     <div class="swiper">
       <!-- Additional required wrapper -->
@@ -19,8 +19,6 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
 
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
     </div>
   </div>
 </section>
@@ -39,8 +37,9 @@
   },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true, // Optional: Enable clickable bullets
+  }
 });
 </script>

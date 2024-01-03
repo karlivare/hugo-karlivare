@@ -1,6 +1,43 @@
-<section class="container-fluid bg-light portfolio-shortcode-section">
-    <div class="portfolio-shortcode-container container mx-auto d-flex flex-column flex-lg-row justify-content-between">
-        <img class="portfolio-shortcode-img" src="/portfolio-img/oceancollage-no1.jpg" alt="Ocean collage number 1">
-        <img class="portfolio-shortcode-img" src="/portfolio-img/oceancollage-no2.jpg" alt="Ocean collage number 2">
+<section class="portfolio-shortcode-section bg-light">
+    <div class="portfolio-shortcode-container container">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="/portfolio-img/oceancollage-no1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/portfolio-img/oceancollage-no2.jpg" alt=""></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+  
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+  
+      </div>
     </div>
-</section>
+  </section>
+  
+  <script>
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    centeredSlides: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true, // Optional: Enable clickable bullets
+    }
+  });
+  </script>
+  
+

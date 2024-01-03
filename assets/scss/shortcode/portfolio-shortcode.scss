@@ -1,13 +1,12 @@
-.portfolio-shortcode-img{
-    border-radius: 8px;
-}
-
 .portfolio-shortcode-container{
-    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
-.portfolio-shortcode-section{
-    padding: 3rem;
+.portfolio-shortcode-img{
+    width: 100vw;
+    height: auto;
 }
 
 .portfolio-iframe{
@@ -25,11 +24,16 @@
     #portfolio-item-title{
         font-size: 3rem;
     }
- }
+}
 
-
-@include media-breakpoint-up(lg) { 
+ @include media-breakpoint-up(sm){
+    .portfolio-shortcode-container{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
     .portfolio-shortcode-img{
-        max-width: 50%;
+        border-radius: 8px;
+        height: 70vh;
+        width: auto;
     }
  }

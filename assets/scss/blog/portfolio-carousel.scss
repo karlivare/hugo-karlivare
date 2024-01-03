@@ -1,5 +1,12 @@
-#swiper-wrapper-c34d44c25139cdcb{
-    height: 50vh;
+.swiper {
+    width: 100vw;
+    height: auto;
+}
+
+
+div.swiper-button-prev,
+div.swiper-button-next {
+    display: none;
 }
 
 .swiper-slide img{
@@ -11,4 +18,22 @@
 div.swiper-button-next, div.swiper-button-prev{
     color: $blue;
 }
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: $blue;
+}
+
+@include media-breakpoint-up(lg) {
+    div.swiper-button-prev,
+    div.swiper-button-next {
+      display: block;
+    }
+}
+
+@include media-breakpoint-up(sm){
+    .swiper{
+        height: 70vh;
+        width: auto;
+    }
+ }
 
