@@ -36,35 +36,40 @@
         "image": "/portfolio-img/lipsync-thumbnail.jpg",
         "year": 2023,
         "medium": "Adobe InDesign, Photoshop",
-        "category": "Nutmeg"
+        "category": "Nutmeg",
+        "url": "/blog/lip-sync/"
     },
     {
         "title": "Gunk House",
         "image": "/portfolio-img/gunkhouse-thumbnail.jpg",
         "year": 2023,
         "medium": "Adobe InDesign, Photoshop",
-        "category": "Nutmeg"
+        "category": "Nutmeg",
+        "url": "/blog/gunk-house/"
     },
     {
         "title": "Bomba Celebration",
         "image": "/portfolio-img/bomba-celebration-thumbnail.jpg",
         "year": 2023,
         "medium": "Adobe InDesign, Photoshop",
-        "category": "Nutmeg"
+        "category": "Nutmeg",
+        "url": "/blog/bomba-celebration/"
     },
     {
         "title": "Block Party",
         "image": "/portfolio-img/block-party-thumbnail.jpg",
         "year": 2023,
         "medium": "Adobe InDesign, Photoshop",
-        "category": "Nutmeg"
+        "category": "Nutmeg",
+        "url": "/blog/block-party/"
     },
     {
         "title": "Battle of the Bands",
         "image": "/portfolio-img/battle-of-the-bands-thumbnail.jpg",
         "year": 2023,
         "medium": "Adobe InDesign, Photoshop",
-        "category": "Nutmeg"
+        "category": "Nutmeg",
+        "url": "/blog/battle-of-the-bands/"
     },
     {
         "title": "Fall Magazine - Staff/Letter from the Editor",
