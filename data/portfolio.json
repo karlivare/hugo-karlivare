@@ -72,7 +72,7 @@
         "url": "/blog/battle-of-the-bands/"
     },
     {
-        "title": "Fall Magazine - Staff/Letter from the Editor",
+        "title": "Staff/Letter from the Editor",
         "image": "/portfolio-img/Staff-LetterFromEditor-thumbnail.jpg",
         "year": 2023,
         "medium": "Adobe InDesign, Photoshop",
@@ -80,7 +80,7 @@
         "url": "/blog/staff-letter/"
     },
     {
-        "title": "Fall Magazine - Our Spaces",
+        "title": "Our Spaces",
         "image": "/portfolio-img/OurSpaces-thumbnail.jpg",
         "year": 2023,
         "medium": "Adobe InDesign",
@@ -89,24 +89,27 @@
     },
     {
         "title": "Ted's Concept Spread",
-        "image": "/portfolio-img/nutmeg-tedspread.jpg",
+        "image": "/portfolio-img/teds-concept-small-thumbnail.jpg",
         "year": 2022,
-        "medium": "Adobe InDesign, Illustrator",
-        "category": "Nutmeg"
+        "medium": "Adobe InDesign, Illustrator, Photoshop",
+        "category": "Nutmeg",
+        "url": "/blog/teds-concept/"
     },
     {
         "title": "Biden at UConn",
         "image": "/portfolio-img/nutmeg-biden.jpg",
         "year": 2022,
         "medium": "Adobe InDesign, Procreate",
-        "category": "Nutmeg"
+        "category": "Nutmeg",
+        "url": "/blog/biden-spread/"
     },
     {
         "title": "Greenhouse",
         "image": "/portfolio-img/nutmeg-greenhousespread-thumbnail.jpg",
         "year": 2021,
         "medium": "Adobe InDesign, Procreate",
-        "category": "Nutmeg"
+        "category": "Nutmeg",
+        "url": "/blog/greenhouse-spread/"
     },
     {
         "title": "Random Recipe Generator",
@@ -142,17 +145,19 @@
     },
     {
         "title": "LC Talks",
-        "image": "/portfolio-img/nutmeg-lctalks-thumbnail.jpg",
+        "image": "/portfolio-img/lc-talks-small-thumbnail.jpg",
         "year": 2021,
         "medium": "Adobe InDesign, Illustrator",
-        "category": "Nutmeg"
+        "category": "Nutmeg",
+        "url": "/blog/lc-talks/"
     },
     {
         "title": "Late Night Carnival",
         "image": "/portfolio-img/nutmeg-latenightcarnival-thumbnail.jpg",
         "year": 2021,
         "medium": "Adobe InDesign, Illustrator",
-        "category": "Nutmeg"
+        "category": "Nutmeg",
+        "url": "/blog/latenight-carnival/"
     },
     {
         "title": "Huskython",
@@ -181,7 +186,8 @@
         "image": "/portfolio-img/nutmeg-winter-thumbnail.jpg",
         "year": 2021,
         "medium": "Adobe InDesign, Illustrator",
-        "category": "Nutmeg"
+        "category": "Nutmeg",
+        "url": "/blog/winter-scenery/"
     },
     {
         "title": "Barber Product Brand Redesign",
