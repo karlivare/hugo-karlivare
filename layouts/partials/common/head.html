@@ -2,6 +2,7 @@
 <meta charset="utf-8">
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 {{ $bundleCSS := resources.Get "css/bundle.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" text="text/css" href="{{ $bundleCSS.RelPermalink}}" integrity="{{ $bundleCSS.Data.Integrity}}">
