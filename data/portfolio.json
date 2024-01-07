@@ -164,14 +164,16 @@
         "image": "/portfolio-img/nutmeg-huskython1-thumbnail.jpg",
         "year": 2021,
         "medium": "Adobe InDesign",
-        "category": "Nutmeg"
+        "category": "Nutmeg",
+        "url": "/blog/huskython/"
     },
     {
         "title": "Senior Quotes",
         "image": "/portfolio-img/nutmeg-seniorquote1-thumbnail.jpg",
         "year": 2021,
         "medium": "Adobe InDesign, Illustrator",
-        "category": "Nutmeg"
+        "category": "Nutmeg",
+        "url": "/blog/senior-quotes/"
     },
     {
         "title": "Covid-19 Timeline",
