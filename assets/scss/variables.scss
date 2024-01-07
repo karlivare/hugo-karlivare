@@ -13,8 +13,8 @@ $beige: #fff3e8;
 $light-blue: #d1f7ff;
 $blue-hover: #38616b;
 
-html, body{
-  background-color: $beige;
+body{
+  background-color: $beige !important;
 }
 
 //////VARIABLE OVERRIDES//////
