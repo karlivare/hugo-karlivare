@@ -1,7 +1,7 @@
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
 
 {{ $bundleCSS := resources.Get "css/bundle.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" text="text/css" href="{{ $bundleCSS.RelPermalink}}" integrity="{{ $bundleCSS.Data.Integrity}}">
