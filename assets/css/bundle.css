@@ -12450,8 +12450,17 @@ div.swiper-button-next, div.swiper-button-prev {
   padding-bottom: 2rem;
 }
 
+#about-dxg > div > div {
+  padding-left: 0;
+}
+
 .before-after-caption {
   padding-top: 0.5rem;
+}
+
+h2.dxg-h2.subtitle, .dxg-h2.subtitle.h2 {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /*#endregion*/
