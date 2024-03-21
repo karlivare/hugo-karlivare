@@ -206,5 +206,13 @@
         "medium": "Figma",
         "category": "UI/UX",
         "url": "/blog/yarn-over/"
+    },
+    {
+        "title": "UConn Digital Experience Group",
+        "image": "/portfolio-img/dxg-thumbnail.png",
+        "year": "2023-24",
+        "medium": "WordPress, Figma",
+        "category": "UI/UX",
+        "url": "/blog/dxg/"
     }
 ]

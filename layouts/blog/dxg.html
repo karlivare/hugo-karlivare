@@ -1,0 +1,76 @@
+{{ define "main"}}
+<section id="portfolio-header" class="container-fluid header">
+    <div class="container mx-auto align-items-center">
+      <h1 id="portfolio-item-title" class="title">{{.Title}}</h1>
+    </div>
+</section>
+
+
+<!--Images go here-->
+{{ .Content }}
+
+
+<section id="about-dxg" class="container-fluid bg-light d-flex flex-column">
+    <div class="py-4 container mx-auto row d-flex align-items-baseline">
+        <div class="col-sm-12 col-lg-4 ">
+            <h2 class="subtitle">About</h2>
+        </div>
+        <p class="col-sm-12 col-lg-8 body">{{.Params.description}}</p>
+    </div>
+</section>
+<section class="container-fluid bg-light d-flex flex-column">
+    <div class="container mx-auto row d-flex align-items-baseline">
+        <h2 class="subtitle">UConn Natural Resources Conservation Academy (NRCA)</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="text-left">
+              <h2 class="thirdtitle">Before</h2>
+            </div>
+            <img src="/portfolio-img/nrca-learn-more-before.jpg" alt="NRCA learn more block, before" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <div class="text-right">
+              <h2 class="thirdtitle">After</h2>
+            </div>
+            <img src="/portfolio-img/nrca-learn-more-after.jpg" alt="NRCA learn more block, after" class="img-fluid">
+            <p class="before-after-caption">More engaging background, text is better organized and more digestible</p>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+              <div class="text-left">
+                <h2 class="thirdtitle">Before</h2>
+              </div>
+              <img src="/portfolio-img/nrca-about-dmm-before.jpg" alt="NRCA DMM about block, before" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <div class="text-right">
+                <h2 class="thirdtitle">After</h2>
+              </div>
+              <img src="/portfolio-img/nrca-about-dmm-after.jpg" alt="NRCA DMM about block, after" class="img-fluid">
+              <p class="before-after-caption">Full width pictures highlight students and help break up text information</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="text-left">
+                <h2 class="thirdtitle">Before</h2>
+              </div>
+              <img src="/portfolio-img/nrca-dmm-pathway-before.jpg" alt="NRCA DMM pathway block, before" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <div class="text-right">
+                <h2 class="thirdtitle">After</h2>
+              </div>
+              <img src="/portfolio-img/nrca-dmm-pathway-after.jpg" alt="NRCA DMM pathway block, after" class="img-fluid">
+              <p class="before-after-caption">Pictures added and padding corrected</p>
+            </div>
+          </div>
+      </div>
+      
+</section>
+
+
+{{end}}

@@ -12392,7 +12392,7 @@ article.portfolio-card:hover .portfolio-card-img {
   }
 }
 /*#endregion*/
-/*Blog single content/Portfolio Items*/
+/*Blog single content, portfolio items*/
 /*#region*/
 #portfolio-metadata {
   gap: 1rem;
@@ -12446,6 +12446,14 @@ div.swiper-button-next, div.swiper-button-prev {
     width: auto;
   }
 }
+#about-dxg {
+  padding-bottom: 2rem;
+}
+
+.before-after-caption {
+  padding-top: 0.5rem;
+}
+
 /*#endregion*/
 /*Short code, used for individual portfolio pages*/
 /*#region*/
