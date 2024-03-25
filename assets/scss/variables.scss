@@ -93,6 +93,11 @@ button, a.btn{
   padding: 1.5rem 1rem 1rem 1rem !important;
 }
 
+.subheader {
+  background-color: rgba($blue, 0.15);
+  padding: 1.5rem !important;
+}
+
 //This is a medium screen breakpoint. Couldn't use bootstrap here
 @media(min-width: 768px){
   .header {

@@ -63,6 +63,11 @@ button, a.btn {
   padding: 1.5rem 1rem 1rem 1rem !important;
 }
 
+.subheader {
+  background-color: rgba(72, 124, 137, 0.15);
+  padding: 1.5rem !important;
+}
+
 @media (min-width: 768px) {
   .header {
     padding: 3rem !important;
