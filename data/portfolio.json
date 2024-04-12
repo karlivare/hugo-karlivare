@@ -32,6 +32,22 @@
         "url": "/blog/typographical-exploration/"
     },
     {
+        "title": "Diving Deeper",
+        "image": "/portfolio-img/diving-deeper-thumbnail.jpg",
+        "year": "2024",
+        "medium": "Adobe Indesign, Photoshop",
+        "category": "Nutmeg",
+        "url": "/blog/diving-deeper/"
+    },
+    {
+        "title": "Serving Across the World",
+        "image": "/portfolio-img/serving-across-the-world-thumbnail.jpg",
+        "year": "2024",
+        "medium": "Adobe Indesign, Photoshop",
+        "category": "Nutmeg",
+        "url": "/blog/serving-across-world/"
+    },
+    {
         "title": "Lip Sync",
         "image": "/portfolio-img/lipsync-thumbnail.jpg",
         "year": 2023,
