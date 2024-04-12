@@ -1,17 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Karli Vare</title>
+    <title>Portfolio on Karli Vare</title>
     <link>https://karlivare.com/blog/</link>
-    <description>Recent content in Blog on Karli Vare</description>
+    <description>Recent content in Portfolio on Karli Vare</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://karlivare.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Barber Product Brand Redesign</title>
+      <link>https://karlivare.com/blog/the-boss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/the-boss/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Battle of the Bands</title>
+      <link>https://karlivare.com/blog/battle-of-the-bands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/battle-of-the-bands/</guid>
+      <description> </description>
+    </item>
+    
     <item>
       <title>BFA Senior Exhbition Posters</title>
       <link>https://karlivare.com/blog/bfa-senior-exhibition-posters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://karlivare.com/blog/bfa-senior-exhibition-posters/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Biden at UConn</title>
+      <link>https://karlivare.com/blog/biden-spread/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/biden-spread/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Block Party</title>
+      <link>https://karlivare.com/blog/block-party/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/block-party/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Bomba Celebration</title>
+      <link>https://karlivare.com/blog/bomba-celebration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/bomba-celebration/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Covid-19 Timeline</title>
+      <link>https://karlivare.com/blog/covid-timeline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/covid-timeline/</guid>
       <description> </description>
     </item>
     
@@ -25,6 +79,24 @@
     </item>
     
     <item>
+      <title>Greenhouse</title>
+      <link>https://karlivare.com/blog/greenhouse-spread/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/greenhouse-spread/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Gunk House</title>
+      <link>https://karlivare.com/blog/gunk-house/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/gunk-house/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
       <title>Holiday Card</title>
       <link>https://karlivare.com/blog/holiday-card/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -34,7 +106,43 @@
     </item>
     
     <item>
-      <title>Meditation Email Campaign</title>
+      <title>Huskython</title>
+      <link>https://karlivare.com/blog/huskython/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/huskython/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Late Night Carnival</title>
+      <link>https://karlivare.com/blog/latenight-carnival/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/latenight-carnival/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>LC Talks</title>
+      <link>https://karlivare.com/blog/lc-talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/lc-talks/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Lip Sync</title>
+      <link>https://karlivare.com/blog/lip-sync/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/lip-sync/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Meditation App Email Campaign</title>
       <link>https://karlivare.com/blog/meditation-email-campaign/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -61,11 +169,74 @@
     </item>
     
     <item>
+      <title>Our Spaces</title>
+      <link>https://karlivare.com/blog/our-spaces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/our-spaces/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Senior Project - Crochet Pattern Marketplace Design</title>
+      <link>https://karlivare.com/blog/yarn-over/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/yarn-over/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Senior Quotes</title>
+      <link>https://karlivare.com/blog/senior-quotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/senior-quotes/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Staff / Letter from the Editor</title>
+      <link>https://karlivare.com/blog/staff-letter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/staff-letter/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Ted&#39;s Concept Spread</title>
+      <link>https://karlivare.com/blog/teds-concept/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/teds-concept/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
       <title>Typographical Exploration</title>
       <link>https://karlivare.com/blog/typographical-exploration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://karlivare.com/blog/typographical-exploration/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>UConn Digital Experience Group</title>
+      <link>https://karlivare.com/blog/dxg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/dxg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Winter Scenery</title>
+      <link>https://karlivare.com/blog/winter-scenery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karlivare.com/blog/winter-scenery/</guid>
       <description> </description>
     </item>
     

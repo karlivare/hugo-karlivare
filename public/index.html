@@ -4,12 +4,19 @@
 	<meta name="generator" content="Hugo 0.117.0">
 <meta charset="utf-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 
-<link rel="stylesheet" text="text/css" href="/css/bundle.min.758d12cde6d70266371c6f0c4abce7aa6e2457ef77bde9d38b06e803c51394d0.css" integrity="sha256-dY0SzebXAmY3HG8MSrznqm4kV&#43;93venTiwboA8UTlNA=">
+<link rel="stylesheet" text="text/css" href="/css/bundle.min.8a1e059720fefe5c8b09491323361a62efbe895ac99a687c2a202be5fc2603c8.css" integrity="sha256-ih4FlyD&#43;/lyLCUkTIzYaYu&#43;&#43;iVrJmmh8KiAr5fwmA8g=">
 <link rel="stylesheet" href="https://use.typekit.net/yxz0ome.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <title>Home - Karli Vare</title>
 </head>
   <body><nav class="navbar navbar-expand-md p-4">
@@ -137,14 +144,15 @@
         </div>
         <div class="offcanvas-body justify-content-end">
           <ul class="navbar-nav align-items-center">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/">Home</a>
-            </li>
+            
             <li class="nav-item">
               <a class="nav-link" href="/blog">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/senior-project">Senior Project</a>
+              <a style="text-align: center;" class="nav-link" href="/blog/yarn-over/">Senior Project</a>
+            </li>
+            <li class="nav-item">
+              <a style="text-align: center;" class="nav-link" href="https://karlivare.com/#form-container">Contact</a>
             </li>
         </div>
       </div>
@@ -156,7 +164,7 @@
     <div class="row container mx-auto align-items-center">
       <div class="col-12 col-md-6">
         <h1 class="title">Karli Vare</h1>
-        <p class="body text-white">I'm a senior at the University of Connecticut majoring in digital media and design. I'm passionate about blending art and technology to create captivating experiences. With a diverse skillset spanning front end web development, graphic design, and UI/UX design I'm here to bring your creative visions to life. </p>
+        <p class="body text-white">I'm a senior at the University of Connecticut majoring in digital media and design. I'm passionate about blending art and technology to create intuitive and vibrant digital experiences. With a diverse skillset spanning UI/UX design, graphic design, and front-end web development, I'm here to bring your creative visions to life. </p>
       </div>
       <div id="flower-mask-img-container" class="col-12 col-md-6 text-center">
         <img id="flower-mask-img" src="/svg/flower-placeholder.svg" alt="">
@@ -164,72 +172,116 @@
     </div>
 </section>
     
-    <section id="skills-section" class="container-fluid">
-  <div class="container p-4">
+    <section id="featured-section" class="container-fluid">
+    <div id="featured-container" class="container">
       <h2 class="subtitle">Featured Work</h2>
-      <div id="featured-card" class="d-flex flex-column-reverse flex-md-row">
-          
-          <div class="card-text col-md-6">
-              <div id="card-links" class="d-flex flex-column justify-content-between justify-content-lg-center">
-                <a href="/blog/news-publication-redesign/" class="active thirdtitle card-link" data-image="image-1">News Publication Redesign</a>
-                <a href="/portfolio-img/covid-timeline1.jpg" class="thirdtitle card-link" data-image="image-2">Nutmeg Publishing Covid Timeline</a>
-                <a href="https://github.uconn.edu/pages/kav19006/dmd3475-finalproject/home.html" class="thirdtitle card-link" data-image="image-3">Random Recipe Generator</a>
+      <div id="featured-work-row" class="row">
+        <div class="col-lg-4">
+            <div class="card h-100">
+              <img src="/portfolio-img/yarnover-large-thumbnail.jpg" alt="" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h5 class="card-title">Senior Project- Crochet Pattern Marketplace Design</h5>
+                <a href="/blog/yarn-over/" class="btn btn-primary">View Project</a>
               </div>
+            </div>
           </div>
-          
-          <div id="image-row" class="col-md-6 d-flex align-items-center">
-              <div class="img-container">
-                <img id="image-1" src="/portfolio-img/dailycampus-cover.jpeg" alt="" class="featured-img img-fluid">
-                <img id="image-2" src="/portfolio-img/covid-timeline1.jpg" alt="" class="featured-img img-fluid" style="display:none;">
-                <img id="image-3" src="/portfolio-img/recipegenerator.jpg" alt="" class="featured-img img-fluid" style="display: none;">
-              </div>
+        <div class="col-lg-4">
+          <div class="card h-100">
+            <img src="/portfolio-img/DC-large-thumbnail.jpg" alt="" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">News Publication Redesign - The Daily Campus</h5>
+              <a href="/blog/news-publication-redesign/" class="btn btn-primary">View Project</a>
+            </div>
           </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card h-100">
+            <img src="/portfolio-img/covid-timeline1.jpg" alt="" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Covid Timeline - Nutmeg Publishing </h5>
+              <a href="/blog/covid-timeline/" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+    <section class="container-fluid nutmeg-section">
+  <div id="nutmeg-spreads-title" class="container">
+      <h2 class="subtitle">Collection: Nutmeg Publishing Spreads</h2>
   </div>
 </section>
 
-    <section id="nutmeg-spreads-section" class="container-fluid">
-    <div id="nutmeg-spreads-container" class="container p-4 d-flex flex-column align-items-start">
-      <h2 class="subtitle">Collection: Nutmeg Publishing Spreads</h2>
-      <a id="view-spreads" href="/blog/#nutmeg-content" class="btn btn-primary">View all spreads</a>
-    </div>
+    <section id="nutmeg-spreads-bg" class="nutmeg-section container-fluid">
+    
 </section>
 
-    <section id="contact-form-section" class="container-fluid bg-light">
+    <section class="nutmeg-section container-fluid">
+  <div id="nutmeg-spreads-button" class="container">
+    <a id="view-spreads" href="/blog/#nutmeg-content" class="btn btn-primary">View all spreads</a>
+  </div>
+</section>
+
+    <section id="contact-form-section" class="container-fluid">
     <div id="form-container">
       <div class="row">
         <div id="form-graphic-container" class="col-12 col-md-5">
         </div>
         <div class="col-12 col-md-7 p-5">
           <h2 class="subtitle">Contact Me</h2>
-          <form action="https://formsubmit.co/kmvare@gmail.com" method="POST" id="contact-form">
-            <input type="hidden" name="_subject" value="Karli Vare Portfolio - New Message">
-              <div class="form-group">
-                <label style="display: none;" for="nameInput">Name</label>
-                <input name="name" placeholder="Name" type="text" class="form-control" id="nameInput">
+          <div class="form-contactinfo-container d-flex flex-column flex-xl-row">
+            <div class="col-12 col-xl-6">
+              <form action="https://formsubmit.co/kmvare@gmail.com" method="POST" id="contact-form">
+                <input type="hidden" name="_subject" value="Karli Vare Portfolio - New Message">
+                  <div class="form-group">
+                    <label style="display: none;" for="nameInput">Name</label>
+                    <input name="name" placeholder="Name" type="text" class="form-control" id="nameInput">
+                  </div>
+                  <div class="form-group">
+                    <label style="display: none;" for="emailInput">Email</label>
+                    <input name="email" placeholder="Email" type="email" class="form-control" id="emailInput">
+                  </div>
+                  <div class="form-group">
+                    <label style="display: none;" for="messageInput">Message</label>
+                    <textarea name="message" placeholder="Message" class="form-control" name="messageInput" id="messageInput" maxlength="500"></textarea>
+                  </div>
+                  <button id="submit-btn" type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="col-12 col-xl-6 info-container">
+              <div class="contact-info d-flex flex-row align-items-start">
+                <img style="height: 25px;" src="/svg/envelope-solid.svg" alt="">
+                <div class="contact-text-info d-flex flex-column">
+                  <p class=".body" style="margin-bottom: 0rem;">Email</p>
+                  <a href="mailto:kmvare@gmail.com"><strong><p class=".body">kmvare@gmail.com</p></strong></a>
+                </div>
               </div>
-              <div class="form-group">
-                <label style="display: none;" for="emailInput">Email</label>
-                <input name="email" placeholder="Email" type="email" class="form-control" id="emailInput">
+              <div class="contact-info d-flex flex-row align-items-start">
+                <img style="height: 25px;" src="/svg/linkedin.svg" alt="">
+                <div class="contact-text-info d-flex flex-column">
+                  <p class=".body" style="margin-bottom: 0rem;">LinkedIn</p>
+                  <a id="linkedin-link" href="https://www.linkedin.com/in/karli-vare/" target="_blank"><strong><p class=".body">https://www.linkedin.com/in/karli-vare/</p></strong></a>
+                </div>
               </div>
-              <div class="form-group">
-                <label style="display: none;" for="messageInput">Message</label>
-                <textarea name="message" placeholder="Message" class="form-control" name="messageInput" id="messageInput" maxlength="500"></textarea>
+              <div class="contact-info d-flex flex-row align-items-start">
+                <img style="height: 25px;" src="/svg/file-solid.svg" alt="">
+                <div class="contact-text-info d-flex flex-column">
+                  <p class=".body" style="margin-bottom: 0rem;">Resume</p>
+                  <a href="https://drive.google.com/file/d/1t_KEI-m1QL1fqSYyMhJTfLF8b3iJ3Zdp/view?usp=sharing" target="_blank"><strong><p class=".body">PDF File</p></strong></a>
+                </div>
               </div>
-              <button id="submit-btn" type="submit" class="btn btn-primary">Submit</button>
-          </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   
-
-    <script src="https://karlivare.com//js/featured.js"></script>
-<footer id="footer" class="container-fluid text-center p-4">
+<footer id="footer" class="container-fluid text-center p-5">
     <img id="footer-graphic" src="/svg/flower-triad.svg" alt="">
     <div id="footer-text">
-      <h6 id="footer-text-title">Website designed and developed by Karli Vare</h6>
+      <h6 style="font-size: 1rem;" id="footer-text-title">Website designed and developed by Karli Vare</h6>
       <small id="copyright">©karlivare.com 2023</small>
     </div>
 </footer>

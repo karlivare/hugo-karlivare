@@ -12468,6 +12468,11 @@ h2.dxg-h2.subtitle, .dxg-h2.subtitle.h2 {
   padding-right: 0;
 }
 
+.dxg-img {
+  border-radius: 8px;
+  border: 1px solid rgba(72, 124, 137, 0.5);
+}
+
 /*#endregion*/
 /*Short code, used for individual portfolio pages*/
 /*#region*/
