@@ -136,6 +136,14 @@
         "url": "https://github.uconn.edu/pages/kav19006/dmd3475-finalproject/home.html"
     },
     {
+        "title": "Gamified Habit App - Snaps",
+        "image": "/portfolio-img/snaps-small-thumbnail.jpg",
+        "year": 2024,
+        "medium": "Figma",
+        "category": "UI/UX",
+        "url": "/blog/snaps/"
+    },
+    {
         "title": "Meditation App Email Campaign",
         "image": "/portfolio-img/emailcampaign-mockup.jpg",
         "year": 2022,

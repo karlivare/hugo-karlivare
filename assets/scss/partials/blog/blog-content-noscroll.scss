@@ -58,6 +58,14 @@ article.portfolio-card:hover .portfolio-card-img{
     }
 }
 
+@include media-breakpoint-up(xl) {
+    #cards-inner-container{
+        gap: 4rem;
+        column-gap: 6rem;
+        justify-content: flex-start;
+    }
+}
+
 
 
 

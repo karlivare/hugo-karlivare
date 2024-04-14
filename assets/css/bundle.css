@@ -12396,6 +12396,13 @@ article.portfolio-card:hover .portfolio-card-img {
     width: 250px;
   }
 }
+@media (min-width: 1200px) {
+  #cards-inner-container {
+    gap: 4rem;
+    column-gap: 6rem;
+    justify-content: flex-start;
+  }
+}
 /*#endregion*/
 /*Blog single content, portfolio items*/
 /*#region*/
