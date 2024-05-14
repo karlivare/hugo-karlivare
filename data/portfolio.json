@@ -136,6 +136,14 @@
         "url": "https://github.uconn.edu/pages/kav19006/dmd3475-finalproject/home.html"
     },
     {
+        "title": "Social Media Web Application - Beehive",
+        "image": "/portfolio-img/beehive-small-thumbnail.svg",
+        "year": 2024,
+        "medium": "Nunjucks, HTML, CSS, Github",
+        "category": "UI/UX",
+        "url": "/blog/beehive/"
+    },
+    {
         "title": "Gamified Habit App - Snaps",
         "image": "/portfolio-img/snaps-small-thumbnail.jpg",
         "year": 2024,
@@ -226,7 +234,7 @@
     {
         "title": "Senior Project - Crochet Pattern Marketplace Prototype",
         "image": "/portfolio-img/yarn-over-small-thumbnail.jpg",
-        "year": 2023,
+        "year": "2023-24",
         "medium": "Figma",
         "category": "UI/UX",
         "url": "/blog/yarn-over/"

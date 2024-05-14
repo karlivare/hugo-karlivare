@@ -6,4 +6,27 @@
     {{partial "home/nutmeg-bg.html"}}
     {{partial "home/nutmeg-button.html"}}
     {{partial "common/contact-form.html"}}
+
+     <!-- JavaScript code -->
+     <script>
+        console.log("is this thing working");
+        // Get the profile picture container element
+        const container = document.getElementById("profile");
+        // Get the clip element
+        const clip = document.getElementById("clip");
+
+        // Function to set transform origin based on container dimensions
+        function setTransformOrigin() {
+            const containerRect = container.getBoundingClientRect();
+            const centerX = containerRect.width;
+            const centerY = containerRect.height;
+            clip.style.transformOrigin = `${centerX}px ${centerY}px`; // Set transform origin
+        }
+
+        // Call the function initially
+        setTransformOrigin();
+
+        // Add event listener for window resize
+        window.addEventListener("resize", setTransformOrigin);
+    </script>
 {{end}}
