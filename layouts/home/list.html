@@ -18,8 +18,11 @@
         // Function to set transform origin based on container dimensions
         function setTransformOrigin() {
             const containerRect = container.getBoundingClientRect();
+            console.log("containerRect: " + containerRect);
             const centerX = containerRect.width;
             const centerY = containerRect.height;
+            console.log("centerX: " + centerX);
+            console.log("centerY: " + centerY);
             clip.style.transformOrigin = `${centerX}px ${centerY}px`; // Set transform origin
         }
 
