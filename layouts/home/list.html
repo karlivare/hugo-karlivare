@@ -15,14 +15,32 @@
         const clip = document.getElementById("clip");
 
         // Function to set transform origin based on container dimensions
+        // function setTransformOrigin() {
+        //     const containerRect = container.getBoundingClientRect();
+        //     console.log("containerRect: " + containerRect);
+        //     const centerX = containerRect.width;
+        //     const centerY = containerRect.height;
+        //     console.log("centerX: " + centerX);
+        //     console.log("centerY: " + centerY);
+        //     clip.style.transformOrigin = `${centerX}px ${centerY}px`; // Set transform origin
+        // }
+
         function setTransformOrigin() {
             const containerRect = container.getBoundingClientRect();
-            console.log("containerRect: " + containerRect);
             const centerX = containerRect.width;
             const centerY = containerRect.height;
-            console.log("centerX: " + centerX);
-            console.log("centerY: " + centerY);
-            clip.style.transformOrigin = `${centerX}px ${centerY}px`; // Set transform origin
+
+            // Check if the browser is Safari
+            const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+            // Set transform origin based on browser
+            if (isSafari) {
+                // Use different transform origin for Safari
+                clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
+            } else {
+                // Use default transform origin for other browsers
+                clip.style.transformOrigin = `${centerX}px ${centerY}px`;
+            }
         }
 
         // Call the function initially
