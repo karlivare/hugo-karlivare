@@ -136,7 +136,7 @@
         "url": "https://github.uconn.edu/pages/kav19006/dmd3475-finalproject/home.html"
     },
     {
-        "title": "Social Media Web Application - Beehive",
+        "title": "Social Media Web Application",
         "image": "/portfolio-img/beehive-small-thumbnail.svg",
         "year": 2024,
         "medium": "Nunjucks, HTML, CSS, Github",
@@ -144,7 +144,7 @@
         "url": "/blog/beehive/"
     },
     {
-        "title": "Gamified Habit App - Snaps",
+        "title": "Gamified Habit App",
         "image": "/portfolio-img/snaps-small-thumbnail.jpg",
         "year": 2024,
         "medium": "Figma",
