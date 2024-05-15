@@ -12465,8 +12465,9 @@ div.swiper-button-next {
 .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 8px;
+  border: 1px solid rgba(72, 124, 137, 0.5);
 }
 
 div.swiper-button-next, div.swiper-button-prev {
@@ -12526,12 +12527,13 @@ h2.dxg-h2.subtitle, .dxg-h2.subtitle.h2 {
 .portfolio-shortcode-img {
   width: 100vw;
   height: auto;
+  border: 1px solid rgba(72, 124, 137, 0.5);
 }
 
 .portfolio-iframe {
   width: 100%;
   height: 80vh;
-  border: 1.5px solid rgba(71, 61, 51, 0.35);
+  border: 1px solid rgba(72, 124, 137, 0.5);
   border-radius: 8px;
 }
 
