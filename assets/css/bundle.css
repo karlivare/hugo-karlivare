@@ -12209,7 +12209,6 @@ img#footer-graphic {
 
 #clip {
   /* Transform origin will be decided dynamically */
-  animation: rotateFlower 10s linear infinite; /* Apply the rotation animation */
 }
 
 @keyframes rotateFlower {
