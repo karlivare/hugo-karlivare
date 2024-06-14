@@ -128,36 +128,12 @@
         "url": "/blog/greenhouse-spread/"
     },
     {
-        "title": "Random Recipe Generator",
-        "image": "/portfolio-img/recipegenerator.jpg",
-        "year": 2021,
-        "medium": "Spoonacular API, JavaScript, HTML, CSS",
-        "category": "Web",
-        "url": "https://github.uconn.edu/pages/kav19006/dmd3475-finalproject/home.html"
-    },
-    {
-        "title": "Social Media Web Application",
-        "image": "/portfolio-img/beehive-small-thumbnail.svg",
-        "year": 2024,
-        "medium": "Nunjucks, HTML, CSS, Github",
-        "category": "UI/UX",
-        "url": "/blog/beehive/"
-    },
-    {
-        "title": "Gamified Habit App",
-        "image": "/portfolio-img/snaps-small-thumbnail.jpg",
-        "year": 2024,
+        "title": "Senior Project - Crochet Pattern Marketplace Prototype",
+        "image": "/portfolio-img/yarn-over-small-thumbnail.jpg",
+        "year": "2023-24",
         "medium": "Figma",
         "category": "UI/UX",
-        "url": "/blog/snaps/"
-    },
-    {
-        "title": "Meditation App Email Campaign",
-        "image": "/portfolio-img/emailcampaign-mockup.jpg",
-        "year": 2022,
-        "medium": "Adobe XD, Illustrator, InDesign",
-        "category": "UI/UX",
-        "url": "/blog/meditation-email-campaign/"
+        "url": "/blog/yarn-over/"
     },
     {
         "title": "News Publication Redesign",
@@ -168,11 +144,43 @@
         "url": "/blog/news-publication-redesign/"
     },
     {
+        "title": "Gamified Habit App",
+        "image": "/portfolio-img/snaps-small-thumbnail.jpg",
+        "year": 2024,
+        "medium": "Figma",
+        "category": "UI/UX",
+        "url": "/blog/snaps/"
+    },
+    {
+        "title": "UConn Digital Experience Group",
+        "image": "/portfolio-img/dxg-thumbnail.png",
+        "year": "2023-24",
+        "medium": "WordPress, Figma",
+        "category": "UI/UX",
+        "url": "/blog/dxg/"
+    },
+    {
+        "title": "Social Media Web Application",
+        "image": "/portfolio-img/beehive-small-thumbnail.svg",
+        "year": 2024,
+        "medium": "Nunjucks, HTML, CSS, Github",
+        "category": "UI/UX",
+        "url": "/blog/beehive/"
+    },
+    {
+        "title": "Meditation App Email Campaign",
+        "image": "/portfolio-img/emailcampaign-mockup.jpg",
+        "year": 2022,
+        "medium": "Adobe XD, Illustrator, InDesign",
+        "category": "UI/UX",
+        "url": "/blog/meditation-email-campaign/"
+    },
+    {
         "title": "Elite Brain & Spine of Connecticut Specialties Page Redesigns",
         "image": "/portfolio-img/ebs-cover-thumbnail.jpg",
         "year": 2023,
         "medium": "Divi, HTML, CSS, JavaScript",
-        "category": "Web",
+        "category": "UI/UX",
         "url": "/blog/ebs-specialties/"
     },
     {
@@ -230,21 +238,5 @@
         "medium": "Figma",
         "category": "UI/UX",
         "url": "/blog/the-boss/"
-    },
-    {
-        "title": "Senior Project - Crochet Pattern Marketplace Prototype",
-        "image": "/portfolio-img/yarn-over-small-thumbnail.jpg",
-        "year": "2023-24",
-        "medium": "Figma",
-        "category": "UI/UX",
-        "url": "/blog/yarn-over/"
-    },
-    {
-        "title": "UConn Digital Experience Group",
-        "image": "/portfolio-img/dxg-thumbnail.png",
-        "year": "2023-24",
-        "medium": "WordPress, Figma",
-        "category": "UI/UX",
-        "url": "/blog/dxg/"
     }
 ]

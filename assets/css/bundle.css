@@ -12207,8 +12207,8 @@ img#footer-graphic {
   height: 100%;
 }
 
-#clip {
-  /* Transform origin will be decided dynamically */
+.animate-flower {
+  animation: rotateFlower 10s linear infinite;
 }
 
 @keyframes rotateFlower {
@@ -12456,6 +12456,10 @@ article.portfolio-card:hover .portfolio-card-img {
   height: auto;
 }
 
+div.swiper-slide.swiper-slide-active {
+  text-align: center;
+}
+
 div.swiper-button-prev,
 div.swiper-button-next {
   display: none;
@@ -12483,7 +12487,7 @@ div.swiper-button-next, div.swiper-button-prev {
     display: block;
   }
   .swiper-slide img {
-    max-width: 1200px;
+    width: auto;
   }
 }
 @media (min-width: 576px) {

@@ -14,6 +14,11 @@
         // Get the clip element
         const clip = document.getElementById("clip");
 
+        window.addEventListener('load', function() {
+            var clip = document.getElementById('clip');
+            clip.classList.add('animate-flower');
+        });
+
         // Function to set transform origin based on container dimensions
         // function setTransformOrigin() {
         //     const containerRect = container.getBoundingClientRect();

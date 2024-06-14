@@ -3,6 +3,9 @@
     height: auto;
 }
 
+div.swiper-slide.swiper-slide-active{
+    text-align: center;
+}
 
 div.swiper-button-prev,
 div.swiper-button-next {
@@ -32,7 +35,8 @@ div.swiper-button-next, div.swiper-button-prev{
     }
 
     .swiper-slide img{
-        max-width: 1200px;
+        // max-width: 1200px;
+        width: auto;
         // height: 100%;
         // object-fit: contain;
     }

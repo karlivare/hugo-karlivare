@@ -21,9 +21,13 @@
   height: 100%;
 }
 
-#clip{
-  /* Transform origin will be decided dynamically */
-  // animation: rotateFlower 10s linear infinite;
+// #clip{
+//   /* Transform origin will be decided dynamically */
+//   // animation: rotateFlower 10s linear infinite;
+// }
+
+.animate-flower {
+  animation: rotateFlower 10s linear infinite;
 }
 
 @keyframes rotateFlower {
