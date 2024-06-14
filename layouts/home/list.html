@@ -9,27 +9,13 @@
 
      <!-- JavaScript code -->
      <script>
+        //define variables
         // Get the profile picture container element
         const container = document.getElementById("flower-svg");
         // Get the clip element
         const clip = document.getElementById("clip");
 
-        window.addEventListener('load', function() {
-            var clip = document.getElementById('clip');
-            clip.classList.add('animate-flower');
-        });
-
-        // Function to set transform origin based on container dimensions
-        // function setTransformOrigin() {
-        //     const containerRect = container.getBoundingClientRect();
-        //     console.log("containerRect: " + containerRect);
-        //     const centerX = containerRect.width;
-        //     const centerY = containerRect.height;
-        //     console.log("centerX: " + centerX);
-        //     console.log("centerY: " + centerY);
-        //     clip.style.transformOrigin = `${centerX}px ${centerY}px`; // Set transform origin
-        // }
-
+        //define transform origin function
         function setTransformOrigin() {
             const containerRect = container.getBoundingClientRect();
             const centerX = containerRect.width;
@@ -48,10 +34,24 @@
             }
         }
 
+        // window.addEventListener('load', function() {
+        //     var clip = document.getElementById('clip');
+        //     clip.classList.add('animate-flower');
+        // });
+
         // Call the function initially
         setTransformOrigin();
 
-        // Add event listener for window resize
-        window.addEventListener("resize", setTransformOrigin);
+         // Add event listener for window load to start the animation with a delay
+        window.addEventListener('load', function() {
+            setTransformOrigin();
+            setTimeout(function() {
+                clip.classList.add('animate-flower');
+            }, 1000); // 1-second delay
+        });
+
+        // Add event listener for window resize to reset the transform origin
+        window.addEventListener('resize', setTransformOrigin);
+
     </script>
 {{end}}
