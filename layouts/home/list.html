@@ -28,9 +28,13 @@
             if (isSafari) {
                 // Use different transform origin for Safari
                 clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
+                console.log("centerX Safari: " + centerX);
+                console.log("centerY Safari: " + centerY);
             } else {
                 // Use default transform origin for other browsers
                 clip.style.transformOrigin = `${centerX}px ${centerY}px`;
+                console.log("centerX Chrome: " + centerX);
+                console.log("centerY Chrome: " + centerY);
             }
         }
 
