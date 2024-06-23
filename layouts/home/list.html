@@ -9,98 +9,140 @@
 
      <!-- JavaScript code -->
      <script>
-        //define variables
-        // Get the profile picture container element
-        const container = document.getElementById("flower-svg");
-        // Get the clip element
-        const clip = document.getElementById("clip");
+            // Define variables
+    const container = document.getElementById("flower-svg");
+    const clip = document.getElementById("clip");
 
-        //define transform origin function
-        function setTransformOrigin() {
-            const containerRect = container.getBoundingClientRect();
-            const centerX = containerRect.width;
-            const centerY = containerRect.height;
+    // Define transform origin function
+    function setTransformOrigin() {
+        const containerRect = container.getBoundingClientRect();
+        const centerX = containerRect.width;
+        const centerY = containerRect.height;
 
-            //adding in device pixel ratio to see if this helps with debugging
-            const devicePixelRatio = window.devicePixelRatio || 1;
-            // Adjust centerX and centerY for device pixel ratio
-            const adjustedCenterX = centerX * devicePixelRatio;
-            const adjustedCenterY = centerY * devicePixelRatio;
+        // Adding in device pixel ratio for debugging
+        const devicePixelRatio = window.devicePixelRatio || 1;
+        const adjustedCenterX = centerX * devicePixelRatio;
+        const adjustedCenterY = centerY * devicePixelRatio;
 
-            //for debugging
-            // Log values for debugging
-            console.log("containerRect.width: " + containerRect.width);
-            console.log("containerRect.height: " + containerRect.height);
-            console.log("centerX: " + centerX);
-            console.log("centerY: " + centerY);
-            console.log("devicePixelRatio: " + devicePixelRatio);
-            console.log("adjustedCenterX: " + adjustedCenterX);
-            console.log("adjustedCenterY: " + adjustedCenterY);
+        // Log values for debugging
+        console.log("containerRect.width: " + containerRect.width);
+        console.log("containerRect.height: " + containerRect.height);
+        console.log("centerX: " + centerX);
+        console.log("centerY: " + centerY);
+        console.log("devicePixelRatio: " + devicePixelRatio);
+        console.log("adjustedCenterX: " + adjustedCenterX);
+        console.log("adjustedCenterY: " + adjustedCenterY);
+        console.log("User Agent: " + navigator.userAgent);
+        console.log("Platform: " + navigator.platform);
 
-            // Check if the browser is Safari
-            const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-            // Check if the browser is Chrome on arm64
-            const isChrome = /Chrome\/[\d.]+/.test(navigator.userAgent);
-            const isArm64 = /arm64/.test(navigator.platform);
+        // Check if the browser is Safari
+        const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        // Check if the browser is Chrome on arm64
+        const isChrome = /Chrome\/[\d.]+/.test(navigator.userAgent);
+        const isArm64 = /arm|aarch64/.test(navigator.platform);
 
-            // Set transform origin based on browser. original before adding in pixel density
-            // if (isSafari) {
-            //     // Use different transform origin for Safari
-            //     clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
-            //     console.log("centerX Safari: " + centerX);
-            //     console.log("centerY Safari: " + centerY);
-            // } else {
-            //     // Use default transform origin for other browsers
-            //     clip.style.transformOrigin = `${centerX}px ${centerY}px`;
-            //     console.log("centerX Chrome: " + centerX);
-            //     console.log("centerY Chrome: " + centerY);
-            // }
-
-            // Set transform origin based on browser. edited with adding in pixel density
-            // if (isSafari) {
-            //     // Use different transform origin for Safari
-            //     clip.style.transformOrigin = `${adjustedCenterX}px ${adjustedCenterY}px`;
-            //     console.log("Safari transform origin set");
-            // } else {
-            //     // Use default transform origin for other browsers
-            //     clip.style.transformOrigin = `${centerX}px ${centerY}px`;
-            //     console.log("Chrome transform origin set");
-            // }
-
-            // Adding conditional of arm64
-            if (isSafari) {
+        // Adding conditional of arm64
+        if (isSafari) {
             // Use different transform origin for Safari
             clip.style.transformOrigin = `${adjustedCenterX}px ${adjustedCenterY}px`;
             console.log("Safari transform origin set: " + clip.style.transformOrigin);
-            } else if (isChrome && isArm64) {
-                // Use halved transform origin for Chrome on arm64
-                clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
-                console.log("Chrome arm64 transform origin set: " + clip.style.transformOrigin);
-            } else {
-                // Use default transform origin for other browsers
-                clip.style.transformOrigin = `${centerX}px ${centerY}px`;
-                console.log("Chrome transform origin set: " + clip.style.transformOrigin);
-            }
-
-            // Log applied transform-origin for debugging
-            console.log("Applied transform origin:", getComputedStyle(clip).transformOrigin);
+        } else if (isChrome && isArm64) {
+            // Use halved transform origin for Chrome on arm64
+            clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
+            console.log("Chrome arm64 transform origin set: " + clip.style.transformOrigin);
+        } else {
+            // Use default transform origin for other browsers
+            clip.style.transformOrigin = `${centerX}px ${centerY}px`;
+            console.log("Chrome transform origin set: " + clip.style.transformOrigin);
         }
 
+        // Log applied transform-origin for debugging
+        console.log("Applied transform origin:", getComputedStyle(clip).transformOrigin);
+    }
 
-        // Call the function initially
+    // Call the function initially
+    setTransformOrigin();
+
+    // Add event listener for window load to start the animation with a delay
+    window.addEventListener('load', function() {
         setTransformOrigin();
+        setTimeout(function() {
+            clip.classList.add('animate-flower');
+        }, 1000); // 1-second delay
+    });
 
-         // Add event listener for window load to start the animation with a delay
-        window.addEventListener('load', function() {
-            setTransformOrigin();
-            setTimeout(function() {
-                clip.classList.add('animate-flower');
-            }, 1000); // 1-second delay
-        });
+    // Add event listener for window resize to reset the transform origin
+    window.addEventListener('resize', setTransformOrigin);
+    document.addEventListener('DOMContentLoaded', setTransformOrigin);
+        // //define variables
+        // // Get the profile picture container element
+        // const container = document.getElementById("flower-svg");
+        // // Get the clip element
+        // const clip = document.getElementById("clip");
 
-        // Add event listener for window resize to reset the transform origin
-        window.addEventListener('resize', setTransformOrigin);
-        document.addEventListener('DOMContentLoaded', setTransformOrigin);
+        // //define transform origin function
+        // function setTransformOrigin() {
+        //     const containerRect = container.getBoundingClientRect();
+        //     const centerX = containerRect.width;
+        //     const centerY = containerRect.height;
+
+        //     //adding in device pixel ratio to see if this helps with debugging
+        //     const devicePixelRatio = window.devicePixelRatio || 1;
+        //     // Adjust centerX and centerY for device pixel ratio
+        //     const adjustedCenterX = centerX * devicePixelRatio;
+        //     const adjustedCenterY = centerY * devicePixelRatio;
+
+        //     //for debugging
+        //     // Log values for debugging
+        //     console.log("containerRect.width: " + containerRect.width);
+        //     console.log("containerRect.height: " + containerRect.height);
+        //     console.log("centerX: " + centerX);
+        //     console.log("centerY: " + centerY);
+        //     console.log("devicePixelRatio: " + devicePixelRatio);
+        //     console.log("adjustedCenterX: " + adjustedCenterX);
+        //     console.log("adjustedCenterY: " + adjustedCenterY);
+
+        //     // Check if the browser is Safari
+        //     const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        //     // Check if the browser is Chrome on arm64
+        //     const isChrome = /Chrome\/[\d.]+/.test(navigator.userAgent);
+        //     const isArm64 = /arm64/.test(navigator.platform);
+
+
+        //     // Adding conditional of arm64
+        //     if (isSafari) {
+        //     // Use different transform origin for Safari
+        //     clip.style.transformOrigin = `${adjustedCenterX}px ${adjustedCenterY}px`;
+        //     console.log("Safari transform origin set: " + clip.style.transformOrigin);
+        //     } else if (isChrome && isArm64) {
+        //         // Use halved transform origin for Chrome on arm64
+        //         clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
+        //         console.log("Chrome arm64 transform origin set: " + clip.style.transformOrigin);
+        //     } else {
+        //         // Use default transform origin for other browsers
+        //         clip.style.transformOrigin = `${centerX}px ${centerY}px`;
+        //         console.log("Chrome transform origin set: " + clip.style.transformOrigin);
+        //     }
+
+        //     // Log applied transform-origin for debugging
+        //     console.log("Applied transform origin:", getComputedStyle(clip).transformOrigin);
+        // }
+
+
+        // // Call the function initially
+        // setTransformOrigin();
+
+        //  // Add event listener for window load to start the animation with a delay
+        // window.addEventListener('load', function() {
+        //     setTransformOrigin();
+        //     setTimeout(function() {
+        //         clip.classList.add('animate-flower');
+        //     }, 1000); // 1-second delay
+        // });
+
+        // // Add event listener for window resize to reset the transform origin
+        // window.addEventListener('resize', setTransformOrigin);
+        // document.addEventListener('DOMContentLoaded', setTransformOrigin);
 
     </script>
 {{end}}
