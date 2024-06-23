@@ -58,56 +58,56 @@
         window.addEventListener('resize', setTransformOrigin);
     </script> -->
     <script>
-        // Define variables
-        const container = document.getElementById("flower-svg");
-        const clip = document.getElementById("clip");
-    
-        // Define transform origin function
-        function setTransformOrigin() {
-            const containerRect = container.getBoundingClientRect();
-            const centerX = containerRect.width / 2;
-            const centerY = containerRect.height / 2;
-    
-            // Check if the browser is Safari
-            const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-    
-            // Check if the browser is Chrome
-            const isChrome = /Chrome\/[\d.]+/.test(navigator.userAgent);
-    
-            // Check if the platform is x86_64 (Intel 64-bit architecture)
-            const isIntel64 = /x86_64/.test(navigator.platform);
-    
-            // Set transform origin based on browser and platform
-            if (isSafari) {
-                // Use different transform origin for Safari
-                clip.style.transformOrigin = `${centerX}px ${centerY}px`;
-                console.log("Safari transform origin set:", clip.style.transformOrigin);
-            } else if (isChrome && isIntel64) {
-                // Use full centerX and centerY for x86_64 Chrome
-                clip.style.transformOrigin = `${centerX}px ${centerY}px`;
-                console.log("x86_64 Chrome transform origin set:", clip.style.transformOrigin);
-            } else {
-                // Use half of centerX and centerY for other browsers and platforms
-                clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
-                console.log("Default transform origin set:", clip.style.transformOrigin);
-            }
-    
-            // Log applied transform-origin for debugging
-            console.log("Applied transform origin:", getComputedStyle(clip).transformOrigin);
+    // Define variables
+    const container = document.getElementById("flower-svg");
+    const clip = document.getElementById("clip");
+
+    // Define transform origin function
+    function setTransformOrigin() {
+        const containerRect = container.getBoundingClientRect();
+        const centerX = containerRect.width / 2;
+        const centerY = containerRect.height / 2;
+
+        // Check if the browser is Safari
+        const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+        // Check if the browser is Chrome
+        const isChrome = /Chrome\/[\d.]+/.test(navigator.userAgent);
+
+        // Check if the platform is x86_64 (Intel 64-bit architecture)
+        const isIntel64 = /x86_64/.test(navigator.platform);
+
+        // Set transform origin based on browser and platform
+        if (isSafari) {
+            // Use different transform origin for Safari
+            clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
+            console.log("Safari transform origin set:", clip.style.transformOrigin);
+        } else if (isChrome && isIntel64) {
+            // Use full centerX and centerY for x86_64 Chrome
+            clip.style.transformOrigin = `${centerX*2}px ${centerY*2}px`;
+            console.log("x86_64 Chrome transform origin set:", clip.style.transformOrigin);
+        } else {
+            // Use half of centerX and centerY for other browsers and platforms
+            clip.style.transformOrigin = `${centerX*2*2}px ${centerY*2*2}px`;
+            console.log("Default transform origin set:", clip.style.transformOrigin);
         }
-    
-        // Call the function initially with a delay after DOMContentLoaded
-        document.addEventListener('DOMContentLoaded', function() {
-            setTimeout(function() {
-                setTransformOrigin();
-                clip.classList.add('animate-flower');
-            }, 1000); // 1-second delay
-        });
-    
-        // Add event listener for window resize to reset the transform origin
-        window.addEventListener('resize', setTransformOrigin);
-    </script>
-    
+
+        // Log applied transform-origin for debugging
+        console.log("Applied transform origin:", getComputedStyle(clip).transformOrigin);
+    }
+
+    // Call the function initially with a delay after DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+            setTransformOrigin();
+            clip.classList.add('animate-flower');
+        }, 1000); // 1-second delay
+    });
+
+    // Add event listener for window resize to reset the transform origin
+    window.addEventListener('resize', setTransformOrigin);
+</script>
+
     
     
     
