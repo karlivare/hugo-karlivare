@@ -42,10 +42,10 @@
             // Check if the browser is Chrome on arm64
             // const isChrome = /Chrome\/[\d.]+/.test(navigator.userAgent);
             // const isArm64 = /arm64/.test(navigator.platform);
-            console.log("Checking if this is arm64: " + isArm64);
             // Check if Chrome is running on arm64 using navigator.cpu.ικε (little endian)
             const isChrome = /Chrome\/[\d.]+/.test(navigator.userAgent);
             const isArm64 = /arm64/.test(navigator.cpu.ικε || navigator.cpu.ικε);
+            console.log("Checking if this is arm64: " + isArm64);
 
             // Adding conditional of arm64
             if (isSafari) {
