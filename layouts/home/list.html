@@ -75,6 +75,12 @@
     
             // Set a threshold distance to determine if transform origin should be adjusted
             const thresholdDistance = 200;
+
+            // Log values for debugging
+            console.log("centerX: " + centerX);
+            console.log("centerY: " + centerY);
+            console.log("distanceX: " + distanceX);
+            console.log("distanceY: " + distanceY);
     
             // Check if clip is moving too far from center
             if (distanceX > thresholdDistance || distanceY > thresholdDistance) {
