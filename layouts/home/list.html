@@ -8,7 +8,7 @@
     {{partial "common/contact-form.html"}}
 
      <!-- JavaScript code -->
-     <script>
+     <!-- <script>
         // Define variables
         const container = document.getElementById("flower-svg");
         const clip = document.getElementById("clip");
@@ -56,6 +56,47 @@
 
         // Add event listener for window resize to reset the transform origin
         window.addEventListener('resize', setTransformOrigin);
+    </script> -->
+    <script>
+        // Define variables
+        const container = document.getElementById("flower-svg");
+        const clip = document.getElementById("clip");
+    
+        // Define transform origin function
+        function setTransformOrigin() {
+            const containerRect = container.getBoundingClientRect();
+            const centerX = containerRect.width / 2;
+            const centerY = containerRect.height / 2;
+    
+            // Set transform origin based on browser
+            clip.style.transformOrigin = `${centerX}px ${centerY}px`; // Standard transform-origin
+            clip.style.webkitTransformOrigin = `${centerX}px ${centerY}px`; // WebKit specific
+    
+            // Log applied transform-origin for debugging
+            console.log("Applied transform origin:", getComputedStyle(clip).transformOrigin);
+    
+            // Check if animation is moving correctly
+            const computedTransformOrigin = getComputedStyle(clip).transformOrigin;
+            const expectedTransformOrigin = `${centerX}px ${centerY}px`;
+    
+            if (computedTransformOrigin === expectedTransformOrigin) {
+                console.log("Animation is moving correctly.");
+            } else {
+                console.warn("Animation transform origin mismatch:", computedTransformOrigin, "Expected:", expectedTransformOrigin);
+            }
+        }
+    
+        // Call the function initially with a delay after DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                setTransformOrigin();
+                clip.classList.add('animate-flower');
+            }, 1000); // 1-second delay
+        });
+    
+        // Add event listener for window resize to reset the transform origin
+        window.addEventListener('resize', setTransformOrigin);
     </script>
+    
     
 {{end}}
