@@ -65,44 +65,31 @@
         // Define transform origin function
         function setTransformOrigin() {
             const containerRect = container.getBoundingClientRect();
-            const clipRect = clip.getBoundingClientRect();
             const centerX = containerRect.width / 2;
             const centerY = containerRect.height / 2;
-    
-            // Calculate horizontal distance of clip from center of container
-            const distanceX = Math.abs(clipRect.left + clipRect.width / 2 - containerRect.left - centerX);
-    
-            // Set a threshold distance to determine if transform origin should be adjusted
-            const thresholdDistance = 1000;
     
             // Check if the browser is Safari
             const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
     
-            // Log distanceY for debugging
-            console.log("Distance X:", distanceX);
-            console.log("Clip position (left, top):", clip.left, clip.top);
+            // Check if the browser is Chrome
+            const isChrome = /Chrome\/[\d.]+/.test(navigator.userAgent);
     
-            // Check if clip is moving too far vertically from center
-            if (distanceX > thresholdDistance) {
-                if (isSafari) {
-                    // Use half transform origin for Safari
-                    clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
-                    console.log("Safari transform origin adjusted to half both X and Y:", clip.style.transformOrigin);
-                } else {
-                    // Use half transform origin for other browsers
-                    clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
-                    console.log("Chrome transform origin adjusted to half both X and Y:", clip.style.transformOrigin);
-                }
+            // Check if the platform is x86_64 (Intel 64-bit architecture)
+            const isIntel64 = /x86_64/.test(navigator.platform);
+    
+            // Set transform origin based on browser and platform
+            if (isSafari) {
+                // Use different transform origin for Safari
+                clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
+                console.log("Safari transform origin set:", clip.style.transformOrigin);
+            } else if (isChrome && isIntel64) {
+                // Use full centerX and centerY for x86_64 Chrome
+                clip.style.transformOrigin = `${centerX}px ${centerY}px`;
+                console.log("x86_64 Chrome transform origin set:", clip.style.transformOrigin);
             } else {
-                if (isSafari) {
-                    // Use default transform origin for Safari
-                    clip.style.transformOrigin = `${centerX}px ${centerY}px`;
-                    console.log("Safari default transform origin set:", clip.style.transformOrigin);
-                } else {
-                    // Use default transform origin for other browsers
-                    clip.style.transformOrigin = `${centerX}px ${centerY}px`;
-                    console.log("Chrome default transform origin set:", clip.style.transformOrigin);
-                }
+                // Use half of centerX and centerY for other browsers and platforms
+                clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
+                console.log("Default transform origin set:", clip.style.transformOrigin);
             }
     
             // Log applied transform-origin for debugging
@@ -120,6 +107,7 @@
         // Add event listener for window resize to reset the transform origin
         window.addEventListener('resize', setTransformOrigin);
     </script>
+    
     
     
     
