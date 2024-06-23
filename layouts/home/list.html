@@ -81,6 +81,9 @@
                 clip.style.transformOrigin = `${centerX}px ${centerY}px`;
                 console.log("Chrome transform origin set: " + clip.style.transformOrigin);
             }
+
+            // Log applied transform-origin for debugging
+            console.log("Applied transform origin:", getComputedStyle(clip).transformOrigin);
         }
 
 
