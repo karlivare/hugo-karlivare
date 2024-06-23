@@ -69,20 +69,20 @@
             const centerX = containerRect.width / 2;
             const centerY = containerRect.height / 2;
     
-            // Calculate vertical distance of clip from center of container
-            const distanceY = Math.abs(clipRect.top + clipRect.height / 2 - containerRect.top - centerY);
+            // Calculate horizontal distance of clip from center of container
+            const distanceX = Math.abs(clipRect.left + clipRect.width / 2 - containerRect.left - centerX);
     
             // Set a threshold distance to determine if transform origin should be adjusted
-            const thresholdDistance = 350;
+            const thresholdDistance = 100;
     
             // Check if the browser is Safari
             const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
     
             // Log distanceY for debugging
-            console.log("Distance Y:", distanceY);
+            console.log("Distance X:", distanceX);
     
             // Check if clip is moving too far vertically from center
-            if (distanceY > thresholdDistance) {
+            if (distanceX > thresholdDistance) {
                 if (isSafari) {
                     // Use half transform origin for Safari
                     clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
