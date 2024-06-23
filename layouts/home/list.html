@@ -66,6 +66,7 @@
         function setTransformOrigin() {
             const containerRect = container.getBoundingClientRect();
             const clipRect = clip.getBoundingClientRect();
+            const centerX = containerRect.width / 2;
             const centerY = containerRect.height / 2;
     
             // Calculate vertical distance of clip from center of container
@@ -83,22 +84,22 @@
             // Check if clip is moving too far vertically from center
             if (distanceY > thresholdDistance) {
                 if (isSafari) {
-                    // Use different transform origin for Safari
-                    clip.style.transformOrigin = `center ${centerY / 2}px`;
-                    console.log("Safari transform origin adjusted to half vertically:", clip.style.transformOrigin);
+                    // Use half transform origin for Safari
+                    clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
+                    console.log("Safari transform origin adjusted to half both X and Y:", clip.style.transformOrigin);
                 } else {
-                    // Adjust transform origin to half vertically of container height
-                    clip.style.transformOrigin = `center ${centerY / 2}px`;
-                    console.log("Chrome transform origin adjusted to half vertically:", clip.style.transformOrigin);
+                    // Use half transform origin for other browsers
+                    clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
+                    console.log("Chrome transform origin adjusted to half both X and Y:", clip.style.transformOrigin);
                 }
             } else {
                 if (isSafari) {
                     // Use default transform origin for Safari
-                    clip.style.transformOrigin = `center ${centerY}px`;
+                    clip.style.transformOrigin = `${centerX}px ${centerY}px`;
                     console.log("Safari default transform origin set:", clip.style.transformOrigin);
                 } else {
                     // Use default transform origin for other browsers
-                    clip.style.transformOrigin = `center ${centerY}px`;
+                    clip.style.transformOrigin = `${centerX}px ${centerY}px`;
                     console.log("Chrome default transform origin set:", clip.style.transformOrigin);
                 }
             }
