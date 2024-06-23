@@ -80,7 +80,7 @@
             // Set transform origin based on browser and platform
             if (isSafari) {
                 // Use different transform origin for Safari
-                clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
+                clip.style.transformOrigin = `${centerX}px ${centerY}px`;
                 console.log("Safari transform origin set:", clip.style.transformOrigin);
             } else if (isChrome && isIntel64) {
                 // Use full centerX and centerY for x86_64 Chrome
