@@ -73,13 +73,14 @@
             const distanceX = Math.abs(clipRect.left + clipRect.width / 2 - containerRect.left - centerX);
     
             // Set a threshold distance to determine if transform origin should be adjusted
-            const thresholdDistance = 100;
+            const thresholdDistance = 1000;
     
             // Check if the browser is Safari
             const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
     
             // Log distanceY for debugging
             console.log("Distance X:", distanceX);
+            console.log("Clip position (left, top):", clipRect.left, clipRect.top);
     
             // Check if clip is moving too far vertically from center
             if (distanceX > thresholdDistance) {
