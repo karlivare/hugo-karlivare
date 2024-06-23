@@ -66,11 +66,9 @@
         function setTransformOrigin() {
             const containerRect = container.getBoundingClientRect();
             const clipRect = clip.getBoundingClientRect();
-            const centerX = containerRect.width / 2;
             const centerY = containerRect.height / 2;
     
-            // Calculate distance of clip from center of container
-            const distanceX = Math.abs(clipRect.left + clipRect.width / 2 - containerRect.left - centerX);
+            // Calculate vertical distance of clip from center of container
             const distanceY = Math.abs(clipRect.top + clipRect.height / 2 - containerRect.top - centerY);
     
             // Set a threshold distance to determine if transform origin should be adjusted
@@ -78,30 +76,26 @@
     
             // Check if the browser is Safari
             const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-            // Log values for debugging
-            console.log("centerX: " + centerX);
-            console.log("centerY: " + centerY);
     
-            // Check if clip is moving too far from center
-            if (distanceX > thresholdDistance || distanceY > thresholdDistance) {
+            // Check if clip is moving too far vertically from center
+            if (distanceY > thresholdDistance) {
                 if (isSafari) {
                     // Use different transform origin for Safari
-                    clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
-                    console.log("Safari transform origin adjusted to half:", clip.style.transformOrigin);
+                    clip.style.transformOrigin = `center ${centerY / 2}px`;
+                    console.log("Safari transform origin adjusted to half vertically:", clip.style.transformOrigin);
                 } else {
-                    // Adjust transform origin to half of container dimensions
-                    clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
-                    console.log("Chrome transform origin adjusted to half:", clip.style.transformOrigin);
+                    // Adjust transform origin to half vertically of container height
+                    clip.style.transformOrigin = `center ${centerY / 2}px`;
+                    console.log("Chrome transform origin adjusted to half vertically:", clip.style.transformOrigin);
                 }
             } else {
                 if (isSafari) {
                     // Use default transform origin for Safari
-                    clip.style.transformOrigin = `${centerX}px ${centerY}px`;
+                    clip.style.transformOrigin = `center ${centerY}px`;
                     console.log("Safari default transform origin set:", clip.style.transformOrigin);
                 } else {
                     // Use default transform origin for other browsers
-                    clip.style.transformOrigin = `${centerX}px ${centerY}px`;
+                    clip.style.transformOrigin = `center ${centerY}px`;
                     console.log("Chrome default transform origin set:", clip.style.transformOrigin);
                 }
             }
