@@ -46,17 +46,16 @@
         // Call the function initially
         setTransformOrigin();
     
-        // Add event listener for window load to start the animation with a delay
-        window.addEventListener('load', function() {
-            setTransformOrigin();
+        // Call the function initially with a delay after DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', function() {
             setTimeout(function() {
+                setTransformOrigin();
                 clip.classList.add('animate-flower');
             }, 1000); // 1-second delay
         });
-    
+
         // Add event listener for window resize to reset the transform origin
         window.addEventListener('resize', setTransformOrigin);
-        document.addEventListener('DOMContentLoaded', setTransformOrigin);
     </script>
     
 {{end}}
