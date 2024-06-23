@@ -65,25 +65,30 @@
         // Define transform origin function
         function setTransformOrigin() {
             const containerRect = container.getBoundingClientRect();
+            const clipRect = clip.getBoundingClientRect();
             const centerX = containerRect.width / 2;
             const centerY = containerRect.height / 2;
     
-            // Set transform origin based on browser
-            clip.style.transformOrigin = `${centerX}px ${centerY}px`; // Standard transform-origin
-            clip.style.webkitTransformOrigin = `${centerX}px ${centerY}px`; // WebKit specific
+            // Calculate distance of clip from center of container
+            const distanceX = Math.abs(clipRect.left + clipRect.width / 2 - containerRect.left - centerX);
+            const distanceY = Math.abs(clipRect.top + clipRect.height / 2 - containerRect.top - centerY);
+    
+            // Set a threshold distance to determine if transform origin should be adjusted
+            const thresholdDistance = 200;
+    
+            // Check if clip is moving too far from center
+            if (distanceX > thresholdDistance || distanceY > thresholdDistance) {
+                // Adjust transform origin to half of container dimensions
+                clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
+                console.log("Transform origin adjusted to half:", clip.style.transformOrigin);
+            } else {
+                // Use default transform origin
+                clip.style.transformOrigin = `${centerX}px ${centerY}px`;
+                console.log("Default transform origin set:", clip.style.transformOrigin);
+            }
     
             // Log applied transform-origin for debugging
             console.log("Applied transform origin:", getComputedStyle(clip).transformOrigin);
-    
-            // Check if animation is moving correctly
-            const computedTransformOrigin = getComputedStyle(clip).transformOrigin;
-            const expectedTransformOrigin = `${centerX}px ${centerY}px`;
-    
-            if (computedTransformOrigin === expectedTransformOrigin) {
-                console.log("Animation is moving correctly.");
-            } else {
-                console.warn("Animation transform origin mismatch:", computedTransformOrigin, "Expected:", expectedTransformOrigin);
-            }
         }
     
         // Call the function initially with a delay after DOMContentLoaded
@@ -97,6 +102,7 @@
         // Add event listener for window resize to reset the transform origin
         window.addEventListener('resize', setTransformOrigin);
     </script>
+    
     
     
 {{end}}
