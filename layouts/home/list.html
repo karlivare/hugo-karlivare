@@ -78,6 +78,10 @@
     
             // Check if the browser is Safari
             const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+            // Log values for debugging
+            console.log("centerX: " + centerX);
+            console.log("centerY: " + centerY);
     
             // Check if clip is moving too far from center
             if (distanceX > thresholdDistance || distanceY > thresholdDistance) {
