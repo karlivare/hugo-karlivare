@@ -75,22 +75,31 @@
     
             // Set a threshold distance to determine if transform origin should be adjusted
             const thresholdDistance = 200;
-
-            // Log values for debugging
-            console.log("centerX: " + centerX);
-            console.log("centerY: " + centerY);
-            console.log("distanceX: " + distanceX);
-            console.log("distanceY: " + distanceY);
+    
+            // Check if the browser is Safari
+            const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
     
             // Check if clip is moving too far from center
             if (distanceX > thresholdDistance || distanceY > thresholdDistance) {
-                // Adjust transform origin to half of container dimensions
-                clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
-                console.log("Transform origin adjusted to half:", clip.style.transformOrigin);
+                if (isSafari) {
+                    // Use different transform origin for Safari
+                    clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
+                    console.log("Safari transform origin adjusted to half:", clip.style.transformOrigin);
+                } else {
+                    // Adjust transform origin to half of container dimensions
+                    clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
+                    console.log("Chrome transform origin adjusted to half:", clip.style.transformOrigin);
+                }
             } else {
-                // Use default transform origin
-                clip.style.transformOrigin = `${centerX}px ${centerY}px`;
-                console.log("Default transform origin set:", clip.style.transformOrigin);
+                if (isSafari) {
+                    // Use default transform origin for Safari
+                    clip.style.transformOrigin = `${centerX}px ${centerY}px`;
+                    console.log("Safari default transform origin set:", clip.style.transformOrigin);
+                } else {
+                    // Use default transform origin for other browsers
+                    clip.style.transformOrigin = `${centerX}px ${centerY}px`;
+                    console.log("Chrome default transform origin set:", clip.style.transformOrigin);
+                }
             }
     
             // Log applied transform-origin for debugging
@@ -108,6 +117,7 @@
         // Add event listener for window resize to reset the transform origin
         window.addEventListener('resize', setTransformOrigin);
     </script>
+    
     
     
     
