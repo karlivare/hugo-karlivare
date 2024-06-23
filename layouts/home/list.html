@@ -40,6 +40,9 @@
             // Check if the browser is Safari
             const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
+            // Check if the browser is Chrome on arm64
+            const isChromeArm64 = /Chrome\/[\d.]+.*arm64/.test(navigator.userAgent);
+
             // Set transform origin based on browser. original before adding in pixel density
             // if (isSafari) {
             //     // Use different transform origin for Safari
@@ -60,9 +63,24 @@
                 console.log("Safari transform origin set");
             } else {
                 // Use default transform origin for other browsers
-                clip.style.transformOrigin = `${centerX}px ${centerY}px`;
+                clip.style.transformOrigin = `${adjustedCenterX}px ${adjustedCenterY}px`;
                 console.log("Chrome transform origin set");
             }
+
+            // Adding conditional of arm64
+            // if (isSafari) {
+            //     // Use different transform origin for Safari
+            //     clip.style.transformOrigin = `${adjustedCenterX}px ${adjustedCenterY}px`;
+            //     console.log("Safari transform origin set: " + clip.style.transformOrigin);
+            // } else if (isChromeArm64) {
+            //     // Use halved transform origin for Chrome on arm64
+            //     clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
+            //     console.log("Chrome arm64 transform origin set: " + clip.style.transformOrigin);
+            // } else {
+            //     // Use default transform origin for other browsers
+            //     clip.style.transformOrigin = `${centerX}px ${centerY}px`;
+            //     console.log("Chrome transform origin set: " + clip.style.transformOrigin);
+            // }
         }
 
 
