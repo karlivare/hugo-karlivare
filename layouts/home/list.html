@@ -8,55 +8,6 @@
     {{partial "common/contact-form.html"}}
 
      <!-- JavaScript code -->
-     <!-- <script>
-        // Define variables
-        const container = document.getElementById("flower-svg");
-        const clip = document.getElementById("clip");
-    
-        // Define transform origin function
-        function setTransformOrigin() {
-            const containerRect = container.getBoundingClientRect();
-            const centerX = containerRect.width;
-            const centerY = containerRect.height;
-    
-            // Log values for debugging
-            console.log("containerRect.width: " + containerRect.width);
-            console.log("containerRect.height: " + containerRect.height);
-            console.log("centerX: " + centerX);
-            console.log("centerY: " + centerY);
-    
-            // Check if the browser is Safari
-            const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-    
-            // Set transform origin based on browser
-            if (isSafari) {
-                // Use different transform origin for Safari
-                clip.style.transformOrigin = `${centerX / 2}px ${centerY / 2}px`;
-                console.log("Safari transform origin set: " + clip.style.transformOrigin);
-            } else {
-                // Use default transform origin for other browsers
-                clip.style.transformOrigin = `${centerX}px ${centerY}px`;
-                console.log("Chrome transform origin set: " + clip.style.transformOrigin);
-            }
-    
-            // Log applied transform-origin for debugging
-            console.log("Applied transform origin:", getComputedStyle(clip).transformOrigin);
-        }
-    
-        // Call the function initially
-        setTransformOrigin();
-    
-        // Call the function initially with a delay after DOMContentLoaded
-        document.addEventListener('DOMContentLoaded', function() {
-            setTimeout(function() {
-                setTransformOrigin();
-                clip.classList.add('animate-flower');
-            }, 1000); // 1-second delay
-        });
-
-        // Add event listener for window resize to reset the transform origin
-        window.addEventListener('resize', setTransformOrigin);
-    </script> -->
     <script>
     // Get the user agent string of the browser
     var userAgent = navigator.userAgent;
@@ -69,19 +20,13 @@
         return userAgent.includes('Chrome/' + version);
     }
 
-    // Check for Chrome 126.0.0.0
-    if (checkChromeVersion('126.0.0.0')) {
-        alert('This browser is Chrome 126.0.0.0 on x86_64 architecture.');
-    }
-    // Check for Chrome 125.0.0.0
-    else if (checkChromeVersion('125.0.0.0')) {
-        alert('This browser is Chrome 125.0.0.0 on arm64 architecture.');
-    }
-    // If neither version is found
-    else {
-        alert('Unable to determine the specific browser version and architecture.');
-    }
+    // Detect if the browser is Safari
+    var isSafari = /^((?!chrome|android).)*safari/i.test(userAgent);
 
+    // Detect Chrome versions and platform
+    var isChrome = userAgent.includes('Chrome');
+    var isIntel64 = checkChromeVersion('126.0.0.0'); // Assuming 126.0.0.0 is x86_64
+    var isArm64 = checkChromeVersion('125.0.0.0');  // Assuming 125.0.0.0 is arm64
 
 
     // Define variables
@@ -94,15 +39,6 @@
         const centerX = containerRect.width / 2;
         const centerY = containerRect.height / 2;
 
-        // Check if the browser is Safari
-        const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-        // Check if the browser is Chrome
-        const isChrome = /Chrome\/[\d.]+/.test(navigator.userAgent);
-
-        // Check if the platform is x86_64 (Intel 64-bit architecture)
-        const isIntel64 = /x86_64/.test(navigator.platform);
-
         // Set transform origin based on browser and platform
         if (isSafari) {
             clip.style.transformOrigin = `${centerX}px ${centerY}px`;
@@ -111,13 +47,15 @@
             // for x86_64 Chrome
             clip.style.transformOrigin = `${centerX*2}px ${centerY*2}px`;
             console.log("x86_64 Chrome transform origin set:", clip.style.transformOrigin);
+        } else if (isChrome && isArm64) {
+            // for arm64 Chrome
+            clip.style.transformOrigin = `${centerX}px ${centerY}px`;
+            console.log("arm64 Chrome transform origin set:", clip.style.transformOrigin);
         } else {
+            // Default case
             clip.style.transformOrigin = `${centerX}px ${centerY}px`;
             console.log("Default transform origin set:", clip.style.transformOrigin);
         }
-
-        // Log applied transform-origin for debugging
-        console.log("Applied transform origin:", getComputedStyle(clip).transformOrigin);
     }
 
     // Call the function initially with a delay after DOMContentLoaded
