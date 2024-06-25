@@ -78,11 +78,20 @@
         const isIntel64 = /x86_64/.test(navigator.platform);
 
         //testing another way of detecting intel chrome browser
-        if (navigator.userAgent.indexOf("WOW64") != -1 || 
-            navigator.userAgent.indexOf("Win64") != -1 ){
-        alert("This is a 64 bit OS");
-        } else {
-        alert("Not a 64 bit OS");
+        // Get the user agent string of the browser
+        var userAgent = navigator.userAgent;
+
+        // Check if the user agent contains "(x86_64)"
+        if (userAgent.includes('(x86_64)')) {
+            alert('This browser is running on x86_64 architecture.');
+        } 
+        // Check if the user agent contains "arm64"
+        else if (userAgent.includes('arm64')) {
+            alert('This browser is running on arm64 architecture.');
+        }
+        // If neither pattern is found
+        else {
+            alert('Unable to determine the architecture of this browser.');
         }
 
         // Set transform origin based on browser and platform
