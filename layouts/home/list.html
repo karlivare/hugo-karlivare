@@ -58,13 +58,16 @@
         window.addEventListener('resize', setTransformOrigin);
     </script> -->
     <script>
+    // Get the user agent string of the browser
     var userAgent = navigator.userAgent;
 
-    // Check if the user agent contains "(x86_64)"
-    if (userAgent.includes('(x86_64)')) {
+    // Log the user agent string to the console for inspection
+    console.log('User Agent: ' + userAgent);
+
+    // Check if the user agent contains "x86_64" or "arm64"
+    if (userAgent.includes('x86_64')) {
         alert('This browser is running on x86_64 architecture.');
     } 
-    // Check if the user agent contains "arm64"
     else if (userAgent.includes('arm64')) {
         alert('This browser is running on arm64 architecture.');
     }
@@ -72,6 +75,8 @@
     else {
         alert('Unable to determine the architecture of this browser.');
     }
+
+
     // Define variables
     const container = document.getElementById("flower-svg");
     const clip = document.getElementById("clip");
