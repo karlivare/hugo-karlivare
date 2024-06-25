@@ -64,17 +64,24 @@
     // Log the user agent string to the console for inspection
     console.log('User Agent: ' + userAgent);
 
-    // Check if the user agent contains "x86_64" or "arm64"
-    if (userAgent.includes('x86_64')) {
-        alert('This browser is running on x86_64 architecture.');
-    } 
-    else if (userAgent.includes('arm64')) {
-        alert('This browser is running on arm64 architecture.');
+    // Function to check if a version pattern exists in the user agent
+    function checkChromeVersion(version) {
+        return userAgent.includes('Chrome/' + version);
     }
-    // If neither pattern is found
+
+    // Check for Chrome 126.0.0.0
+    if (checkChromeVersion('126.0.0.0')) {
+        alert('This browser is Chrome 126.0.0.0 on x86_64 architecture.');
+    }
+    // Check for Chrome 125.0.0.0
+    else if (checkChromeVersion('125.0.0.0')) {
+        alert('This browser is Chrome 125.0.0.0 on arm64 architecture.');
+    }
+    // If neither version is found
     else {
-        alert('Unable to determine the architecture of this browser.');
+        alert('Unable to determine the specific browser version and architecture.');
     }
+
 
 
     // Define variables
