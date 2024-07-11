@@ -11,13 +11,10 @@
     <script>
     // Get the user agent string of the browser
     var userAgent = navigator.userAgent;
-    var platform = navigator.platform || '';
-    var userAgentData = navigator.userAgentData || {};
 
     // Log the user agent string to the console for inspection
     console.log('User Agent: ' + userAgent);
-    console.log('Platform: ' + platform);
-    console.log('User Agent Data: ', userAgentData);
+  
 
     // Function to check if a version pattern exists in the user agent
     function checkChromeVersion(version) {
@@ -29,25 +26,8 @@
 
     // Detect Chrome versions and platform
     var isChrome = userAgent.includes('Chrome');
-    var isIntelMacOS = platform.includes('MacIntel') || (userAgentData.platform && userAgentData.platform.includes('MacIntel'));
-    var isAppleSiliconMacOS = platform.includes('Mac') && !isIntelMacOS;
-    var isAndroid = userAgent.includes('Android');
-    var isIntel64 = checkChromeVersion('126.0.0.0') && isIntelMacOS;
-    var isOtherChrome = checkChromeVersion('126.0.0.0') && isAndroid;
-
-    // Detect Chrome versions and platform
-    // var isChrome = userAgent.includes('Chrome');
-    // var isIntel64 = checkChromeVersion('126.0.0.0'); // Assuming 126.0.0.0 is x86_64
-    // var isArm64 = checkChromeVersion('125.0.0.0');  // Assuming 125.0.0.0 is arm64
-    console.log('isSafari:', isSafari);
-    console.log('isChrome:', isChrome);
-    console.log('isIntelMacOS:', isIntelMacOS);
-    console.log('isAppleSiliconMacOS:', isAppleSiliconMacOS);
-    console.log('isAndroid:', isAndroid);
-    console.log('isIntel64:', isIntel64);
-    console.log('isOtherChrome:', isOtherChrome);
-    
-
+    var isMobile = /Mobi|Android/i.test(userAgent);
+    var isDesktopChrome = isChrome && !isMobile;
 
     // Define variables
     const container = document.getElementById("flower-svg");
@@ -63,14 +43,13 @@
         if (isSafari) {
             clip.style.transformOrigin = `${centerX}px ${centerY}px`;
             console.log("Safari transform origin set:", clip.style.transformOrigin);
-        } else if (isChrome && isIntel64) {
-            // for x86_64 Chrome
+        } else if (isDesktopChrome) {
             clip.style.transformOrigin = `${centerX*2}px ${centerY*2}px`;
-            console.log("x86_64 Chrome transform origin set:", clip.style.transformOrigin);
-        } else if (isChrome && isArm64) {
-            // for arm64 Chrome
+            clip.style.animation = 'none';
+            console.log("Desktop Chrome animation disabled");
+        } else if (isChrome && isMobile) {
             clip.style.transformOrigin = `${centerX}px ${centerY}px`;
-            console.log("arm64 Chrome transform origin set:", clip.style.transformOrigin);
+            console.log("Mobile Chrome transform origin set:", clip.style.transformOrigin);
         } else {
             // Default case
             clip.style.transformOrigin = `${centerX}px ${centerY}px`;
