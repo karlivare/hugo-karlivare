@@ -30,6 +30,14 @@
     var isIntel64 = checkChromeVersion('126.0.0.0') && isIntelMacOS;
     var isOtherChrome = checkChromeVersion('126.0.0.0') && isAndroid;
 
+    // Log detected platform details
+    console.log('isSafari:', isSafari);
+    console.log('isChrome:', isChrome);
+    console.log('isIntelMacOS:', isIntelMacOS);
+    console.log('isAndroid:', isAndroid);
+    console.log('isIntel64:', isIntel64);
+    console.log('isOtherChrome:', isOtherChrome);
+
 
     // Define variables
     const container = document.getElementById("flower-svg");
