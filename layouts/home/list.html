@@ -25,8 +25,10 @@
 
     // Detect Chrome versions and platform
     var isChrome = userAgent.includes('Chrome');
-    var isIntel64 = checkChromeVersion('126.0.0.0'); // Assuming 126.0.0.0 is x86_64
-    var isArm64 = checkChromeVersion('125.0.0.0');  // Assuming 125.0.0.0 is arm64
+    var isIntelMacOS = userAgent.includes('Macintosh; Intel Mac OS X');
+    var isAndroid = userAgent.includes('Android');
+    var isIntel64 = checkChromeVersion('126.0.0.0') && isIntelMacOS;
+    var isOtherChrome = checkChromeVersion('126.0.0.0') && isAndroid;
 
 
     // Define variables
