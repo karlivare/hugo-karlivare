@@ -26,7 +26,7 @@
 
     // Detect Chrome versions and platform
     var isChrome = userAgent.includes('Chrome');
-    var isMobile = /Mobi|Android/i.test(userAgent);
+    var isMobile = /(Mobi|CriOS|Mobile)/i.test(userAgent);
     var isDesktopChrome = isChrome && !isMobile;
 
     // Define variables
