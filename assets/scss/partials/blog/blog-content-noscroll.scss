@@ -1,71 +1,73 @@
-#card-container{
-    display: flex;
-    justify-content: start;
-}
-
-#cards-inner-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: start;
-}
-
-.portfolio-card{
-    flex: 0 0 calc(25% - 1rem); /* Adjust the width as needed */
-    margin-top: 1rem;
-    width: 200px;
-}
-
 .portfolio-card-img{
-    max-width: 100%;
-    height: auto;
+    max-width: 580px;
+    max-height: 375px;
     border-radius: 8px;
     transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
     box-shadow: 0px 5px 3px 0px rgba(71, 61, 51, 0.0);
     border: 1.5px solid rgba(71, 61, 51, 0.15);
+    width: 100%;
 }
 
-h3.portfolio-card-title{
-    max-width: 100%;
-    margin-top: 0.5rem;
+.portfolio-card-title{
+    font-family: ofelia-display, sans-serif;
+    font-style: normal;
+    color: $brown;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-top: 1rem;
 }
 
 a{
     text-decoration: none;
 }
 
-a:hover .portfolio-card-img{
+.portfolio-card-img:hover{
     transform: translateY(-10px);
-    box-shadow: 0px 5px 3px 0px rgba(71, 61, 51, 0.35);
+    box-shadow: 0px 5px 3px 0px rgba(71, 61, 51, 0.25);
     cursor: pointer;
 }
 
-/*need to add hover effect for the nutmeg section that no longer has the anchor tag*/
-article.portfolio-card:hover .portfolio-card-img{
-    transform: translateY(-10px);
-    box-shadow: 0px 5px 3px 0px rgba(71, 61, 51, 0.35);
-    cursor: pointer;
-}
+//arrow icon animation and pseudoelement padding
+.arrow-icon {
+    margin-left: 8px; /* Space between text and icon */
+    transition: transform 0.3s ease; /* Smooth transition for movement */
+  }
+  
+  .portfolio-card-view-project:hover .arrow-icon {
+    transform: translateX(4px); /* Move the arrow 4px to the right */
+  }
+  .portfolio-card-view-project {
+    position: relative; /* Make it a positioning context for pseudo-element */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+  }
+  
+  .portfolio-card-view-project::before {
+    content: '';
+    position: absolute;
+    top: -24px; /* Adjust to extend the clickable area above */
+    left: -24px; /* Adjust to extend the clickable area to the left */
+    right: -24px; /* Adjust to extend the clickable area to the right */
+    bottom: -24px; /* Adjust to extend the clickable area below */
+  }
 
+
+div#portfolio-content.container.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column by default */
+    gap: 16px; /* Space between grid items */
+}
 
 @include media-breakpoint-up(lg) {
-    #cards-inner-container{
-        gap: 4rem;
-        justify-content: space-between;
-    }
-    .portfolio-card{
-        width: 250px;
+    div#portfolio-content.container.grid {
+      grid-template-columns: 1fr 1fr; /* Two columns on medium screens and above */
     }
 }
 
-@include media-breakpoint-up(xl) {
-    #cards-inner-container{
-        gap: 4rem;
-        column-gap: 6rem;
-        justify-content: flex-start;
+@include media-breakpoint-up(md) {
+    .portfolio-card-img{
+        height: 375px;
     }
 }
-
 
 
 

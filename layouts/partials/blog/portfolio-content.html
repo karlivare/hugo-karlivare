@@ -1,0 +1,30 @@
+{{ $portfolioData := getJSON "/data/portfolio.json" }}
+
+{{ $targetCategory := "main-content" }}
+
+{{ with $portfolioData }}
+<section id="portfolio-content-container" class="bg-light container-fluid header" style="margin-bottom: 2rem;">
+    <div id="portfolio-content" class="container grid"> 
+                    {{ range . }}
+                    {{ if eq .category $targetCategory }}
+    
+                    <!-- Each portfolio card as an <article> -->
+                        <a style="margin-top: 1rem;" href="{{ .url }}">
+                        <article style="margin-top: 1rem;">
+                            <img style="object-fit: cover;" class="portfolio-card-img" src="{{ .image }}" alt="{{ .title }}">
+                            <h3 class="portfolio-card-title">{{ .title }}</h3>
+                            <h3 class="portfolio-card-subtitle body">{{ .subtitle }}</h3>
+                            <h3 class="all-caps-text d-flex align-items-center">
+                                VIEW PROJECT 
+                                <svg class="arrow-icon" width="12" height="12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 8h11.793" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                                    <path d="M9 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                                </svg>
+                              </h3>                              
+                        </article>
+                        </a>
+                    {{ end }}
+                    {{ end }}
+    </div>
+</section>
+{{ end }}

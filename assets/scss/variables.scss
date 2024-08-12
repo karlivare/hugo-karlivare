@@ -53,16 +53,26 @@ button, a.btn{
 }
 /*#endregion*/
 
+.portfolio-title{
+  display: inline-block;
+  font-family: ofelia-text, sans-serif;
+  font-style: normal;
+  color: $brown;
+  font-weight: 700;
+  font-size: 2.0rem;
+  margin-bottom: 1rem;
+  border-bottom: 8px solid rgb(71, 61, 51, 0.5);
+}
+
+
 //subtitle
 /*#region*/
 .subtitle {
-  display: inline-block;
   font-family: ofelia-text, sans-serif;
   font-style: normal;
   color: $brown;
   font-weight: 500;
   font-size: 1.75rem;
-  // border-bottom: 4px solid rgb(71, 61, 51, 0.5);
   margin-bottom: 1.5rem; /*this accounts for a smaller underline*/
 }
 /*#endregion*/
@@ -77,13 +87,22 @@ button, a.btn{
   margin-top: 1rem;
 }
 
+.all-caps-text{
+  font-family: ofelia-display, sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.0rem;
+  margin-top: 1rem;
+}
+
 //body text
 .body {
   font-family: ofelia-display, sans-serif;
   font-style: normal;
   color: $brown;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.0rem;
 }
 /*#endregion*/
 

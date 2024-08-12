@@ -1,37 +1,5 @@
 [
     {
-        "title": "BFA Senior Exhibition Posters",
-        "image": "/portfolio-img/BFAposter-day.jpg",
-        "year": 2021,
-        "medium": "Adobe Illustrator",
-        "category": "Graphic Design",
-        "url": "/blog/bfa-senior-exhibition-posters/"
-    },
-    {
-        "title": "Ocean Collages",
-        "image": "/portfolio-img/oceancollage-no1-thumbnail.jpg",
-        "year": 2020,
-        "medium": "Adobe Photoshop, Illustrator",
-        "category": "Graphic Design",
-        "url": "/blog/ocean-collages/"
-    },
-    {
-        "title": "Holiday Card",
-        "image": "/portfolio-img/holidaycard.jpg",
-        "year": 2020,
-        "medium": "Adobe Photoshop, Wacom tablet",
-        "category": "Graphic Design",
-        "url": "/blog/holiday-card/"
-    },
-    {
-        "title": "Typographical Exploration",
-        "image": "/portfolio-img/typographical-exploration-thumbnail.jpg",
-        "year": 2022,
-        "medium": "Adobe Illustrator, Photoshop",
-        "category": "Graphic Design",
-        "url": "/blog/typographical-exploration/"
-    },
-    {
         "title": "Diving Deeper",
         "image": "/portfolio-img/diving-deeper-thumbnail.jpg",
         "year": "2024",
@@ -128,60 +96,49 @@
         "url": "/blog/greenhouse-spread/"
     },
     {
-        "title": "Senior Project - Crochet Pattern Marketplace Prototype",
+        "title": "Yarn Over",
+        "subtitle": "Concept crochet pattern marketplace",
         "image": "/portfolio-img/yarn-over-small-thumbnail.jpg",
         "year": "2023-24",
         "medium": "Figma",
-        "category": "UI/UX",
+        "category": "main-content",
         "url": "/blog/yarn-over/"
     },
     {
-        "title": "News Publication Redesign",
-        "image": "/portfolio-img/DC-mockup.jpg",
+        "title": "The Daily Campus",
+        "subtitle": "News website redesign",
+        "image": "/portfolio-img/dc-main-content.jpg",
         "year": 2022,
         "medium": "Adobe XD, Illustrator, InDesign",
-        "category": "UI/UX",
-        "url": "/blog/news-publication-redesign/"
+        "category": "main-content",
+        "url": "/blog/news-website-redesign/"
     },
     {
-        "title": "Gamified Habit App",
-        "image": "/portfolio-img/snaps-small-thumbnail.jpg",
+        "title": "SNAPS",
+        "subtitle": "Gamified habit app",
+        "image": "/portfolio-img/snaps-thumbnail-main-content.jpg",
         "year": 2024,
         "medium": "Figma",
-        "category": "UI/UX",
+        "category": "main-content",
         "url": "/blog/snaps/"
     },
     {
-        "title": "UConn Digital Experience Group",
-        "image": "/portfolio-img/dxg-thumbnail.png",
+        "title": "UConn Office of Outreach and Engagement",
+        "subtitle": "Website and community based programs map ",
+        "image": "/portfolio-img/outreach-engagement-main-content.jpg",
         "year": "2023-24",
         "medium": "WordPress, Figma",
-        "category": "UI/UX",
+        "category": "main-content",
         "url": "/blog/dxg/"
     },
     {
-        "title": "Social Media Web Application",
-        "image": "/portfolio-img/beehive-small-thumbnail.svg",
-        "year": 2024,
-        "medium": "Nunjucks, HTML, CSS, Github",
-        "category": "UI/UX",
-        "url": "/blog/beehive/"
-    },
-    {
-        "title": "Meditation App Email Campaign",
-        "image": "/portfolio-img/emailcampaign-mockup.jpg",
-        "year": 2022,
-        "medium": "Adobe XD, Illustrator, InDesign",
-        "category": "UI/UX",
-        "url": "/blog/meditation-email-campaign/"
-    },
-    {
-        "title": "Elite Brain & Spine of Connecticut Specialties Page Redesigns",
-        "image": "/portfolio-img/ebs-cover-thumbnail.jpg",
-        "year": 2023,
-        "medium": "Divi, HTML, CSS, JavaScript",
-        "category": "UI/UX",
-        "url": "/blog/ebs-specialties/"
+        "title": "Nutmeg Publishing",
+        "subtitle": "Yearbook and magazine spreads",
+        "image": "/portfolio-img/serving-across-the-world-thumbnail-main-content.jpg",
+        "year": "2021-24",
+        "medium": "WordPress, Figma",
+        "category": "main-content",
+        "url": "/blog/dxg/"
     },
     {
         "title": "LC Talks",
@@ -230,13 +187,5 @@
         "medium": "Adobe InDesign, Illustrator",
         "category": "Nutmeg",
         "url": "/blog/winter-scenery/"
-    },
-    {
-        "title": "Barber Product Brand Redesign",
-        "image": "/portfolio-img/TheBossLaptopMockups.png",
-        "year": 2023,
-        "medium": "Figma",
-        "category": "UI/UX",
-        "url": "/blog/the-boss/"
     }
 ]
