@@ -12628,7 +12628,7 @@ div.swiper-button-next, div.swiper-button-prev {
   }
 }
 .slide-body {
-  height: 150px;
+  height: 250px;
 }
 
 @media (min-width: 768px) {
