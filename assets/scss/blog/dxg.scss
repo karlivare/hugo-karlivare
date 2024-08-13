@@ -9,12 +9,12 @@
     color: $brown;
 }
 
-#context-img{
+#context-img-container{
   margin-top: 1rem;
   align-self: center;
 }
 @include media-breakpoint-up(md) {
-  #context-img{
+  #context-img-container{
     margin-top: 0rem;
   }
 }

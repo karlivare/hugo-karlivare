@@ -3,7 +3,7 @@
   <section id="portfolio-header" class="container-fluid" style="margin-top: 4rem;">
     <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center mx-auto" style="padding-left: 0; padding-right: 0; gap: 2rem;">
       <!-- Title on the left -->
-      <div class="d-flex flex-column">
+      <div class="d-flex flex-column w-100">
         <div>
           <h1 class="portfolio-title">{{.Title}}</h1>
         </div>
@@ -12,12 +12,6 @@
           <p class="meta-text all-caps-text">Graphic Designer Designer</p>
           <p class="meta-text all-caps-text">Adobe InDesign</p>
         </div>
-      </div>
-  
-      <!-- Logo and Project Link on the right -->
-      <div class="d-flex align-items-center justify-content-between justify-content-lg-end col-12 col-lg-4" style="gap: 24px;">
-        <img src="/png/uconn-wordmark-single-blue.png" alt="Logo" style="width: 100px;" class="logo-img" />
-        <a target=”_blank” href="https://outreach.engagement.uconn.edu/" class="btn btn-primary">Visit Website</a>
       </div>
     </div>
   </section>
@@ -35,8 +29,8 @@
         <p class="body">{{.Params.context}}</p>
       </div>
       <!-- Image on the left -->
-      <div id="context-img" style="padding: 0rem 2rem;" class="col-12 col-md-5">
-        <img src="/portfolio-img/outreach-engagement-main-content.jpg" alt="Description" class="img-fluid" style="border-radius: 16px;">
+      <div id="context-img-container" style="padding: 0rem 2rem;" class="col-12 col-md-5">
+        <img id="context-img" src="/portfolio-img/serving-across-the-world-thumbnail-main-content.jpg" alt="Description" class="img-fluid" style="border-radius: 16px;">
       </div>
     </div>
   </section>
@@ -46,80 +40,26 @@
       <!-- Text on the left -->
       <div id="action-text" class="col-12 col-md-7" style="padding: 0rem 2rem;">
         <p class="all-caps-text">Action</p>
-        <p class="body">{{.Params.action1}}<br><br>{{.Params.action2}}<br><br>{{.Params.action3}}</p>
+        <p class="body">{{.Params.action1}}</p>
       </div>
 
-      <!-- Image on the right -->
-      <div id="video-container" style="padding: 0rem 2rem;" class="d-flex justify-content-center col-12 col-md-5">
-        <video class="OE-video" autoplay loop muted playsinline>
-          <source src="/portfolio-img/OE-map-filter.mov" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <video class="OE-video" autoplay loop muted playsinline>
-          <source src="/portfolio-img/scholar-directory-mobile.mov" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>         
-      </div>
     </div>
   </section>
 
-  <!--Swiper carousel-->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <!-- Slide 1 -->
-      <div class="swiper-slide flex-md-column-reverse">
-        <div class="slide-text d-flex align-items-start" style="gap:2rem;">
-          <p class="portfolio-title" style="display: flex; align-items:flex-end; margin-bottom: 32px;">0.1</p>
-          <div class="slide-body d-flex flex-column align-items-start">
-            <p class="subtitle" style="margin-bottom: 0;">Website Audit</p>
-            <p class="body">A preliminary audit of the Office's website. Utilizing FigJam AI and organized by visual design, user experience, and accessibility. </p>
-          </div>
+  <!--Spread container, dynamically importing from json-->
+<section class="container my-4">
+  <div class="d-flex flex-wrap justify-content-center">
+    {{ range .Site.Data.portfolio }}
+      {{ if eq .category "Nutmeg" }}
+        <div class="p-2">
+          <img src="{{ .image }}" class="img-nutmeg" alt="{{ .title }}">
         </div>
-        <div class="carousel-img-container">
-          <img src="/portfolio-img/figjam-audit.jpg" alt="Slide 1" class="slide-image">
-        </div>
-      </div>
-      <!-- Slide 2 -->
-      <div class="swiper-slide flex-md-column-reverse">
-        <div class="slide-text d-flex align-items-start" style="gap:2rem;">
-          <p class="portfolio-title" style="display: flex; align-items:flex-end; margin-bottom: 32px;">0.2</p>
-          <div class="slide-body d-flex flex-column align-items-start">
-            <p class="subtitle" style="margin-bottom: 0;">Updating the Site</p>
-            <p class="body">A before and after of the banners for the site.</p>
-          </div>
-        </div>
-        <div class="carousel-img-container">
-          <img src="/portfolio-img/OE-before-after-banner.jpg" alt="Slide 1" class="slide-image">
-        </div>
-      </div>
-      <!-- Slide 3 -->
-      <div class="swiper-slide flex-md-column-reverse">
-        <div class="slide-text d-flex align-items-start" style="gap:2rem;">
-          <p class="portfolio-title" style="display: flex; align-items:flex-end; margin-bottom: 32px;">0.3</p>
-          <div class="slide-body d-flex flex-column align-items-start">
-            <p class="subtitle" style="margin-bottom: 0;">Community Program Map Mockup</p>
-            <p class="body">Web and mobile mockups of the community program map page created using Figma</p>
-          </div>
-        </div>
-        <div class="carousel-img-container">
-          <img src="/portfolio-img/OE-after-map.png" alt="Slide 1" class="slide-image">
-        </div>
-      </div>
-      <!-- Slide 4 -->
-      <div class="swiper-slide flex-md-column-reverse">
-        <div class="slide-text d-flex align-items-start" style="gap:2rem;">
-          <p class="portfolio-title" style="display: flex; align-items:flex-end; margin-bottom: 32px;">0.4</p>
-          <div class="slide-body d-flex flex-column align-items-start">
-            <p class="subtitle" style="margin-bottom: 0;">Scholar Directory Mockup</p>
-            <p class="body">Web and mobile mockups of the scholar directory page created using Figma</p>
-          </div>
-        </div>
-        <div class="carousel-img-container">
-          <img src="/portfolio-img/OE-scholar-directory.png" alt="Slide 1" class="slide-image">
-        </div>
-      </div>
-    </div>
+      {{ end }}
+    {{ end }}
   </div>
+</section>
+
+
   
   
 

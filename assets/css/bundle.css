@@ -12533,13 +12533,13 @@ div.swiper-button-next, div.swiper-button-prev {
   color: #473d33;
 }
 
-#context-img {
+#context-img-container {
   margin-top: 1rem;
   align-self: center;
 }
 
 @media (min-width: 768px) {
-  #context-img {
+  #context-img-container {
     margin-top: 0rem;
   }
 }
@@ -12647,6 +12647,46 @@ img.slide-image {
 .swiper-pagination-bullet {
   background: #000; /* Pagination bullet color */
   margin: 0 4px; /* Space between bullets */
+}
+
+#problem-container, #impact-container {
+  background-color: #487c89;
+  border-radius: 16px;
+  color: white;
+  padding: 2rem 2rem;
+}
+
+#context-text {
+  color: #473d33;
+}
+
+#context-img {
+  border: 1px solid rgba(72, 124, 137, 0.5);
+}
+
+#context-img-container {
+  margin-top: 1rem;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  #context-img-container {
+    margin-top: 0rem;
+  }
+}
+#action-text {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  #action-text {
+    margin-bottom: 0rem;
+  }
+}
+.img-nutmeg {
+  border-radius: 8px;
+  border: 1px solid rgba(72, 124, 137, 0.5);
+  width: 200px;
 }
 
 /*#endregion*/
