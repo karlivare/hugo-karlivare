@@ -12374,6 +12374,18 @@ img.card-img-top {
   object-fit: cover;
 }
 
+.featured-card {
+  overflow: hidden;
+}
+
+.featured-img {
+  transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+
+.featured-img:hover {
+  transform: scale(1.1); /* Scale up by 10% on hover */
+}
+
 #featured-work-row {
   gap: 1rem;
 }
