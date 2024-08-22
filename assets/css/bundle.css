@@ -12877,19 +12877,84 @@ img.slide-image {
   width: 200px;
 }
 
-/*#endregion*/
-/*Short code, used for individual portfolio pages*/
-/*#region*/
-.portfolio-shortcode-container {
-  display: flex;
-  justify-content: center;
-  padding: 0;
+#problem-container, #impact-container {
+  background-color: #487c89;
+  border-radius: 16px;
+  color: white;
+  padding: 2rem 2rem;
 }
 
-.portfolio-shortcode-img {
-  width: 100vw;
-  height: auto;
+#context-text {
+  color: #473d33;
+}
+
+#context-img {
   border: 1px solid rgba(72, 124, 137, 0.5);
+}
+
+#context-img-container {
+  margin-top: 1rem;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  #context-img-container {
+    margin-top: 0rem;
+  }
+}
+#action-text {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  #action-text {
+    margin-bottom: 0rem;
+  }
+}
+.img-nutmeg {
+  border-radius: 8px;
+  border: 1px solid rgba(72, 124, 137, 0.5);
+  width: 200px;
+}
+
+#problem-container, #impact-container {
+  background-color: #487c89;
+  border-radius: 16px;
+  color: white;
+  padding: 2rem 2rem;
+}
+
+#context-text {
+  color: #473d33;
+}
+
+#context-img {
+  border: 1px solid rgba(72, 124, 137, 0.5);
+}
+
+#context-img-container {
+  margin-top: 1rem;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  #context-img-container {
+    margin-top: 0rem;
+  }
+}
+#action-text {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  #action-text {
+    margin-bottom: 0rem;
+  }
+}
+.img-nutmeg {
+  border-radius: 8px;
+  border: 1px solid rgba(72, 124, 137, 0.5);
+  width: 200px;
 }
 
 .portfolio-iframe {
@@ -12899,29 +12964,6 @@ img.slide-image {
   border-radius: 8px;
 }
 
-#portfolio-item-title {
-  font-size: 2rem;
-}
-
-@media (min-width: 768px) {
-  #portfolio-item-title {
-    font-size: 3rem;
-  }
-  #portfolio-item-title {
-    font-size: 2.5rem;
-  }
-}
-@media (min-width: 576px) {
-  .portfolio-shortcode-container {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-  .portfolio-shortcode-img {
-    border-radius: 8px;
-    height: 70vh;
-    width: auto;
-  }
-}
 /*#endregion*/
 
 /*# sourceMappingURL=bundle.css.map */
