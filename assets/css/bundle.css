@@ -12462,6 +12462,15 @@ a {
   text-decoration: none;
 }
 
+.project-link-btn {
+  background-color: #473d33;
+  border: none;
+}
+
+.project-link-btn:hover {
+  background-color: #3B342B;
+}
+
 .portfolio-card-img:hover {
   transform: translateY(-10px);
   box-shadow: 0px 5px 3px 0px rgba(71, 61, 51, 0.25);
