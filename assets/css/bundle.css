@@ -12421,10 +12421,13 @@ h3.all-caps-text, .all-caps-text.h3 {
   transform: translateX(4px); /* Move the arrow 4px to the right */
 }
 
-.portfolio-card-title,
+.card-body, .portfolio-card-title,
 .portfolio-card-subtitle,
 .all-caps-text {
   position: relative; /* Make them positioning contexts for pseudo-elements */
+}
+
+.featured-card-body, .view-project {
   cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
