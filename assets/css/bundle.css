@@ -12676,7 +12676,7 @@ div.swiper-button-next, div.swiper-button-prev {
 }
 
 .OE-video {
-  height: 450px;
+  max-height: 650px;
   border-radius: 16px;
   border: 1px solid rgba(72, 124, 137, 0.5);
 }
