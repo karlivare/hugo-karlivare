@@ -35,30 +35,6 @@ a{
     cursor: pointer;
 }
 
-//arrow icon animation and pseudoelement padding
-.arrow-icon {
-    margin-left: 8px; /* Space between text and icon */
-    transition: transform 0.3s ease; /* Smooth transition for movement */
-  }
-  
-  .portfolio-card-view-project:hover .arrow-icon {
-    transform: translateX(4px); /* Move the arrow 4px to the right */
-  }
-  .portfolio-card-view-project {
-    position: relative; /* Make it a positioning context for pseudo-element */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-  }
-  
-  .portfolio-card-view-project::before {
-    content: '';
-    position: absolute;
-    top: -24px; /* Adjust to extend the clickable area above */
-    left: -24px; /* Adjust to extend the clickable area to the left */
-    right: -24px; /* Adjust to extend the clickable area to the right */
-    bottom: -24px; /* Adjust to extend the clickable area below */
-  }
-
-
 div#portfolio-content.container.grid {
     display: grid;
     grid-template-columns: 1fr; /* Single column by default */
