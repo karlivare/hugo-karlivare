@@ -9,6 +9,12 @@
     color: $brown;
 }
 
+.snaps-video{
+  max-height: 650px;
+  border-radius: 16px;
+  border: 1px solid rgba(72,124,137,.5)
+}
+
 #context-img{
   border: 1px solid rgba(72,124,137,.5);
 }
