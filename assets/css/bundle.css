@@ -12302,6 +12302,10 @@ img#footer-graphic {
   padding-bottom: 3rem;
 }
 
+#explore-all-work {
+  margin-top: 1.5rem;
+}
+
 @media (min-width: 992px) {
   #nutmeg-spreads-bg {
     height: 500px;
