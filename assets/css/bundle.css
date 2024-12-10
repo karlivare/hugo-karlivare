@@ -12147,18 +12147,32 @@ img#footer-graphic {
   background-color: #e4eff1;
 }
 
-#form-graphic-container {
-  background-image: url(/svg/contact-form-graphic.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 #contact-form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
+#contactFlowersSVG {
+  width: 100%;
+}
+
+#form-graphic-container {
+  overflow: hidden !important;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  #contactFlowersSVG {
+    width: initial;
+    height: 100%;
+  }
+}
+@media (min-width: 992px) {
+  #form-graphic-container {
+    max-width: 700px;
+  }
+}
 #contact-form input::placeholder,
 #contact-form textarea::placeholder {
   color: #473d33;
