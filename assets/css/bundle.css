@@ -12489,7 +12489,7 @@ a {
 }
 
 .project-link-btn {
-  background-color: #473d33;
+  background-color: #595047;
   border: none;
 }
 
@@ -12750,9 +12750,23 @@ img.slide-image {
   align-items: flex-start;
 }
 
+#dc-title-tags {
+  width: 100%;
+}
+
+#dc-title-links {
+  gap: 2rem;
+}
+
 @media (min-width: 992px) {
   #meta-text-container {
     gap: 2rem;
+  }
+  #dc-title-tags {
+    width: initial;
+  }
+  #dc-title-links {
+    gap: 0rem;
   }
 }
 .meta-text {

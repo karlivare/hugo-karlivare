@@ -1,9 +1,9 @@
 {{ define "main"}}
 <div class="container-fluid d-flex flex-column align-items-center" style="gap: 4rem;">
   <section id="portfolio-header" class="container-fluid" style="margin-top: 4rem;">
-    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center mx-auto" style="padding-left: 0; padding-right: 0; gap: 2rem;">
+    <div id="dc-title-links" class="container d-flex flex-column flex-lg-row justify-content-between align-items-start mx-auto" style="padding-left: 0; padding-right: 0;">
       <!-- Title on the left -->
-      <div class="w-100 d-flex flex-column">
+      <div id="dc-title-tags" class="d-flex flex-column">
         <div>
           <h1 class="portfolio-title">{{.Title}}</h1>
         </div>
@@ -15,7 +15,7 @@
       </div>
   
       <!-- Logo and Project Link on the right -->
-      <div class="d-flex align-items-center justify-content-between justify-content-md-start col-12 col-lg-4" style="gap: 24px;">
+      <div id="dc-proto-links" class="d-flex align-items-center justify-content-start" style="gap: 24px;">
         <a target=”_blank” href="https://xd.adobe.com/view/f865ff50-93ce-41ad-ace6-ae75ce148542-ad36/" class="btn btn-primary project-link-btn">View Web Prototype</a>
         <a target=”_blank” href="https://xd.adobe.com/view/1164c340-27f8-4be5-afe4-9c0a523b8188-4437/" class="btn btn-primary project-link-btn">View Mobile Prototype</a>
       </div>

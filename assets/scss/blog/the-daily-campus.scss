@@ -40,9 +40,25 @@
   align-items: flex-start;
 }
 
+#dc-title-tags{
+  width: 100%;
+}
+
+#dc-title-links{
+  gap: 2rem;
+}
+
 @include media-breakpoint-up(lg) {
   #meta-text-container{
     gap: 2rem;
+  }
+
+  #dc-title-tags{
+    width: initial;
+  }
+
+  #dc-title-links{
+    gap: 0rem;
   }
 }
 
