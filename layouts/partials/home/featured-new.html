@@ -78,30 +78,26 @@
   </section>
 
   <script>
-    console.log(document.querySelectorAll("#featured-work-row .col-lg-4"));
-
     document.addEventListener("DOMContentLoaded", () => {
-  // Target all cards
-  const cards = document.querySelectorAll("#featured-work-row .col-lg-4");
+    // Register GSAP's ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
 
-  // GSAP timeline for animations
-  gsap.registerPlugin(ScrollTrigger);
-
-  gsap.timeline({
-    scrollTrigger: {
-      trigger: "#featured-section", // Trigger animation when this section is in view
-      start: "top 80%", // Start when the top of the section is 80% down the viewport
-      end: "bottom 20%", // Optional: control when the animation ends
-      toggleActions: "play none none reverse", // Adjust the behavior: onEnter, onLeave, etc.
-    },
-  })
-    .from(cards, {
-      y: 50, // Move cards up from below
-      opacity: 0, // Start with opacity 0
-      duration: 0.8, // Duration for each animation
-      stagger: 0.3, // Delay between each card's animation
-      ease: "power2.out", // Ease-out effect for smooth animation
+    // Animate the columns inside the row
+    gsap.from("#featured-work-row .col-lg-4", {
+      scrollTrigger: {
+      trigger: "#featured-section",
+      start: "top+=300 bottom",
+      markers: false, // Visual indicators for ScrollTrigger boundaries
+      },
+      y: 50, // Animate up 50px
+      opacity: 0, // Start invisible and fade in
+      duration: 0.8, // Duration of each animation
+      stagger: 0.3, // Delay of 0.3s between each column animation
+      ease: "power2.out", // Smooth easing
     });
-});
+  });
+
+  console.log("GSAP:", gsap);
+  console.log("ScrollTrigger:", gsap.plugins.ScrollTrigger);
 
   </script>
