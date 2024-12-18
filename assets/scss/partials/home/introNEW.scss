@@ -2,6 +2,8 @@
   height: 50vh;
   background-color: $blue;
   padding: 2rem;
+  position: relative; /* Enables positioning child elements relative to this container */
+  overflow: hidden;
 }
 
 #mission-statement{
@@ -11,6 +13,8 @@
   font-weight: 200;
   font-size: 1.5rem;
   margin-bottom: 0;
+  z-index: 2;
+  position: relative;
 }
 
 #karli-vare{
@@ -63,5 +67,45 @@
   
   #intro-flower{
     width: 60px;
+  }
+}
+
+/* Style the side flowers SVG */
+//the container for svg
+#side-flowers {
+  position: absolute;
+  bottom: 150px;
+  left: 50px;
+  width: 100%; /* Spans the section */
+  height: 100%; /* Matches the parent section */
+  overflow: visible; /* Prevent cutoff during rotation */
+  pointer-events: none; /* Ignore mouse events on flowers */
+  z-index: 0;
+}
+
+//the container for svg flowers
+#side-flowers-svg{
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+#sideFlower1 {
+  position: absolute;
+  top: -50px; /* Adjust position */
+  left: 10%;
+}
+
+#sideFlower2 {
+  position: absolute;
+  bottom: -50px; /* Adjust position */
+  right: 10%;
+}
+
+@include media-breakpoint-up(lg) {
+  #side-flowers {
+    bottom: 0px;
+    top: 50px;
+    left: 400px;
   }
 }
