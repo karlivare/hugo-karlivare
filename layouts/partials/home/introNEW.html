@@ -1,0 +1,27 @@
+<section id="intro-header" class="container-fluid d-flex align-items-end">
+    <div class="mx-auto">
+      <h1 id="mission-statement"><span id="karli-vare">Karli Vare</span> is an interactive media designer who believes in beautifully balanced design with technical feasibility.<span><img id="intro-flower" src="/svg/intro-flower.svg" alt=""></span></h1>
+    </div>
+</section>
+
+
+<script>
+    // Rotate the circle infinitely
+gsap.to("#intro-flower", {
+    duration: 40,                 // Animation duration in seconds
+    rotation: 360,               // Rotate 360 degrees
+    transformOrigin: "50% 50%",  // Set the center of the circle as the origin
+    repeat: -1,                  // Repeat indefinitely
+    ease: "linear"               // Smooth linear motion
+});
+
+    //placeholder animation for now
+    // Fade in and up for the text
+    gsap.from("#mission-statement", {
+    opacity: 0,                   // Start fully transparent
+    y: 30,                        // Start 20px below its position
+    duration: 2,                // Duration of the animation in seconds
+    ease: "power2.out"            // Easing for smooth animation
+    });
+
+  </script>

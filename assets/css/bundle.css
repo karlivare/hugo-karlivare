@@ -12241,60 +12241,64 @@ img#footer-graphic {
 /*#endregion*/
 /*Home*/
 /*#region*/
-/*#region*/
-.flower-mask {
-  width: 100%;
-  position: relative;
+#intro-header {
+  height: 35vh;
+  background-color: #487c89;
+  padding: 2rem;
 }
 
-#profile {
-  clip-path: url(#clip);
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  position: relative;
+#mission-statement {
+  color: #fff3e8;
+  font-family: ofelia-text, sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 1.5rem;
+  margin-bottom: 0;
 }
 
-#flower-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+#karli-vare {
+  color: #fff3e8;
+  font-family: ofelia-text, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
-.animate-flower {
-  animation: rotateFlower 10s linear infinite;
+#intro-flower {
+  padding-left: 8px;
+  width: 30px;
 }
 
-@keyframes rotateFlower {
-  0% {
-    transform: rotate(0deg); /* Start rotation from 0 degrees */
+@media (min-width: 768px) {
+  #intro-header {
+    height: 50vh;
   }
-  100% {
-    transform: rotate(360deg); /* Rotate 360 degrees */
+  #mission-statement {
+    font-size: 2.5rem;
+  }
+  #karli-vare {
+    font-size: 2.5rem;
+  }
+  #intro-flower {
+    width: 30px;
   }
 }
 @media (min-width: 992px) {
   #intro-header {
-    overflow: hidden;
+    height: 85vh;
+    padding: 4rem 2rem;
   }
-  #flower-mask-container {
-    position: relative;
+  #mission-statement {
+    font-size: 4rem;
+    line-height: 90px;
   }
-  .flower-mask {
-    width: 500px;
-    position: absolute;
-    top: -15rem;
-    right: -2rem;
+  #karli-vare {
+    font-size: 4rem;
   }
-}
-@media (min-width: 1200px) {
-  .flower-mask {
-    right: 4rem;
+  #intro-flower {
+    width: 60px;
   }
 }
-/*#endregion*/
 .nutmeg-section {
   background-color: #fff3e8;
 }
