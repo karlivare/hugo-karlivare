@@ -12352,7 +12352,6 @@ img#footer-graphic {
 #sideFlower2 {
   position: absolute;
   bottom: -50px; /* Adjust position */
-  right: 10%;
 }
 
 @media (min-width: 992px) {
