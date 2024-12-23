@@ -89,15 +89,12 @@
       start: "top+=300 bottom",
       markers: false, // Visual indicators for ScrollTrigger boundaries
       },
-      y: 25, // Animate up 50px
+      y: 25, // Animate up
       opacity: 0, // Start invisible and fade in
-      duration: 2, // Duration of each animation
-      stagger: 0.5, // Delay of 0.3s between each column animation
+      duration: 1, // Duration of each animation
+      stagger: 0.3, // Delay of 0.3s between each column animation
       ease: "power2.out", // Smooth easing
     });
   });
-
-  console.log("GSAP:", gsap);
-  console.log("ScrollTrigger:", gsap.plugins.ScrollTrigger);
 
   </script>
