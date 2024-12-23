@@ -47,7 +47,7 @@
 #intro-flower{
   width: 10px;
   position: relative;
-  right: 2%;
+  
 }
 
 ///MEDIA QUERY MEDIUM///
@@ -66,6 +66,7 @@
   
   #intro-flower{
     width: 15px;
+    left: 0;
   }
 }
 
@@ -119,7 +120,7 @@
 #sideFlower2 {
   position: absolute;
   bottom: -50px; /* Adjust position */
-  // right: 10%;
+  right: 10%;
 }
 
 @include media-breakpoint-up(lg) {
