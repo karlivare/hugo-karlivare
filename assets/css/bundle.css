@@ -12287,7 +12287,7 @@ img#footer-graphic {
 #intro-flower {
   width: 10px;
   position: relative;
-  right: 5px;
+  right: 0px;
 }
 
 @media (min-width: 768px) {
