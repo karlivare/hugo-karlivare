@@ -23,25 +23,21 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll('a[href^="/#"]').forEach(link => {
-        link.addEventListener("click", event => {
-            event.preventDefault();
-            const targetId = link.getAttribute("href").split("#")[1];
-            const targetElement = document.getElementById(targetId);
+    document.getElementById("contactLink").addEventListener("click", function (e) {
+    e.preventDefault();
 
-            if (targetElement) {
-                // Use the history API to navigate without page refresh
-                history.pushState(null, null, `/#${targetId}`);
-                targetElement.scrollIntoView({ behavior: "smooth" });
-            } else {
-                // If the target is not on the current page, navigate to the URL
-                window.location = link.getAttribute("href");
-            }
-        });
-    });
-});
-
+    // Check if we're on the homepage
+    if (window.location.pathname === "/" || window.location.pathname === "") {
+      // If on homepage, directly scroll to the form
+      const targetElement = document.getElementById("form-container");
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Otherwise, redirect to homepage and scroll to the form
+      window.location.href = "/#form-container";
+    }
+  });
 </script>
 
 
