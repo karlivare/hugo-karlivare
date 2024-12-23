@@ -6,6 +6,16 @@
   overflow: hidden;
 }
 
+.mission-statement-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //this makes flower and text go on same row
+  position: relative;
+  display: inline-block;
+}
+
 #mission-statement{
   color: $beige;
   font-family: ofelia-text, sans-serif;
@@ -14,7 +24,10 @@
   font-size: 1.5rem;
   margin-bottom: 0;
   z-index: 2;
+  
+  //this makes flower and text go on same line
   position: relative;
+  display: inline;
 }
 
 #karli-vare{
@@ -26,8 +39,9 @@
 }
 
 #intro-flower{
-  padding-left: 8px;
-  width: 30px;
+  width: 10px;
+  position: relative;
+  right: 5px;
 }
 
 ///MEDIA QUERY MEDIUM///
@@ -45,7 +59,7 @@
   }
   
   #intro-flower{
-    width: 45px;
+    width: 15px;
   }
 }
 
@@ -66,7 +80,7 @@
   }
   
   #intro-flower{
-    width: 60px;
+    width: 25px;
   }
 }
 

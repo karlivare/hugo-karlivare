@@ -8,7 +8,7 @@
         <div class="col-12 col-md-7 p-5 d-flex flex-column justify-content-center">
           <h2 class="subtitle">Contact Me</h2>
           <div class="form-contactinfo-container d-flex flex-column flex-xl-row">
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-8">
               <form action="https://formsubmit.co/kmvare@gmail.com" method="POST" id="contact-form">
                 <input type="hidden" name="_subject" value="Karli Vare Portfolio - New Message">
                   <div class="form-group">
@@ -26,21 +26,25 @@
                   <button id="submit-btn" type="submit" class="btn btn-primary">Submit</button>
               </form>
             </div>
-            <div class="col-12 col-xl-6 info-container">
+            <div class="col-12 col-xl-4 info-container">
               <div class="contact-info d-flex flex-row align-items-start">
-                <img style="height: 25px;" src="/svg/envelope-solid.svg" alt="">
-                <div class="contact-text-info d-flex flex-column">
-                  <p class=".body" style="margin-bottom: 0rem;">Email</p>
-                  <a href="mailto:kmvare@gmail.com"><strong><p class=".body">kmvare@gmail.com</p></strong></a>
-                </div>
+                <a href="mailto:kmvare@gmail.com" id="email-link" class="d-flex flex-row align-items-start" style="text-decoration: none;">
+                  <img style="width: 25px;" src="/svg/envelope-solid.svg" alt="Envelope Icon">
+                  <div class="contact-text-info d-flex flex-column">
+                    <strong>
+                      <p style="margin-bottom: 0;">Email</p>
+                    </strong>
+                  </div>
+                </a>
               </div>
+              
               <div class="contact-info d-flex flex-row align-items-start">
-                <img style="height: 25px;" src="/svg/linkedin.svg" alt="">
-                <div class="contact-text-info d-flex flex-column">
-                  <p class=".body" style="margin-bottom: 0rem;">LinkedIn</p>
-                  <a id="linkedin-link" href="https://www.linkedin.com/in/karli-vare/" target="_blank"><strong><p class=".body">https://www.linkedin.com/in/karli-vare/</p></strong></a>
-                </div>
+                <a id="linkedin-link" href="https://www.linkedin.com/in/karli-vare/" target="_blank" class="d-flex align-items-start" style="text-decoration: none;">
+                  <img style="width: 25px;" src="/svg/linkedin.svg" alt="LinkedIn Icon">
+                  <strong>LinkedIn</strong>
+                </a>
               </div>
+              
             </div>
           </div>
         </div>
@@ -52,7 +56,7 @@
     // Rotate the circle infinitely
 gsap.to("#contactFlower1", {
     duration: 40,                 // Animation duration in seconds
-    rotation: 360,               // Rotate 360 degrees
+    rotation: -360,               // Rotate 360 degrees
     transformOrigin: "50% 50%",  // Set the center of the circle as the origin
     repeat: -1,                  // Repeat indefinitely
     ease: "linear"               // Smooth linear motion

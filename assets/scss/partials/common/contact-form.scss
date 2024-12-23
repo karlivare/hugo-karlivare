@@ -1,7 +1,9 @@
 //////CONTACT FORM//////
 #contact-form-section {
   overflow: hidden;
-  background-color: rgba($color: #E4EFF1, $alpha: 1.0)
+  background-color: rgba($color: #E4EFF1, $alpha: 1.0);
+  padding-left: 0;
+  padding-right: 0;
 }
 #contact-form {
   display: flex;
@@ -68,11 +70,6 @@
   padding-top: 1rem;
 }
 
-.contact-info{
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
 @include media-breakpoint-up(md) {
   #form-graphic-container {
     height: auto;
@@ -86,3 +83,14 @@
     word-wrap: break-word;
   }
 }
+
+.contact-info {
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+#email-link, #linkedin-link{
+  color: $blue;
+  gap: 1rem;
+}
+
+

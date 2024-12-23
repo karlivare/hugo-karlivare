@@ -1,7 +1,11 @@
 <section id="intro-header" class="container-fluid d-flex align-items-end">
-    <div class="mx-auto">
-      <h1 id="mission-statement"><span id="karli-vare">Karli Vare</span> is an interactive media designer who believes in beautifully balanced design with technical feasibility.<span><img id="intro-flower" src="/svg/intro-flower.svg" alt=""></span></h1>
+    <div class="mission-statement-container mx-auto">
+        <h1 id="mission-statement">
+            <span id="karli-vare">Karli Vare</span> is an interactive media designer who believes in beautifully balanced design with technical feasibility
+        </h1>
+        <img id="intro-flower" src="/svg/intro-flower.svg" alt="">
     </div>
+    
     <div id="side-flowers">
         <svg id="side-flowers-svg" width="723" height="717" viewBox="0 0 723 717" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="sideFlower1" opacity="0.5" clip-path="url(#clip0_75_2)">
@@ -21,44 +25,92 @@
             </clipPath>
             </defs>
             </svg>
-            
     </div>
 </section>
 
 
 <script>
-    // Rotate the circle infinitely
-gsap.to("#intro-flower", {
-    duration: 40,                 // Animation duration in seconds
-    rotation: 360,               // Rotate 360 degrees
-    transformOrigin: "50% 50%",  // Set the center of the circle as the origin
-    repeat: -1,                  // Repeat indefinitely
-    ease: "linear"               // Smooth linear motion
-});
-
-    //placeholder animation for now
-    // Fade in and up for the text
-    gsap.from("#mission-statement", {
-    opacity: 0,                   // Start fully transparent
-    y: 30,                        // Start 20px below its position
-    duration: 2,                // Duration of the animation in seconds
-    ease: "power2.out"            // Easing for smooth animation
-    });
-
-    //animate the side flowers
+    
+    // Side flower animations (continuously rotating)
     gsap.to("#sideFlower1", {
-    duration: 80,                 // Animation duration in seconds
-    rotation: 360,               // Rotate 360 degrees
-    transformOrigin: "50% 50%",  // Set the center of the circle as the origin
-    repeat: -1,                  // Repeat indefinitely
-    ease: "linear"               // Smooth linear motion
+        duration: 80,
+        rotation: -360,
+        transformOrigin: "50% 50%",
+        repeat: -1,
+        ease: "linear"
     });
+    
     gsap.to("#sideFlower2", {
-    duration: 80,                 // Animation duration in seconds
-    rotation: 360,               // Rotate 360 degrees
-    transformOrigin: "50% 50%",  // Set the center of the circle as the origin
-    repeat: -1,                  // Repeat indefinitely
-    ease: "linear"               // Smooth linear motion
+        duration: 80,
+        rotation: 360,
+        transformOrigin: "50% 50%",
+        repeat: -1,
+        ease: "linear"
+    });
+</script>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+    const missionStatement = document.querySelector('#mission-statement');
+    const karliVareText = document.querySelector('#karli-vare');
+    const introFlower = document.querySelector('#intro-flower'); // Target the intro flower SVG
+
+    // Ensure the introFlower starts hidden (opacity 0)
+    gsap.set(introFlower, {
+        opacity: 0,   // Start hidden
+        y: 8,        // Small offset for flower (adjust if necessary)
     });
 
-  </script>
+    // Wrapping "Karli Vare" in a span if needed (otherwise skip this step)
+    const karliVare = missionStatement.querySelector('#karli-vare');
+    let missionStatementText = missionStatement.innerText;
+
+    // Remove "Karli Vare" part from the string, so we can manipulate the remaining text separately
+    missionStatementText = missionStatementText.replace(karliVare.innerText, '');
+
+    // Clear the original mission statement and reconstruct it
+    missionStatement.innerHTML = '';
+    missionStatement.appendChild(karliVare);
+
+    // Split remaining mission statement into spans for each character
+    for (let char of missionStatementText) {
+        const span = document.createElement('span');
+        span.innerText = char;
+        span.style.fontStyle = 'italic';  // Apply italic to non-Karli Vare text
+        span.style.fontWeight = 'normal'; // Keep non-Karli Vare text normal weight
+        missionStatement.appendChild(span);
+    }
+
+    // Set the initial state of the text (make all characters invisible with a "rise" effect)
+    gsap.set(missionStatement.querySelectorAll('span'), {
+        opacity: 0,   // Start text as invisible
+    });
+
+    // Animate text fade-in and rise (staggered animation)
+    gsap.to(missionStatement.querySelectorAll('span'), {
+        opacity: 1,   // Fade-in text
+        stagger: {
+            amount: 1,  // Duration over which the stagger happens
+            ease: "none" // No easing for even speed
+        },
+        duration: 2    // Duration for each character’s animation
+    });
+
+    // Animate the intro flower to fade-in after the text
+    gsap.to(introFlower, {
+        delay: 1.1,      // Start after the text animation completes
+        opacity: 1,    // Fade in the flower
+        y: 0,          // Optionally move flower (adjust Y if you want movement)
+        duration: 0.75,    // Flower fades in slower than the text
+        ease: "power1.out"  // Smooth transition for the flower
+    });
+});
+</script>
+
+
+
+
+
+
+
+    

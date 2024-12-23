@@ -12145,6 +12145,8 @@ img#footer-graphic {
 #contact-form-section {
   overflow: hidden;
   background-color: #e4eff1;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #contact-form {
@@ -12221,11 +12223,6 @@ img#footer-graphic {
   padding-top: 1rem;
 }
 
-.contact-info {
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
 @media (min-width: 768px) {
   #form-graphic-container {
     height: auto;
@@ -12238,6 +12235,16 @@ img#footer-graphic {
     word-wrap: break-word;
   }
 }
+.contact-info {
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#email-link, #linkedin-link {
+  color: #487c89;
+  gap: 1rem;
+}
+
 /*#endregion*/
 /*Home*/
 /*#region*/
@@ -12249,6 +12256,14 @@ img#footer-graphic {
   overflow: hidden;
 }
 
+.mission-statement-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: inline-block;
+}
+
 #mission-statement {
   color: #fff3e8;
   font-family: ofelia-text, sans-serif;
@@ -12258,6 +12273,7 @@ img#footer-graphic {
   margin-bottom: 0;
   z-index: 2;
   position: relative;
+  display: inline;
 }
 
 #karli-vare {
@@ -12269,8 +12285,9 @@ img#footer-graphic {
 }
 
 #intro-flower {
-  padding-left: 8px;
-  width: 30px;
+  width: 10px;
+  position: relative;
+  right: 5px;
 }
 
 @media (min-width: 768px) {
@@ -12284,7 +12301,7 @@ img#footer-graphic {
     font-size: 2.5rem;
   }
   #intro-flower {
-    width: 45px;
+    width: 15px;
   }
 }
 @media (min-width: 992px) {
@@ -12300,7 +12317,7 @@ img#footer-graphic {
     font-size: 4rem;
   }
   #intro-flower {
-    width: 60px;
+    width: 25px;
   }
 }
 /* Style the side flowers SVG */
