@@ -27,7 +27,13 @@
   
   //this makes flower and text go on same line
   position: relative;
-  display: inline;
+  display: inline;  /* Keep inline style so it can naturally wrap */
+  
+}
+
+#mission-statement span{
+  display: inline-block; /* Inline-block to allow control of position (relative) */
+  position: relative;    /* Allows the rise animation to work */
 }
 
 #karli-vare{
@@ -41,7 +47,7 @@
 #intro-flower{
   width: 10px;
   position: relative;
-  right: 0px;
+  right: 2%;
 }
 
 ///MEDIA QUERY MEDIUM///
@@ -122,4 +128,8 @@
     top: 50px;
     left: 400px;
   }
+}
+
+span {
+  will-change: transform, opacity;
 }

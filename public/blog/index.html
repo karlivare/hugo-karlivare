@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 
-<link rel="stylesheet" text="text/css" href="/css/bundle.min.8b2fc489a569a1d9e5785f6254ae1e90a61f99baf17eb6349de3e2355ad1ea01.css" integrity="sha256-iy/EiaVpodnleF9iVK4ekKYfmbrxfrY0nePiNVrR6gE=">
+<link rel="stylesheet" text="text/css" href="/css/bundle.min.e0bf9aa2dbd7577a349297cf5f92775f744fcaa51b9788476be3f95eeba5ceea.css" integrity="sha256-4L&#43;aotvXV3o0kpfPX5J3X3RPyqUbl4hHa&#43;P5Xuulzuo=">
 <link rel="stylesheet" href="https://use.typekit.net/yxz0ome.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <link rel="icon" type="image/png" href="/favicon.png">
@@ -18,7 +18,13 @@
 
 <link rel="stylesheet" href="https://unpkg.com/swiper@8.4.7/swiper-bundle.min.css" />
 <script src="https://unpkg.com/swiper@8.4.7/swiper-bundle.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+
 
 
 <title>Portfolio - Karli Vare</title>
@@ -317,7 +323,7 @@
         <div class="col-12 col-md-7 p-5 d-flex flex-column justify-content-center">
           <h2 class="subtitle">Contact Me</h2>
           <div class="form-contactinfo-container d-flex flex-column flex-xl-row">
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-8">
               <form action="https://formsubmit.co/kmvare@gmail.com" method="POST" id="contact-form">
                 <input type="hidden" name="_subject" value="Karli Vare Portfolio - New Message">
                   <div class="form-group">
@@ -335,21 +341,25 @@
                   <button id="submit-btn" type="submit" class="btn btn-primary">Submit</button>
               </form>
             </div>
-            <div class="col-12 col-xl-6 info-container">
+            <div class="col-12 col-xl-4 info-container">
               <div class="contact-info d-flex flex-row align-items-start">
-                <img style="height: 25px;" src="/svg/envelope-solid.svg" alt="">
-                <div class="contact-text-info d-flex flex-column">
-                  <p class=".body" style="margin-bottom: 0rem;">Email</p>
-                  <a href="mailto:kmvare@gmail.com"><strong><p class=".body">kmvare@gmail.com</p></strong></a>
-                </div>
+                <a href="mailto:kmvare@gmail.com" id="email-link" class="d-flex flex-row align-items-start" style="text-decoration: none;">
+                  <img style="width: 25px;" src="/svg/envelope-solid.svg" alt="Envelope Icon">
+                  <div class="contact-text-info d-flex flex-column">
+                    <strong>
+                      <p style="margin-bottom: 0;">Email</p>
+                    </strong>
+                  </div>
+                </a>
               </div>
+              
               <div class="contact-info d-flex flex-row align-items-start">
-                <img style="height: 25px;" src="/svg/linkedin.svg" alt="">
-                <div class="contact-text-info d-flex flex-column">
-                  <p class=".body" style="margin-bottom: 0rem;">LinkedIn</p>
-                  <a id="linkedin-link" href="https://www.linkedin.com/in/karli-vare/" target="_blank"><strong><p class=".body">https://www.linkedin.com/in/karli-vare/</p></strong></a>
-                </div>
+                <a id="linkedin-link" href="https://www.linkedin.com/in/karli-vare/" target="_blank" class="d-flex align-items-start" style="text-decoration: none;">
+                  <img style="width: 25px;" src="/svg/linkedin.svg" alt="LinkedIn Icon">
+                  <strong>LinkedIn</strong>
+                </a>
               </div>
+              
             </div>
           </div>
         </div>
@@ -361,7 +371,7 @@
     
 gsap.to("#contactFlower1", {
     duration: 40,                 
-    rotation: 360,               
+    rotation: -360,               
     transformOrigin: "50% 50%",  
     repeat: -1,                  
     ease: "linear"               

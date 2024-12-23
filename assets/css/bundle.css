@@ -12273,7 +12273,12 @@ img#footer-graphic {
   margin-bottom: 0;
   z-index: 2;
   position: relative;
-  display: inline;
+  display: inline; /* Keep inline style so it can naturally wrap */
+}
+
+#mission-statement span {
+  display: inline-block; /* Inline-block to allow control of position (relative) */
+  position: relative; /* Allows the rise animation to work */
 }
 
 #karli-vare {
@@ -12287,7 +12292,7 @@ img#footer-graphic {
 #intro-flower {
   width: 10px;
   position: relative;
-  right: 0px;
+  right: 2%;
 }
 
 @media (min-width: 768px) {
@@ -12357,6 +12362,10 @@ img#footer-graphic {
     left: 400px;
   }
 }
+span {
+  will-change: transform, opacity;
+}
+
 .nutmeg-section {
   background-color: #fff3e8;
 }

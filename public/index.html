@@ -8,7 +8,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 
-<link rel="stylesheet" text="text/css" href="/css/bundle.min.8b2fc489a569a1d9e5785f6254ae1e90a61f99baf17eb6349de3e2355ad1ea01.css" integrity="sha256-iy/EiaVpodnleF9iVK4ekKYfmbrxfrY0nePiNVrR6gE=">
+<link rel="stylesheet" text="text/css" href="/css/bundle.min.e0bf9aa2dbd7577a349297cf5f92775f744fcaa51b9788476be3f95eeba5ceea.css" integrity="sha256-4L&#43;aotvXV3o0kpfPX5J3X3RPyqUbl4hHa&#43;P5Xuulzuo=">
 <link rel="stylesheet" href="https://use.typekit.net/yxz0ome.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <link rel="icon" type="image/png" href="/favicon.png">
@@ -19,7 +19,13 @@
 
 <link rel="stylesheet" href="https://unpkg.com/swiper@8.4.7/swiper-bundle.min.css" />
 <script src="https://unpkg.com/swiper@8.4.7/swiper-bundle.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+
 
 
 <title>Home - Karli Vare</title>
@@ -161,10 +167,15 @@
 </nav>
 
     <section id="intro-header" class="container-fluid d-flex align-items-end">
-    <div class="mx-auto">
-      <h1 id="mission-statement"><span id="karli-vare">Karli Vare</span> is an interactive media designer who believes in beautifully balanced design with technical feasibility.<span><img id="intro-flower" src="/svg/intro-flower.svg" alt=""></span></h1>
-      <div id="side-flowers">
-        <svg width="723" height="717" viewBox="0 0 723 717" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="mission-statement-container mx-auto">
+        <h1 id="mission-statement">
+            <span id="karli-vare">Karli Vare</span> is an interactive media designer who believes in beautifully balanced design with technical feasibility
+        </h1>
+        <img id="intro-flower" src="/svg/intro-flower.svg" alt="">
+    </div>
+    
+    <div id="side-flowers">
+        <svg id="side-flowers-svg" width="723" height="717" viewBox="0 0 723 717" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="sideFlower1" opacity="0.5" clip-path="url(#clip0_75_2)">
             <path d="M532.905 153.344C545.433 136.438 554.76 117.43 568.202 100.981C612.734 46.4243 698.141 16.6331 768.186 65.0667C808.238 92.6647 818.114 134.884 793.424 180.759C777.879 209.636 759.499 236.321 734.627 258.07C732.158 260.263 728.5 264.01 728.958 266.295C729.963 271.047 735.358 269.584 739.108 269.95C783.914 274.245 823.6 290.146 858.989 318.475C902.607 353.566 903.338 418.541 859.446 453.358C824.423 481.139 783.091 486.256 740.571 487.17C715.881 487.718 691.558 484.063 667.417 479.311C663.028 478.489 656.901 474.285 653.883 479.494C652.42 482.053 655.346 487.901 657.45 491.648C680.493 532.862 685.888 577.458 681.316 623.424C676.104 675.513 635.961 715.905 586.856 716.91C550.462 717.732 520.926 700.278 498.706 672.68C467.341 633.75 454.264 587.236 448.595 538.254C446.218 517.51 446.583 517.967 428.661 528.384C385.591 553.515 340.967 574.625 289.577 574.351C248.245 574.168 212.216 561.009 191.002 523.175C167.775 481.778 170.336 439.833 195.574 399.898C220.903 359.781 260.224 338.031 303.293 322.404C321.307 315.916 339.138 308.149 358.524 306.138C361.999 305.773 365.748 303.945 366.297 300.289C367.028 295.903 363.188 292.796 360.079 290.968C341.607 280.185 325.239 266.66 309.785 252.13C272.843 217.587 242.484 179.114 240.564 125.472C238.918 79.1399 277.049 25.4974 320.118 8.59129C375.167 -13.0667 435.61 7.86022 473.559 51.4505C497.06 78.5002 514.708 108.109 524.126 142.652C525.224 146.856 528.15 150.419 532.996 153.161V153.344H532.905ZM547.079 391.491C574.054 373.58 583.93 332.914 567.47 307.966C551.651 284.023 517.634 278.266 492.762 295.172C465.603 313.632 455.545 354.389 472.004 378.88C487.641 402.091 522.389 407.94 547.17 391.491H547.079Z" fill="#6FA7B3"/>
             <path d="M567.379 307.965C583.93 332.913 573.963 373.578 546.988 391.49C522.207 407.939 487.459 402.09 471.822 378.879C455.362 354.388 465.421 313.63 492.579 295.171C517.452 278.173 551.468 284.022 567.288 307.965H567.379Z" fill="#6FA7B3"/>
@@ -182,46 +193,103 @@
             </clipPath>
             </defs>
             </svg>
-            
-      </div>
     </div>
 </section>
 
 
 <script>
     
-gsap.to("#intro-flower", {
-    duration: 40,                 
-    rotation: 360,               
-    transformOrigin: "50% 50%",  
-    repeat: -1,                  
-    ease: "linear"               
+    
+    gsap.to("#sideFlower1", {
+        duration: 80,
+        rotation: -360,
+        transformOrigin: "50% 50%",
+        repeat: -1,
+        ease: "linear"
+    });
+    
+    gsap.to("#sideFlower2", {
+        duration: 80,
+        rotation: 360,
+        transformOrigin: "50% 50%",
+        repeat: -1,
+        ease: "linear"
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const missionStatement = document.querySelector('#mission-statement');
+    const karliVareText = document.querySelector('#karli-vare');
+    const introFlower = document.querySelector('#intro-flower');
+
+    
+    gsap.set(introFlower, {
+        opacity: 0,
+        y: 25,
+    });
+
+    const karliVare = missionStatement.querySelector('#karli-vare');
+    let missionStatementText = missionStatement.innerText;
+
+    
+    missionStatementText = missionStatementText.replace(karliVare.innerText, '');
+
+    missionStatement.innerHTML = '';
+    missionStatement.appendChild(karliVare);
+
+    
+    const words = missionStatementText.split(' ');
+
+    words.forEach(word => {
+        const wordSpan = document.createElement('span');
+        wordSpan.innerText = word;
+        wordSpan.style.fontStyle = 'italic';
+        wordSpan.style.fontWeight = 'normal';
+        wordSpan.style.position = 'relative'; 
+        wordSpan.style.marginRight = '0.05em'; 
+        missionStatement.appendChild(wordSpan);
+
+        
+        missionStatement.appendChild(document.createTextNode(' '));
+    });
+
+    
+    gsap.set(missionStatement.querySelectorAll('span'), {
+        opacity: 0,
+        y: 25,  
+    });
+
+    
+    gsap.to(missionStatement.querySelectorAll('span'), {
+        opacity: 1,
+        y: 0,
+        stagger: {
+            amount: 1,
+            ease: "power4.in"
+        },
+        duration: 1
+    });
+
+    
+    gsap.to(introFlower, {
+        delay: 1,
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        ease: "none"
+    });
 });
 
-    
-    
-    gsap.from("#mission-statement", {
-    opacity: 0,                   
-    y: 30,                        
-    duration: 2,                
-    ease: "power2.out"            
-    });
+</script>
+
+
+
+
+
+
 
     
-    gsap.from("#sideFlower1", {
-    opacity: 0,                   
-    y: 30,                        
-    duration: 2,                
-    ease: "power2.out"            
-    });
-    gsap.from("#sideFlower2", {
-    opacity: 0,                   
-    y: 30,                        
-    duration: 2,                
-    ease: "power2.out"            
-    });
-
-  </script>
     
     <section id="featured-section" class="container-fluid">
     <div id="featured-container" class="container">
@@ -301,6 +369,31 @@ gsap.to("#intro-flower", {
       <a id="explore-all-work" href="/blog" class="btn btn-primary">Explore All Work</a>
     </div>
   </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    
+    gsap.registerPlugin(ScrollTrigger);
+
+    
+    gsap.from("#featured-work-row .col-lg-4", {
+      scrollTrigger: {
+      trigger: "#featured-section",
+      start: "top+=300 bottom",
+      markers: false, 
+      },
+      y: 25, 
+      opacity: 0, 
+      duration: 2, 
+      stagger: 0.5, 
+      ease: "power2.out", 
+    });
+  });
+
+  console.log("GSAP:", gsap);
+  console.log("ScrollTrigger:", gsap.plugins.ScrollTrigger);
+
+  </script>
     <section class="container-fluid nutmeg-section">
   <div id="nutmeg-spreads-title" class="container">
       <h2 class="subtitle">Nutmeg Publishing Spreads</h2>
@@ -327,7 +420,7 @@ gsap.to("#intro-flower", {
         <div class="col-12 col-md-7 p-5 d-flex flex-column justify-content-center">
           <h2 class="subtitle">Contact Me</h2>
           <div class="form-contactinfo-container d-flex flex-column flex-xl-row">
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-8">
               <form action="https://formsubmit.co/kmvare@gmail.com" method="POST" id="contact-form">
                 <input type="hidden" name="_subject" value="Karli Vare Portfolio - New Message">
                   <div class="form-group">
@@ -345,21 +438,25 @@ gsap.to("#intro-flower", {
                   <button id="submit-btn" type="submit" class="btn btn-primary">Submit</button>
               </form>
             </div>
-            <div class="col-12 col-xl-6 info-container">
+            <div class="col-12 col-xl-4 info-container">
               <div class="contact-info d-flex flex-row align-items-start">
-                <img style="height: 25px;" src="/svg/envelope-solid.svg" alt="">
-                <div class="contact-text-info d-flex flex-column">
-                  <p class=".body" style="margin-bottom: 0rem;">Email</p>
-                  <a href="mailto:kmvare@gmail.com"><strong><p class=".body">kmvare@gmail.com</p></strong></a>
-                </div>
+                <a href="mailto:kmvare@gmail.com" id="email-link" class="d-flex flex-row align-items-start" style="text-decoration: none;">
+                  <img style="width: 25px;" src="/svg/envelope-solid.svg" alt="Envelope Icon">
+                  <div class="contact-text-info d-flex flex-column">
+                    <strong>
+                      <p style="margin-bottom: 0;">Email</p>
+                    </strong>
+                  </div>
+                </a>
               </div>
+              
               <div class="contact-info d-flex flex-row align-items-start">
-                <img style="height: 25px;" src="/svg/linkedin.svg" alt="">
-                <div class="contact-text-info d-flex flex-column">
-                  <p class=".body" style="margin-bottom: 0rem;">LinkedIn</p>
-                  <a id="linkedin-link" href="https://www.linkedin.com/in/karli-vare/" target="_blank"><strong><p class=".body">https://www.linkedin.com/in/karli-vare/</p></strong></a>
-                </div>
+                <a id="linkedin-link" href="https://www.linkedin.com/in/karli-vare/" target="_blank" class="d-flex align-items-start" style="text-decoration: none;">
+                  <img style="width: 25px;" src="/svg/linkedin.svg" alt="LinkedIn Icon">
+                  <strong>LinkedIn</strong>
+                </a>
               </div>
+              
             </div>
           </div>
         </div>
@@ -371,7 +468,7 @@ gsap.to("#intro-flower", {
     
 gsap.to("#contactFlower1", {
     duration: 40,                 
-    rotation: 360,               
+    rotation: -360,               
     transformOrigin: "50% 50%",  
     repeat: -1,                  
     ease: "linear"               
@@ -386,73 +483,6 @@ gsap.to("#contactFlower2", {
   </script>
 
   
-
-     
-    <script>
-    
-    var userAgent = navigator.userAgent;
-
-    
-    console.log('User Agent: ' + userAgent);
-  
-
-    
-    function checkChromeVersion(version) {
-        return userAgent.includes('Chrome/' + version);
-    }
-
-    
-    var isSafari = /^((?!chrome|android).)*safari/i.test(userAgent);
-
-    
-    var isChrome = userAgent.includes('Chrome');
-    var isMobile = /(Mobi|CriOS|Mobile)/i.test(userAgent);
-    var isDesktopChrome = isChrome && !isMobile;
-
-    
-    const container = document.getElementById("flower-svg");
-    const clip = document.getElementById("clip");
-
-    
-    function setTransformOrigin() {
-        const containerRect = container.getBoundingClientRect();
-        const centerX = containerRect.width / 2;
-        const centerY = containerRect.height / 2;
-
-        
-        if (isSafari) {
-            clip.style.transformOrigin = `${centerX}px ${centerY}px`;
-            console.log("Safari transform origin set:", clip.style.transformOrigin);
-        } else if (isDesktopChrome) {
-            clip.style.transformOrigin = `${centerX*2}px ${centerY*2}px`;
-            clip.style.animation = 'none';
-            console.log("Desktop Chrome animation disabled");
-        } else if (isChrome && isMobile) {
-            clip.style.transformOrigin = `${centerX}px ${centerY}px`;
-            console.log("Mobile Chrome transform origin set:", clip.style.transformOrigin);
-        } else {
-            
-            clip.style.transformOrigin = `${centerX}px ${centerY}px`;
-            console.log("Default transform origin set:", clip.style.transformOrigin);
-        }
-    }
-
-    
-    document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(function() {
-            setTransformOrigin();
-            clip.classList.add('animate-flower');
-        }, 1000); 
-    });
-
-    
-    window.addEventListener('resize', setTransformOrigin);
-</script>
-
-    
-    
-    
-    
 <footer id="footer" class="container-fluid text-center p-5">
     <img id="footer-graphic" src="/svg/flower-triad.svg" alt="">
     <div id="footer-text">
