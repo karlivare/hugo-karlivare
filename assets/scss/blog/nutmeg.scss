@@ -32,10 +32,15 @@
   }
 }
 
-.img-nutmeg{
+img.img-nutmeg{
   border-radius: 8px;
   border: 1px solid rgba(72,124,137,.5);
-  width: 200px;
+  width: 100%;
+}
+@include media-breakpoint-up(sm) {
+  img.img-nutmeg{
+    width: 200px;
+  }
 }
 
 
