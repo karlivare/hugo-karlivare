@@ -57,14 +57,7 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
-      # Upload Hugo build for debugging
-      - name: Upload Hugo build
-        uses: actions/upload-artifact@v2
-        with:
-          name: hugo-build
-          path: ./public
-
-      # Upload to GitHub Pages
+      # Upload Hugo build to GitHub Pages (use the correct action here)
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v1
         with:
