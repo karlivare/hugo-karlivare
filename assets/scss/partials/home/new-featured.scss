@@ -22,10 +22,6 @@ img.card-img-top{
     transition: transform 0.2s ease-in-out; /* Smooth transition */
 }
 
-.featured-img:hover{
-    transform: scale(1.1); /* Scale up by 10% on hover */
-}
-
 #featured-work-row{
     gap:1rem;
 }
@@ -59,9 +55,15 @@ h3.all-caps-text{
     transition: transform 0.3s ease; /* Smooth transition for movement */
 }
 
-.all-caps-text:hover .arrow-icon {
+
+.featured-card-hover-state:hover .featured-img {
+    transform: scale(1.1); /* Scale the image */
+}
+
+.featured-card-hover-state:hover .arrow-icon {
     transform: translateX(4px); /* Move the arrow 4px to the right */
 }
+
 
 .card-body, .portfolio-card-title,
 .portfolio-card-subtitle,
@@ -70,7 +72,7 @@ h3.all-caps-text{
 }
 
 .featured-card-body, .view-project{
-    cursor: pointer; /* Changes cursor to pointer on hover */
+    cursor: pointer;
 }
 
 .all-caps-text::before {
