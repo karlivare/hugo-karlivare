@@ -47,17 +47,38 @@
   </section>
 
   <!--Spread container, dynamically importing from json-->
-<section class="container my-4">
-  <div class="d-flex flex-wrap justify-content-center">
-    {{ range .Site.Data.portfolio }}
-      {{ if eq .category "Nutmeg" }}
+  <section class="container my-4">
+    <div class="d-flex flex-wrap justify-content-center">
+      {{ $portfolioData := slice
+        (dict "title" "Diving Deeper" "image" "/portfolio-img/diving-deeper-thumbnail.jpg")
+        (dict "title" "Serving Across the World" "image" "/portfolio-img/serving-across-the-world-thumbnail.jpg")
+        (dict "title" "Lip Sync" "image" "/portfolio-img/lipsync-thumbnail.jpg")
+        (dict "title" "Gunk House" "image" "/portfolio-img/gunkhouse-small-thumbnail-final.jpg")
+        (dict "title" "Bomba Celebration" "image" "/portfolio-img/bomba-celebration-small-thumbnail-final.jpg")
+        (dict "title" "Block Party" "image" "/portfolio-img/block-party-thumbnail.jpg")
+        (dict "title" "Battle of the Bands" "image" "/portfolio-img/battle-of-the-bands-thumbnail.jpg")
+        (dict "title" "Staff/Letter from the Editor" "image" "/portfolio-img/Staff-LetterFromEditor-thumbnail.jpg")
+        (dict "title" "Our Spaces" "image" "/portfolio-img/OurSpaces-thumbnail.jpg")
+        (dict "title" "Ted's Concept Spread" "image" "/portfolio-img/teds-concept-small-thumbnail.jpg")
+        (dict "title" "Biden at UConn" "image" "/portfolio-img/nutmeg-biden.jpg")
+        (dict "title" "Greenhouse" "image" "/portfolio-img/nutmeg-greenhousespread-thumbnail.jpg")
+        (dict "title" "LC Talks" "image" "/portfolio-img/lc-talks-small-thumbnail.jpg")
+        (dict "title" "Late Night Carnival" "image" "/portfolio-img/nutmeg-latenightcarnival-thumbnail.jpg")
+        (dict "title" "Huskython" "image" "/portfolio-img/nutmeg-huskython1-thumbnail.jpg")
+        (dict "title" "Senior Quotes" "image" "/portfolio-img/nutmeg-seniorquote1-thumbnail.jpg")
+        (dict "title" "Covid-19 Timeline" "image" "/portfolio-img/covid-timeline1-thumbnail.jpg")
+        (dict "title" "Winter Scenery" "image" "/portfolio-img/nutmeg-winter-thumbnail.jpg")
+      }}
+      
+      
+      {{ range $portfolioData }}
         <div class="p-2">
           <img src="{{ .image }}" class="img-nutmeg" alt="{{ .title }}">
         </div>
       {{ end }}
-    {{ end }}
-  </div>
-</section>
+    </div>
+  </section>
+  
 
 
   
