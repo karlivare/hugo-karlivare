@@ -1,4 +1,5 @@
-{{ $portfolioData := getJSON "/data/portfolio.json" }}
+{{ $portfolioDataFile := resources.Get "data/portfolio.json" }}
+{{ $portfolioData := $portfolioDataFile | transform.Unmarshal }}
 
 {{ $targetCategory := "main-content" }}
 
