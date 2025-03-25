@@ -89,7 +89,7 @@
 }
 
 .slide-body{
-  height: 250px;
+  height: 268px;
 }
 @include media-breakpoint-up(md) {
   .slide-body{
@@ -146,21 +146,7 @@
     height: 100%;
   }
 
-  //swiper pagination
-  .swiper-pagination {
-  position: absolute;
-  bottom: -20px; /* Adjust based on your layout */
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  pointer-events: none; /* Prevents pagination from interfering with slide content */
-}
 
-.swiper-pagination-bullet {
-  background: #000; /* Pagination bullet color */
-  margin: 0 4px; /* Space between bullets */
-}
 
   
   
