@@ -12623,6 +12623,10 @@ div#portfolio-content.container.grid {
     gap: 3rem;
   }
 }
+html {
+  overflow-x: hidden;
+}
+
 .swiper {
   width: 100vw;
   height: auto;
@@ -12801,6 +12805,10 @@ img.slide-image {
 .swiper-pagination-bullet {
   background: #000; /* Pagination bullet color */
   margin: 0 4px; /* Space between bullets */
+}
+
+html {
+  overflow-x: hidden;
 }
 
 #problem-container, #impact-container {
