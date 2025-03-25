@@ -12623,7 +12623,7 @@ div#portfolio-content.container.grid {
     gap: 3rem;
   }
 }
-html {
+html, body {
   overflow-x: hidden;
 }
 

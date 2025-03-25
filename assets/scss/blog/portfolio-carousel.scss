@@ -1,8 +1,8 @@
 //adding this html rule so that card overflow on carousel can still be visible but user cannot horizontal scroll
-html {
+html, body{
     overflow-x: hidden;
   } 
-  
+
 .swiper {
     width: 100vw;
     height: auto;
