@@ -12628,6 +12628,10 @@ div#portfolio-content.container.grid {
   height: auto;
 }
 
+.swiper-container {
+  overflow: visible !important;
+}
+
 div.slide-body {
   gap: 8px;
 }
