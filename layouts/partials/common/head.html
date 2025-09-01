@@ -23,22 +23,52 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
 <script>
-    document.getElementById("contactLink").addEventListener("click", function (e) {
-    e.preventDefault();
+  document.addEventListener("DOMContentLoaded", function () {
+    const contactLink = document.getElementById("contactLink");
 
-    // Check if we're on the homepage
-    if (window.location.pathname === "/" || window.location.pathname === "") {
-      // If on homepage, directly scroll to the form
-      const targetElement = document.getElementById("form-container");
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth" });
+    // Handle click on nav link
+    if (contactLink) {
+      contactLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        const path = window.location.pathname;
+
+        if (path.startsWith("/blog")) {
+          // On a blog page → scroll to blog's form
+          const blogForm = document.getElementById("form-container");
+          if (blogForm) {
+            blogForm.scrollIntoView({ behavior: "smooth" });
+          } else {
+            // fallback to homepage
+            window.location.assign("/#form-container");
+          }
+        } else if (path === "/" || path === "") {
+          // Already on homepage → smooth scroll
+          const homeForm = document.getElementById("form-container");
+          if (homeForm) {
+            homeForm.scrollIntoView({ behavior: "smooth" });
+          }
+        } else {
+          // Any other page → go to homepage form
+          window.location.assign("/#form-container");
+        }
+      });
+    }
+
+    // Handle arriving on homepage with #form-container in URL
+    if (window.location.hash === "#form-container") {
+      const form = document.getElementById("form-container");
+      if (form) {
+        setTimeout(() => {
+          form.scrollIntoView({ behavior: "smooth" });
+        }, 100); // allow DOM + browser anchor jump to settle
       }
-    } else {
-      // Otherwise, redirect to homepage and scroll to the form
-      window.location.href = "/#form-container";
     }
   });
 </script>
+
+
+
+
 
 
 <title>

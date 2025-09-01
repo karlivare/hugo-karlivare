@@ -12807,10 +12807,6 @@ img.slide-image {
   margin: 0 4px; /* Space between bullets */
 }
 
-html {
-  overflow-x: hidden;
-}
-
 #problem-container, #impact-container {
   background-color: #487c89;
   border-radius: 16px;
