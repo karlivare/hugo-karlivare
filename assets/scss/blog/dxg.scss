@@ -1,0 +1,138 @@
+#problem-container, #impact-container{
+    background-color: $blue;
+    border-radius: 16px;
+    color: white;
+    padding: 2rem 2rem;
+}
+
+#context-text{
+    color: $brown;
+}
+
+#context-img-container{
+  margin-top: 1rem;
+  align-self: center;
+}
+@include media-breakpoint-up(md) {
+  #context-img-container{
+    margin-top: 0rem;
+  }
+}
+
+#action-text{
+  margin-bottom: 1rem;
+}
+@include media-breakpoint-up(md) {
+  #action-text{
+    margin-bottom: 0rem;
+  }
+}
+
+
+#meta-text-container> *{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#meta-text-container{
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+@include media-breakpoint-up(lg) {
+  #meta-text-container{
+    gap: 2rem;
+  }
+}
+
+.meta-text{
+  background-color: rgba($blue, 0.25);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.carousel-img-container{
+    width: 302px;
+    height: 201px;
+}
+
+@include media-breakpoint-up(md) {
+  .carousel-img-container{
+    width: 604px;
+    height: 402px;
+}
+}
+
+@include media-breakpoint-up(xl) {
+  .carousel-img-container{
+    width: 907px;
+    height: 603px;
+}
+}
+
+.slide-body{
+  height: 250px;
+}
+@include media-breakpoint-up(md) {
+  .slide-body{
+    height: auto;
+  }
+}
+
+//swiper configuration
+.swiper-container {
+    width: 100%; /* Full-width container */
+    overflow: hidden;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Smoother transitions */
+    gap: 1rem;
+  }
+
+  #video-container{
+    gap: 1rem;
+  }
+
+  .OE-video{
+    max-height: 650px;
+    border-radius: 16px;
+    border: 1px solid rgba(72,124,137,.5)
+  }
+  
+  
+  .slide-text {
+    // height: 175px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  img.slide-image{
+    width: 100%;
+    height: 100%;
+  }
+
+  //swiper pagination
+  .swiper-pagination {
+  position: absolute;
+  bottom: -20px; /* Adjust based on your layout */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  pointer-events: none; /* Prevents pagination from interfering with slide content */
+}
+
+.swiper-pagination-bullet {
+  background: #000; /* Pagination bullet color */
+  margin: 0 4px; /* Space between bullets */
+}
+
+  
+  
+  

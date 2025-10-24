@@ -1,0 +1,85 @@
+#featured-section {
+    background-color: #E4EFF1;
+}
+
+#featured-container{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
+} 
+
+img.card-img-top{
+    height: 275px;
+    object-fit: cover;
+}
+
+.featured-card{
+    overflow: hidden;
+}
+
+.featured-img{
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+
+#featured-work-row{
+    gap:1rem;
+}
+
+div.card.h-100{
+    border: 1px solid rgba(72,124,137,.5) !important;
+}
+
+@include media-breakpoint-up(lg) {
+    #featured-work-row{
+        gap:0rem;
+    }
+}
+
+h3.all-caps-text{
+    color: $blue;
+}
+
+.featured-title{
+    font-family: ofelia-display, sans-serif;
+    font-style: normal;
+    color: $brown;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+
+//arrow icon animation and pseudoelement padding
+.arrow-icon {
+    margin-left: 8px; /* Space between text and icon */
+    transition: transform 0.3s ease; /* Smooth transition for movement */
+}
+
+
+.featured-card-hover-state:hover .featured-img {
+    transform: scale(1.1); /* Scale the image */
+}
+
+.featured-card-hover-state:hover .arrow-icon {
+    transform: translateX(4px); /* Move the arrow 4px to the right */
+}
+
+
+.card-body, .portfolio-card-title,
+.portfolio-card-subtitle,
+.all-caps-text {
+    position: relative; /* Make them positioning contexts for pseudo-elements */
+}
+
+.featured-card-body, .view-project{
+    cursor: pointer;
+}
+
+.all-caps-text::before {
+    content: '';
+    position: absolute;
+    top: -24px; /* Adjust to extend the clickable area above */
+    left: -24px; /* Adjust to extend the clickable area to the left */
+    right: -24px; /* Adjust to extend the clickable area to the right */
+    bottom: -24px; /* Adjust to extend the clickable area below */
+}

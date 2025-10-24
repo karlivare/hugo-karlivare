@@ -1,0 +1,75 @@
+#problem-container, #impact-container{
+    background-color: $blue;
+    border-radius: 16px;
+    color: white;
+    padding: 2rem 2rem;
+}
+
+
+#context-text{
+    color: $brown;
+}
+
+.context-img{
+  border: 1px solid rgba(72,124,137,.5);
+  border-radius: 16px !important;
+}
+
+.context-img-container{
+  margin-top: 1rem;
+  align-self: center;
+}
+@include media-breakpoint-up(md) {
+  #context-img-container{
+    margin-top: 0rem;
+  }
+}
+
+#action-text{
+  margin-bottom: 1rem;
+}
+@include media-breakpoint-up(md) {
+  #action-text{
+    margin-bottom: 0rem;
+  }
+}
+
+
+#meta-text-container> *{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#meta-text-container{
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+#title-links{
+  gap: 2rem;
+}
+
+@include media-breakpoint-up(lg) {
+  #meta-text-container{
+    gap: 2rem;
+  }
+
+  #title-links{
+    gap: 0rem;
+  }
+}
+
+.meta-text{
+  background-color: rgba($blue, 0.25);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: default;
+}
+
+
+
+
+
+  
+  
+  

@@ -1,0 +1,52 @@
+#problem-container, #impact-container{
+    background-color: $blue;
+    border-radius: 16px;
+    color: white;
+    padding: 2rem 2rem;
+}
+
+#context-text{
+    color: $brown;
+}
+
+.snaps-video{
+  max-height: 650px;
+  border-radius: 16px;
+  border: 1px solid rgba(72,124,137,.5)
+}
+
+#context-img{
+  border: 1px solid rgba(72,124,137,.5);
+}
+
+#context-img-container{
+  margin-top: 1rem;
+  align-self: center;
+}
+@include media-breakpoint-up(md) {
+  #context-img-container{
+    margin-top: 0rem;
+  }
+}
+
+#action-text{
+  margin-bottom: 1rem;
+}
+@include media-breakpoint-up(md) {
+  #action-text{
+    margin-bottom: 0rem;
+  }
+}
+
+.img-nutmeg{
+  border-radius: 8px;
+  border: 1px solid rgba(72,124,137,.5);
+  width: 200px;
+}
+
+
+
+
+  
+  
+  

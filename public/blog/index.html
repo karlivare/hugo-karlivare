@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+<link rel="stylesheet" text="text/css" href="/css/bundle.min.21d881be14ffd9e74aa842fef71e5010019025afbd70ec01e3e750044bbe8609.css" integrity="sha256-IdiBvhT/2edKqEL&#43;9x5QEAGQJa&#43;9cOwB4&#43;dQBEu&#43;hgk=">
+<link rel="stylesheet" href="https://use.typekit.net/yxz0ome.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="icon" type="image/png" href="/favicon.png">
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/swiper@8.4.7/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper@8.4.7/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const contactLink = document.getElementById("contactLink");
+
+    
+    if (contactLink) {
+      contactLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        const path = window.location.pathname;
+
+        if (path.startsWith("/blog")) {
+          
+          const blogForm = document.getElementById("form-container");
+          if (blogForm) {
+            blogForm.scrollIntoView({ behavior: "smooth" });
+          } else {
+            
+            window.location.assign("/#form-container");
+          }
+        } else if (path === "/" || path === "") {
+          
+          const homeForm = document.getElementById("form-container");
+          if (homeForm) {
+            homeForm.scrollIntoView({ behavior: "smooth" });
+          }
+        } else {
+          
+          window.location.assign("/#form-container");
+        }
+      });
+    }
+
+    
+    if (window.location.hash === "#form-container") {
+      const form = document.getElementById("form-container");
+      if (form) {
+        setTimeout(() => {
+          form.scrollIntoView({ behavior: "smooth" });
+        }, 100); 
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+<title>Portfolio - Karli Vare</title>
+</head>
+  <body><nav class="navbar navbar-expand-md p-4">
+  <div class="container-fluid">
+    <a class="navbar-brand logo" href="/">
+
+      <svg class="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 523.1 468.7" style="enable-background:new 0 0 523.1 468.7;" xml:space="preserve">
+          <style type="text/css">
+            .st0{fill:#296EB4;}
+            .st1{fill:#6FA7B3;}
+            .st2{fill:#D1F7FF;}
+            .st3{fill:#473D33;}
+          </style>
+          <g id="big-flower">
+            <g id="karlivare-logo">
+              <path class="st0" d="M295.9,160.6c-1.5-3-1.7-5.8-0.8-8.2c7-20.4,8.3-41.2,5.7-62.6c-4.1-34.6-27.1-65.5-61.9-73.3
+                c-27.2-6.1-64.4,7.7-79.2,31.3c-17.2,27.4-15.1,56.8-8.5,86.6c2.8,12.5,6.3,24.8,11.9,36.4c1,2,1.8,4.8,0,6.8
+                c-1.5,1.6-4,1.3-5.9,0.3c-10.4-5.5-21.9-7.7-33-10.6c-26.7-6.9-53.7-9.3-79.9,2.1c-26.1,11.4-41.6,31.4-44.1,59.9
+                C-2,255.3,11.5,274,32,288.2c25.5,17.5,54.9,22.1,84.8,24.2c12.5,0.9,12.4,0.5,6.6,11.6c-13.8,26.3-23,53.9-20.6,83.9
+                c1.7,21.3,10.5,40,28.9,51.9c24.8,16.1,58.5,9.6,78.7-14.6c17.9-21.4,30.3-45.4,32.8-73.8c0.2-2.6,0.8-6.5,2.4-7.3
+                c3.3-1.6,4.9,2.6,6.8,4.5c10.4,10.6,21.3,20.6,33.8,28.7c21.5,13.9,43.8,25.4,70.6,23.4c33.6-2.5,55.3-35.1,45.5-67.4
+                c-8-26.1-22.4-47.5-43.2-64.8c-1.7-1.4-4.9-2.5-3.8-5.3c0.5-1.3,3.6-1.9,5.6-2.2c19.8-2.5,38-9.5,55.5-18.6
+                c27.8-14.5,37.2-38.9,26.6-66.2c-18.5-47.9-71.1-61.9-111.8-49.8C319,150.1,307.9,156.5,295.9,160.6L295.9,160.6z"/>
+              <path class="st1" d="M295.9,160.6c12-4.2,23.1-10.5,35.3-14.1c40.7-12.1,93.3,2,111.8,49.8c10.6,27.3,1.2,51.7-26.6,66.2
+                c-17.5,9.1-35.7,16.2-55.5,18.6c-2,0.2-5,0.9-5.6,2.2c-1.1,2.7,2,3.8,3.8,5.3c20.9,17.3,35.2,38.7,43.2,64.8
+                c9.9,32.2-11.9,64.9-45.5,67.4c-26.9,2-49.2-9.5-70.6-23.4c-12.5-8.1-23.4-18.1-33.8-28.7c-1.9-1.9-3.5-6.1-6.8-4.5
+                c-1.6,0.8-2.1,4.7-2.4,7.3c-2.5,28.3-14.9,52.4-32.8,73.8c-20.2,24.2-53.9,30.7-78.7,14.6c-18.4-11.9-27.2-30.6-28.9-51.9
+                c-2.4-30,6.8-57.6,20.6-83.9c5.8-11.1,5.9-10.8-6.6-11.6c-30-2.1-59.3-6.7-84.8-24.2C11.5,274-2,255.4,0.2,229.3
+                c2.5-28.5,17.9-48.6,44-59.9c26.2-11.4,53.2-8.9,79.9-2.1c11.2,2.9,22.7,5.1,33,10.6c1.9,1,4.3,1.3,5.9-0.3c1.8-1.9,1-4.8,0-6.8
+                c-5.6-11.6-9.1-23.9-11.9-36.4c-6.6-29.7-8.8-59.2,8.5-86.6c14.9-23.6,52.1-37.5,79.2-31.3c34.7,7.8,57.8,38.7,61.9,73.3
+                c2.5,21.4,1.3,42.2-5.7,62.6C294.2,154.9,294.4,157.7,295.9,160.6L295.9,160.6z M222.3,284.1c19.5,0.2,38.2-16.7,38.5-34.7
+                c0.2-17.3-14.7-31.7-32.9-31.7c-19.8,0-38.6,16.9-38.7,34.7C189.1,269.2,204.4,283.9,222.3,284.1L222.3,284.1z"/>
+              <path class="st2" d="M260.7,249.4c-0.2,18.1-18.9,34.9-38.4,34.7c-17.9-0.2-33.2-14.9-33.2-31.7c0.1-17.8,18.9-34.7,38.7-34.7
+                C246,217.7,261,232.1,260.7,249.4L260.7,249.4z"/>
+            </g>
+          </g>
+          <g id="small-flower">
+            <g>
+              <path class="st1" d="M447.1,32.5c2.7-3.6,4.6-7.6,7.5-11.1c9.4-11.6,27.5-17.9,42.3-7.6c8.5,5.9,10.6,14.8,5.3,24.5
+                c-3.3,6.1-7.2,11.8-12.4,16.4c-0.5,0.5-1.3,1.2-1.2,1.7c0.2,1,1.4,0.7,2.1,0.8c9.5,0.9,17.9,4.3,25.4,10.3
+                c9.2,7.4,9.4,21.2,0.1,28.6c-7.4,5.9-16.2,7-25.2,7.2c-5.2,0.1-10.4-0.7-15.5-1.7c-0.9-0.2-2.2-1.1-2.9,0
+                c-0.3,0.5,0.3,1.8,0.8,2.6c4.9,8.7,6,18.2,5,27.9c-1.1,11-9.6,19.6-20,19.8c-7.7,0.2-14-3.5-18.7-9.4c-6.6-8.2-9.4-18.1-10.6-28.5
+                c-0.5-4.4-0.4-4.3-4.2-2.1c-9.1,5.3-18.6,9.8-29.5,9.7c-8.8-0.1-16.4-2.8-20.9-10.8c-4.9-8.8-4.4-17.7,1-26.1
+                c5.4-8.5,13.7-13.1,22.8-16.4c3.8-1.4,7.6-3,11.7-3.4c0.7-0.1,1.5-0.5,1.6-1.2c0.1-0.9-0.6-1.6-1.3-2c-3.9-2.3-7.4-5.2-10.6-8.2
+                c-7.8-7.3-14.2-15.5-14.6-26.8c-0.4-9.8,7.7-21.2,16.8-24.8c11.6-4.6,24.4-0.2,32.5,9.1c5,5.7,8.7,12,10.7,19.3
+                C445.4,31.1,446,31.9,447.1,32.5L447.1,32.5z M450.1,82.9c5.7-3.8,7.8-12.4,4.3-17.7c-3.4-5.1-10.5-6.3-15.8-2.7
+                c-5.7,3.9-7.9,12.5-4.4,17.7C437.5,85.2,444.9,86.4,450.1,82.9L450.1,82.9z"/>
+              <path class="st2" d="M454.4,65.2c3.5,5.3,1.4,13.9-4.3,17.7c-5.2,3.5-12.6,2.2-15.9-2.7c-3.5-5.2-1.4-13.8,4.4-17.7
+                C443.9,58.9,451.1,60.1,454.4,65.2L454.4,65.2z"/>
+            </g>
+          </g>
+          <g id="kv">
+            <g>
+              <path class="st3" d="M69.8,138.5l-37.3-19.9l8.1,28.6l-6.4,3.4L12.6,74.6l6.9-1.9l12.7,44.9l21-30.9l9.3-2.6L41,115.4l37.1,22.3
+                L69.8,138.5L69.8,138.5z"/>
+              <path class="st3" d="M123.1,84.1l-25.2,54.2l-1.4-0.1L71.2,84.1h8.3L97.2,124l17.7-39.9L123.1,84.1L123.1,84.1z"/>
+            </g>
+          </g>
+</svg>
+
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+    
+            <svg id="offcanvasNavbarLabel" class="offcanvas-title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 523.1 468.7" style="enable-background:new 0 0 523.1 468.7;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#296EB4;}
+                  .st1{fill:#6FA7B3;}
+                  .st2{fill:#D1F7FF;}
+                  .st3{fill:#473D33;}
+                </style>
+                <g id="big-flower">
+                  <g id="karlivare-logo">
+                    <path class="st0" d="M295.9,160.6c-1.5-3-1.7-5.8-0.8-8.2c7-20.4,8.3-41.2,5.7-62.6c-4.1-34.6-27.1-65.5-61.9-73.3
+                      c-27.2-6.1-64.4,7.7-79.2,31.3c-17.2,27.4-15.1,56.8-8.5,86.6c2.8,12.5,6.3,24.8,11.9,36.4c1,2,1.8,4.8,0,6.8
+                      c-1.5,1.6-4,1.3-5.9,0.3c-10.4-5.5-21.9-7.7-33-10.6c-26.7-6.9-53.7-9.3-79.9,2.1c-26.1,11.4-41.6,31.4-44.1,59.9
+                      C-2,255.3,11.5,274,32,288.2c25.5,17.5,54.9,22.1,84.8,24.2c12.5,0.9,12.4,0.5,6.6,11.6c-13.8,26.3-23,53.9-20.6,83.9
+                      c1.7,21.3,10.5,40,28.9,51.9c24.8,16.1,58.5,9.6,78.7-14.6c17.9-21.4,30.3-45.4,32.8-73.8c0.2-2.6,0.8-6.5,2.4-7.3
+                      c3.3-1.6,4.9,2.6,6.8,4.5c10.4,10.6,21.3,20.6,33.8,28.7c21.5,13.9,43.8,25.4,70.6,23.4c33.6-2.5,55.3-35.1,45.5-67.4
+                      c-8-26.1-22.4-47.5-43.2-64.8c-1.7-1.4-4.9-2.5-3.8-5.3c0.5-1.3,3.6-1.9,5.6-2.2c19.8-2.5,38-9.5,55.5-18.6
+                      c27.8-14.5,37.2-38.9,26.6-66.2c-18.5-47.9-71.1-61.9-111.8-49.8C319,150.1,307.9,156.5,295.9,160.6L295.9,160.6z"/>
+                    <path class="st1" d="M295.9,160.6c12-4.2,23.1-10.5,35.3-14.1c40.7-12.1,93.3,2,111.8,49.8c10.6,27.3,1.2,51.7-26.6,66.2
+                      c-17.5,9.1-35.7,16.2-55.5,18.6c-2,0.2-5,0.9-5.6,2.2c-1.1,2.7,2,3.8,3.8,5.3c20.9,17.3,35.2,38.7,43.2,64.8
+                      c9.9,32.2-11.9,64.9-45.5,67.4c-26.9,2-49.2-9.5-70.6-23.4c-12.5-8.1-23.4-18.1-33.8-28.7c-1.9-1.9-3.5-6.1-6.8-4.5
+                      c-1.6,0.8-2.1,4.7-2.4,7.3c-2.5,28.3-14.9,52.4-32.8,73.8c-20.2,24.2-53.9,30.7-78.7,14.6c-18.4-11.9-27.2-30.6-28.9-51.9
+                      c-2.4-30,6.8-57.6,20.6-83.9c5.8-11.1,5.9-10.8-6.6-11.6c-30-2.1-59.3-6.7-84.8-24.2C11.5,274-2,255.4,0.2,229.3
+                      c2.5-28.5,17.9-48.6,44-59.9c26.2-11.4,53.2-8.9,79.9-2.1c11.2,2.9,22.7,5.1,33,10.6c1.9,1,4.3,1.3,5.9-0.3c1.8-1.9,1-4.8,0-6.8
+                      c-5.6-11.6-9.1-23.9-11.9-36.4c-6.6-29.7-8.8-59.2,8.5-86.6c14.9-23.6,52.1-37.5,79.2-31.3c34.7,7.8,57.8,38.7,61.9,73.3
+                      c2.5,21.4,1.3,42.2-5.7,62.6C294.2,154.9,294.4,157.7,295.9,160.6L295.9,160.6z M222.3,284.1c19.5,0.2,38.2-16.7,38.5-34.7
+                      c0.2-17.3-14.7-31.7-32.9-31.7c-19.8,0-38.6,16.9-38.7,34.7C189.1,269.2,204.4,283.9,222.3,284.1L222.3,284.1z"/>
+                    <path class="st2" d="M260.7,249.4c-0.2,18.1-18.9,34.9-38.4,34.7c-17.9-0.2-33.2-14.9-33.2-31.7c0.1-17.8,18.9-34.7,38.7-34.7
+                      C246,217.7,261,232.1,260.7,249.4L260.7,249.4z"/>
+                  </g>
+                </g>
+                <g id="small-flower">
+                  <g>
+                    <path class="st1" d="M447.1,32.5c2.7-3.6,4.6-7.6,7.5-11.1c9.4-11.6,27.5-17.9,42.3-7.6c8.5,5.9,10.6,14.8,5.3,24.5
+                      c-3.3,6.1-7.2,11.8-12.4,16.4c-0.5,0.5-1.3,1.2-1.2,1.7c0.2,1,1.4,0.7,2.1,0.8c9.5,0.9,17.9,4.3,25.4,10.3
+                      c9.2,7.4,9.4,21.2,0.1,28.6c-7.4,5.9-16.2,7-25.2,7.2c-5.2,0.1-10.4-0.7-15.5-1.7c-0.9-0.2-2.2-1.1-2.9,0
+                      c-0.3,0.5,0.3,1.8,0.8,2.6c4.9,8.7,6,18.2,5,27.9c-1.1,11-9.6,19.6-20,19.8c-7.7,0.2-14-3.5-18.7-9.4c-6.6-8.2-9.4-18.1-10.6-28.5
+                      c-0.5-4.4-0.4-4.3-4.2-2.1c-9.1,5.3-18.6,9.8-29.5,9.7c-8.8-0.1-16.4-2.8-20.9-10.8c-4.9-8.8-4.4-17.7,1-26.1
+                      c5.4-8.5,13.7-13.1,22.8-16.4c3.8-1.4,7.6-3,11.7-3.4c0.7-0.1,1.5-0.5,1.6-1.2c0.1-0.9-0.6-1.6-1.3-2c-3.9-2.3-7.4-5.2-10.6-8.2
+                      c-7.8-7.3-14.2-15.5-14.6-26.8c-0.4-9.8,7.7-21.2,16.8-24.8c11.6-4.6,24.4-0.2,32.5,9.1c5,5.7,8.7,12,10.7,19.3
+                      C445.4,31.1,446,31.9,447.1,32.5L447.1,32.5z M450.1,82.9c5.7-3.8,7.8-12.4,4.3-17.7c-3.4-5.1-10.5-6.3-15.8-2.7
+                      c-5.7,3.9-7.9,12.5-4.4,17.7C437.5,85.2,444.9,86.4,450.1,82.9L450.1,82.9z"/>
+                    <path class="st2" d="M454.4,65.2c3.5,5.3,1.4,13.9-4.3,17.7c-5.2,3.5-12.6,2.2-15.9-2.7c-3.5-5.2-1.4-13.8,4.4-17.7
+                      C443.9,58.9,451.1,60.1,454.4,65.2L454.4,65.2z"/>
+                  </g>
+                </g>
+                <g id="kv">
+                  <g>
+                    <path class="st3" d="M69.8,138.5l-37.3-19.9l8.1,28.6l-6.4,3.4L12.6,74.6l6.9-1.9l12.7,44.9l21-30.9l9.3-2.6L41,115.4l37.1,22.3
+                      L69.8,138.5L69.8,138.5z"/>
+                    <path class="st3" d="M123.1,84.1l-25.2,54.2l-1.4-0.1L71.2,84.1h8.3L97.2,124l17.7-39.9L123.1,84.1L123.1,84.1z"/>
+                  </g>
+                </g>
+      </svg>
+    
+      <button type="button" class="btn-close navbar-toggler" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body justify-content-end">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="/blog">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a id="contactLink" style="text-align: center;" class="nav-link" href="/#form-container">Contact</a>
+          </li>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <section id="portfolio-header" class="container-fluid header">
+    <div class="container mx-auto align-items-center">
+      <h1 style="margin-bottom: 0;" class="title">Portfolio</h1>
+    </div>
+</section>
+
+    
+
+<section id="portfolio-content-container" class="bg-light container-fluid header" style="margin-bottom: 2rem;">
+    <div id="portfolio-content" class="container grid">
+        
+            <a style="margin-top: 1rem;" href="/blog/simple-steps-fertility/">
+                <article style="margin-top: 1rem;">
+                    <img style="object-fit: cover;" class="portfolio-card-img" src="/portfolio-img/simple-steps-thumbnail.jpg" alt="Simple Steps Fertility">
+                    <h3 class="portfolio-card-title">Simple Steps Fertility</h3>
+                    <h3 class="portfolio-card-subtitle body">Strategic Social Content and Creative Marketing</h3>
+                    <h3 class="view-project all-caps-text d-flex align-items-center">
+                        VIEW PROJECT 
+                        <svg class="arrow-icon" width="12" height="12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8h11.793" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <path d="M9 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        </svg>
+                    </h3>
+                </article>
+            </a>
+        
+            <a style="margin-top: 1rem;" href="/blog/yarn-over/">
+                <article style="margin-top: 1rem;">
+                    <img style="object-fit: cover;" class="portfolio-card-img" src="/portfolio-img/yarn-over-large-thumbnail.jpg" alt="Yarn Over">
+                    <h3 class="portfolio-card-title">Yarn Over</h3>
+                    <h3 class="portfolio-card-subtitle body">Concept crochet pattern marketplace</h3>
+                    <h3 class="view-project all-caps-text d-flex align-items-center">
+                        VIEW PROJECT 
+                        <svg class="arrow-icon" width="12" height="12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8h11.793" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <path d="M9 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        </svg>
+                    </h3>
+                </article>
+            </a>
+        
+            <a style="margin-top: 1rem;" href="/blog/the-daily-campus/">
+                <article style="margin-top: 1rem;">
+                    <img style="object-fit: cover;" class="portfolio-card-img" src="/portfolio-img/dc-main-content.jpg" alt="The Daily Campus">
+                    <h3 class="portfolio-card-title">The Daily Campus</h3>
+                    <h3 class="portfolio-card-subtitle body">News website redesign</h3>
+                    <h3 class="view-project all-caps-text d-flex align-items-center">
+                        VIEW PROJECT 
+                        <svg class="arrow-icon" width="12" height="12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8h11.793" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <path d="M9 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        </svg>
+                    </h3>
+                </article>
+            </a>
+        
+            <a style="margin-top: 1rem;" href="/blog/snaps/">
+                <article style="margin-top: 1rem;">
+                    <img style="object-fit: cover;" class="portfolio-card-img" src="/portfolio-img/snaps-thumbnail-main-content.jpg" alt="SNAPS">
+                    <h3 class="portfolio-card-title">SNAPS</h3>
+                    <h3 class="portfolio-card-subtitle body">Gamified habit app</h3>
+                    <h3 class="view-project all-caps-text d-flex align-items-center">
+                        VIEW PROJECT 
+                        <svg class="arrow-icon" width="12" height="12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8h11.793" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <path d="M9 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        </svg>
+                    </h3>
+                </article>
+            </a>
+        
+            <a style="margin-top: 1rem;" href="/blog/dxg/">
+                <article style="margin-top: 1rem;">
+                    <img style="object-fit: cover;" class="portfolio-card-img" src="/portfolio-img/outreach-engagement-main-content.jpg" alt="UConn Office of Outreach and Engagement">
+                    <h3 class="portfolio-card-title">UConn Office of Outreach and Engagement</h3>
+                    <h3 class="portfolio-card-subtitle body">Website and community based programs map</h3>
+                    <h3 class="view-project all-caps-text d-flex align-items-center">
+                        VIEW PROJECT 
+                        <svg class="arrow-icon" width="12" height="12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8h11.793" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <path d="M9 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        </svg>
+                    </h3>
+                </article>
+            </a>
+        
+            <a style="margin-top: 1rem;" href="/blog/nutmeg/">
+                <article style="margin-top: 1rem;">
+                    <img style="object-fit: cover;" class="portfolio-card-img" src="/portfolio-img/serving-across-the-world-thumbnail-main-content.jpg" alt="Nutmeg Publishing">
+                    <h3 class="portfolio-card-title">Nutmeg Publishing</h3>
+                    <h3 class="portfolio-card-subtitle body">Yearbook and magazine spreads</h3>
+                    <h3 class="view-project all-caps-text d-flex align-items-center">
+                        VIEW PROJECT 
+                        <svg class="arrow-icon" width="12" height="12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8h11.793" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <path d="M9 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        </svg>
+                    </h3>
+                </article>
+            </a>
+        
+    </div>
+</section>
+
+    <section id="contact-form-section" class="container-fluid">
+    <div id="form-container">
+      <div class="row">
+        <div id="form-graphic-container" class="col-12 col-md-5">
+          
+            <svg id="contactFlowersSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 504"><path id="background" style="fill:#6fa7b3" d="M.03 0h515v504H.03z"/><g id="contactFlower1" style="opacity:.5"><path d="M469.26 62.68a58.66 58.66 0 0 1-21.05 3.91c-.71 0-1.82.05-2.09.52-.54.93.6 1.49 1.12 2.07 6.58 7.09 10.87 16.07 12.35 25.67 1.79 10.25-5.15 20.08-15.4 21.87-1.45.3-2.96.29-4.48.28-9.8-.67-17.34-5.97-24.35-12.11-4.04-3.59-7.6-7.73-10.82-12.12-.59-.79-.98-2.36-2.25-1.93-.64.21-1.03 1.57-1.27 2.55-2.34 10.17-8.02 18.26-15.64 25.06-8.55 7.69-21.07 8.35-29.27 1.34-6.02-5.29-8.24-12.47-7.85-20.29.64-11.02 5.41-20.54 11.7-29.35 2.65-3.77 2.62-3.57-1.78-4.6-10.78-2.32-21.16-5.39-29.46-13.12-6.7-6.2-10.61-13.61-8.5-22.91 2.34-10.17 9.02-16.71 19-19.45 10.09-2.82 19.77-.55 29.02 3.28 3.92 1.56 7.97 2.93 11.44 5.54.63.59 1.43.61 2.1.2.59-.63.73-1.62.34-2.48-1.38-4.54-2.15-9.09-2.4-13.77-.86-11.13-.17-21.83 7.48-30.96 6.54-7.76 20.72-10.92 30.32-7.35 12.17 4.64 18.91 17 18.65 29.68.01 7.78-1.76 15.41-5.27 22.39-.45 1.05-.5 2.15-.13 3.11 4.56-.87 8.84-2.59 13.49-3.35 15.37-2.29 33.67 5.43 37.97 23.71 2.47 10.45-2.23 18.77-12.97 22.61Z" style="fill:#fff"/></g><g id="contactFlower2" style="opacity:.5"><path d="M237.43 282.02c-.98 3.78 3.37 4.58 5.91 6.14 30.41 18.75 53.15 44.03 68.35 76.74 18.79 40.27-3.54 86.93-47.05 96.38-34.79 7.52-66-3.34-96.59-17.63-17.83-8.3-33.83-19.38-49.44-31.32-2.82-2.13-5.67-7.28-9.73-4.59-1.94 1.28-1.91 6.53-1.74 9.94 1.94 37.49-9.79 71.15-29.23 102.36-22.01 35.31-64.78 50-100.11 33.56-26.25-12.16-41.17-35.01-47.36-62.52-8.68-38.77-1.68-76.61 11.53-113.4 5.58-15.63 5.65-15.14-10.76-14.04-39.49 2.82-78.76 2.18-115.25-16.02-29.43-14.65-50.49-36.63-52.31-71.11-2.06-37.68 14.55-66.78 46.54-86.32 32.18-19.67 67.88-21.45 103.99-17.44 15.08 1.72 30.54 2.47 45.12 7.79 2.66.94 5.9.99 7.57-1.46 2.02-2.91.41-6.42-1.14-8.83-9.46-14.12-16.28-29.62-22.23-45.35-14.28-37.68-22.45-75.71-5.01-114.72C-46.44-23.44-.35-48.3 36.22-45.26c46.79 3.83 82.57 40 94.28 84.5 7.31 27.55 9.42 54.83 4.07 82.84-.54 3.31.17 6.95 2.69 10.53 14.88-7.64 28.27-18.01 43.55-25 50.95-23.32 122.16-14.55 155.22 44.63 18.77 33.71 11.07 67.31-22.61 91.33-21.2 15.1-43.68 27.65-69.06 34.55-2.54.66-6.49 2.02-6.93 3.9Z" style="fill:#fff"/></g></svg>
+        </div>
+        <div class="col-12 col-md-7 p-5 d-flex flex-column justify-content-center">
+          <h2 class="subtitle">Contact Me</h2>
+          <div class="form-contactinfo-container d-flex flex-column flex-xl-row">
+            <div class="col-12 col-xl-8">
+              <form action="https://formsubmit.co/karlivaredesign@gmail.com" method="POST" id="contact-form">
+                <input type="hidden" name="_subject" value="Karli Vare Portfolio - New Message">
+                  <div class="form-group">
+                    <label style="display: none;" for="nameInput">Name</label>
+                    <input name="name" placeholder="Name" type="text" class="form-control" id="nameInput">
+                  </div>
+                  <div class="form-group">
+                    <label style="display: none;" for="emailInput">Email</label>
+                    <input name="email" placeholder="Email" type="email" class="form-control" id="emailInput">
+                  </div>
+                  <div class="form-group">
+                    <label style="display: none;" for="messageInput">Message</label>
+                    <textarea name="message" placeholder="Message" class="form-control" name="messageInput" id="messageInput" maxlength="500"></textarea>
+                  </div>
+                  <button id="submit-btn" type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="col-12 col-xl-4 info-container">
+              <div class="contact-info d-flex flex-row align-items-start">
+                <a href="mailto:karlivaredesign@gmail.com" id="email-link" class="d-flex flex-row align-items-start" style="text-decoration: none;">
+                  <img style="width: 25px;" src="/svg/envelope-solid.svg" alt="Envelope Icon">
+                  <div class="contact-text-info d-flex flex-column">
+                    <strong>
+                      <p style="margin-bottom: 0;">Email</p>
+                    </strong>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="contact-info d-flex flex-row align-items-start">
+                <a id="linkedin-link" href="https://www.linkedin.com/in/karli-vare/" target="_blank" class="d-flex align-items-start" style="text-decoration: none;">
+                  <img style="width: 25px;" src="/svg/linkedin.svg" alt="LinkedIn Icon">
+                  <strong>LinkedIn</strong>
+                </a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    
+gsap.to("#contactFlower1", {
+    duration: 40,                 
+    rotation: -360,               
+    transformOrigin: "50% 50%",  
+    repeat: -1,                  
+    ease: "linear"               
+});
+gsap.to("#contactFlower2", {
+    duration: 40,                 
+    rotation: 360,               
+    transformOrigin: "50% 50%",  
+    repeat: -1,                  
+    ease: "linear"               
+});
+  </script>
+
+  
+
+    <script>
+     document.addEventListener("DOMContentLoaded", () => {
+    
+    gsap.registerPlugin(ScrollTrigger);
+
+    
+    gsap.utils.toArray("article").forEach(article => {
+        gsap.from(article, {
+            scrollTrigger: {
+                trigger: article, 
+                start: "top 80%", 
+                markers: false,    
+            },
+            y: 25,             
+            opacity: 0,        
+            duration: 1,       
+            ease: "power2.out" 
+        });
+    });
+});
+
+    </script>
+<footer id="footer" class="container-fluid text-center p-5">
+    <img id="footer-graphic" src="/svg/flower-triad.svg" alt="">
+    <div id="footer-text">
+      <h6 style="font-size: 1rem;" id="footer-text-title">Website designed and developed by Karli Vare</h6>
+      <small id="copyright">©karlivare.com 2024</small>
+    </div>
+</footer></body>
+</html>

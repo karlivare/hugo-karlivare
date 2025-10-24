@@ -1,0 +1,58 @@
+//////WELCOME SECTION//////
+/*#region*/
+.flower-mask {
+  width: 100%;
+  position: relative;
+}
+
+#profile{
+  clip-path: url(#clip);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+}
+
+#flower-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.animate-flower {
+  animation: rotateFlower 10s linear infinite;
+}
+
+@keyframes rotateFlower {
+  0% {
+    transform: rotate(0deg); /* Start rotation from 0 degrees */
+  }
+  100% {
+    transform: rotate(360deg); /* Rotate 360 degrees */
+  }
+}
+
+
+@include media-breakpoint-up(lg) {
+  #intro-header {
+    overflow: hidden;
+  }
+  #flower-mask-container {
+    position: relative;
+  }
+  .flower-mask {
+    width: 500px;
+    position: absolute;
+    top: -15rem;
+    right: -2rem;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .flower-mask {
+    right: 4rem;
+  }
+}
+/*#endregion*/

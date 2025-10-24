@@ -1,0 +1,142 @@
+/*main styles*/
+nav{
+  background-color: $beige;
+}
+a.navbar-brand.logo{
+  margin-right: 0 !important;
+  padding: 0;
+}
+.modal-backdrop{
+  width: 0vw;
+}
+.offcanvas.offcanvas-end{
+  width: 100vw;
+}
+.bg-light{
+  background-color: $beige;
+}
+#offcanvasNavbar{
+  background-color: $beige !important;
+}
+.offcanvas-header{
+  padding: 2rem !important;
+}
+.navbar-nav .nav-link.active{
+  color: $brown;
+}
+
+button.navbar-toggler{
+  border: none !important;
+  padding: 1rem;
+  background-position: center;
+}
+
+button.btn-close.navbar-toggler{
+  background-image: url('/svg/close.svg');
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1rem !important;
+  margin: 0 !important;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/*logo*/
+svg.logo,
+#offcanvasNavbarLabel {
+  width: 80px;
+}
+
+/*navbar*/
+.nav-item {
+  // text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.nav-item a {
+  transition: transform 0.25s ease-in-out;
+}
+.navbar-nav {
+  gap: 4rem;
+}
+
+/*animating the nav links with an underline*/
+a.nav-link{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.nav-item a:hover {
+  transform: translateY(5px);
+}
+
+.nav-item a {
+  position: relative; /*we will position border element in relation to this*/
+}
+.nav-item a::after {
+  /*making an underline pseudo-element of the navlink*/
+  content: ""; /*this needs to be blank bc there is only decorative content*/
+  position: absolute; /*positioned relative to the nearest positioned ancestor*/
+  width: 100%;
+  opacity: 0.5;
+  height: 8px;
+  top: 3.5rem;
+  left: 0;
+  background-color: $brown;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+  transform-origin: top left; /*this is what makes it go from left to right*/
+}
+.nav-item a:hover::after {
+  transform: scaleX(1);
+}
+
+/*offcanvas*/
+#offcanvasNavbar {
+  gap: 4rem;
+}
+
+/*animation on hover*/
+svg.logo {
+  transform: scale(1);
+  transition: transform 0.25s ease-in-out;
+  overflow: visible; /*setting overflow to visible prevents svg from being cut off during rotation animation*/
+}
+svg.logo:hover {
+  transform: scale(1.25);
+  transition: transform 0.25s ease-in-out;
+}
+g#kv {
+  opacity: 100%;
+  transition: opacity 0.25s ease-in-out;
+}
+svg.logo:hover > g#big-flower {
+  transform-origin: 45% 55%;
+  transform: rotate(360deg);
+  transition: transform 0.75s ease-in-out;
+}
+svg.logo:hover > g#small-flower {
+  transform-origin: 85% 15%;
+  transform: rotate(-360deg);
+  transition: transform 0.75s ease-in-out;
+}
+svg.logo:hover > g#kv {
+  opacity: 0%;
+}
+
+/*media queries*/
+/*change the text style of the navlinks for larger screens*/
+@include media-breakpoint-up(md) {
+  .nav-link {
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  .nav-item a::after {
+    height: 5px;
+    top: 2rem;
+  }
+}

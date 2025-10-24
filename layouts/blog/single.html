@@ -1,0 +1,37 @@
+{{ define "main"}}
+<!-- thinking that this is the default page for a blog when not defined. just ignore this lol? -->
+
+<section id="portfolio-header" class="container-fluid header">
+    <div class="container mx-auto align-items-center">
+      <h1 id="portfolio-item-title" class="title">{{.Title}}</h1>
+    </div>
+</section>
+
+
+<!--Images go here-->
+{{ .Content }}
+
+
+<section id="portfolio-metadata" class="container-fluid bg-light d-flex flex-column">
+    <div class="container mx-auto row d-flex align-items-baseline">
+        <div class="col-sm-12 col-lg-4 ">
+            <h2 class="subtitle">Year</h2>
+        </div>
+        <p class="col-sm-12 col-lg-8 body">{{.Params.year}}</p>
+    </div>
+    <div class="container mx-auto row d-flex align-items-baseline">
+        <div class="col-sm-12 col-lg-4 ">
+            <h2 class="subtitle">Created With</h2>
+        </div>
+        <p class="col-sm-12 col-lg-8 body">{{.Params.medium}}</p>
+    </div>
+    <div class="container mx-auto row d-flex align-items-baseline">
+        <div class="col-sm-12 col-lg-4 ">
+            <h2 class="subtitle">About</h2>
+        </div>
+        <p class="col-sm-12 col-lg-8 body">{{.Params.description}}</p>
+    </div>
+</section>
+
+
+{{end}}

@@ -1,0 +1,28 @@
+{{ define "main"}}
+    {{partial "blog/portfolio-header.html"}}
+    {{partial "blog/portfolio-content.html"}}
+    {{partial "common/contact-form.html"}}
+
+    <script>
+     document.addEventListener("DOMContentLoaded", () => {
+    // Register GSAP's ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Animate each article independently as it comes into view
+    gsap.utils.toArray("article").forEach(article => {
+        gsap.from(article, {
+            scrollTrigger: {
+                trigger: article, // Trigger animation for each individual article
+                start: "top 80%", // Animation starts when the top of the article is 80% down the viewport
+                markers: false,    // Visual indicators for ScrollTrigger boundaries (remove for production)
+            },
+            y: 25,             // Animate up
+            opacity: 0,        // Start invisible and fade in
+            duration: 1,       // Duration of animation
+            ease: "power2.out" // Smooth easing
+        });
+    });
+});
+
+    </script>
+{{end}}

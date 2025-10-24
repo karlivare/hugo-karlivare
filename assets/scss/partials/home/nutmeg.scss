@@ -1,0 +1,37 @@
+//////NUTMEG SPREADS//////
+
+.nutmeg-section{
+  background-color: $beige;
+}
+#nutmeg-spreads-bg {
+  background-image: url("/jpg/nutmeg-spreads-smaller.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+#nutmeg-spreads-title{
+  padding-top: 3rem;
+}
+
+#nutmeg-spreads-button{
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+#explore-all-work{
+  margin-top: 1.5rem;
+}
+
+// //////MEDIA QUERIES//////
+@include media-breakpoint-up(lg) {
+  #nutmeg-spreads-bg{
+    height: 500px;
+  }
+}
+@include media-breakpoint-up(xl) {
+  #nutmeg-spreads-bg{
+    height: 600px;
+  }
+}
+

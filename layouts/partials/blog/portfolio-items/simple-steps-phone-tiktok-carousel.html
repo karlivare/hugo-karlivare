@@ -1,0 +1,145 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+  :root{ --phone-frame-url:url('/images/phone-frame.png'); --radius:24px; --aspect:9/16; }
+  .tiktok-carousel{ position:relative; padding:.5rem 0 2rem; }
+
+  /* Make the container a positioning context so arrows/pagination place correctly */
+  .tiktok-carousel .swiper{ position:relative; overflow:visible; }
+
+  .tiktok-carousel .swiper-slide{ display:flex; justify-content:center; align-items:center; }
+  .tiktok-carousel .phone{ position:relative; width:100%; aspect-ratio:var(--aspect); border-radius:var(--radius); overflow:hidden; background:#000; transition:transform .2s ease; }
+  .tiktok-carousel .phone .screen{ position:absolute; inset:2.5% 3.5%; border-radius:calc(var(--radius) - 6px); overflow:hidden; background:#000; }
+  .tiktok-carousel .phone::after{ content:""; position:absolute; inset:0; background-image:var(--phone-frame-url); background-size:cover; background-position:center; pointer-events:none; }
+  .tiktok-carousel .phone video{ width:100%; height:100%; object-fit:cover; display:block; }
+
+  @media (hover:hover) and (pointer:fine){
+    .tiktok-carousel .swiper-slide:hover .phone{ transform:scale(1.08); }
+  }
+
+  /* Ensure nav buttons sit above slides/videos and are clickable */
+  .tiktok-carousel .swiper-button-next,
+  .tiktok-carousel .swiper-button-prev{
+    color:#111; background:#fff; border-radius:999px; width:40px; height:40px;
+    box-shadow:0 6px 20px rgba(0,0,0,.12);
+    z-index:10;
+  }
+  .tiktok-carousel .swiper-button-next:after,
+  .tiktok-carousel .swiper-button-prev:after{ font-size:16px; font-weight:700; }
+
+  /* Optional: keep pagination dots visible above content */
+  .tiktok-carousel .swiper-pagination{ z-index:10; }
+</style>
+
+<section class="tiktok-carousel container">
+  <div class="swiper" id="tiktokPhoneSwiper">
+    <div class="swiper-wrapper">
+      <!-- EDIT ONLY THESE PATHS -->
+      <div class="swiper-slide"><div class="phone" data-src="/simple-steps-tiktok/AliceVaccineExample.mp4" data-poster="/simple-steps-tiktok/covers/AliceVaccineExample-Cover.jpg"></div></div>
+      <div class="swiper-slide"><div class="phone" data-src="/simple-steps-tiktok/WhereChildrenAreNow.mp4" data-poster="/simple-steps-tiktok/covers/WhereChildrenAreNow-Cover.jpg"></div></div>
+      <div class="swiper-slide"><div class="phone" data-src="/simple-steps-tiktok/DonorConeivedCommunity.mp4" data-poster="/simple-steps-tiktok/covers/DonorConeivedCommunity-Cover.jpg"></div></div>
+      <div class="swiper-slide"><div class="phone" data-src="/simple-steps-tiktok/TinaDrivesUpFromLA.mp4" data-poster="/simple-steps-tiktok/covers/TinaDrivesUpFromLA-Cover.jpg"></div></div>
+      <div class="swiper-slide"><div class="phone" data-src="/simple-steps-tiktok/BrendaWhatLikeForKids.mp4" data-poster="/simple-steps-tiktok/covers/BrendaWhatLikeForKids-Cover.jpg"></div></div>
+      <div class="swiper-slide"><div class="phone" data-src="/simple-steps-tiktok/TinasSimpleStepsToSurrogacy.mp4" data-poster="/simple-steps-tiktok/covers/TinasSimpleStepsToSurrogacy-cover.jpg"></div></div>
+      <div class="swiper-slide"><div class="phone" data-src="/simple-steps-tiktok/LittleHumans.mp4" data-poster="/simple-steps-tiktok/covers/LittleHumans-Cover.jpg"></div></div>
+      <div class="swiper-slide"><div class="phone" data-src="/simple-steps-tiktok/LiliAdvice.mp4" data-poster="/simple-steps-tiktok/covers/LiliAdvice-Cover.jpg"></div></div>
+      <div class="swiper-slide"><div class="phone" data-src="/simple-steps-tiktok/GoodStages.mp4" data-poster="/simple-steps-tiktok/covers/GoodStages-Cover.jpg"></div></div>
+    </div>
+
+    <div class="swiper-button-prev" aria-label="Previous"></div>
+    <div class="swiper-button-next" aria-label="Next"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+(function(){
+  const swiperRoot = document.getElementById('tiktokPhoneSwiper');
+
+  // Build <video> tags (with controls) for each phone
+  swiperRoot.querySelectorAll('.phone').forEach((phone)=>{
+    const wrap = document.createElement('div');
+    wrap.className = 'screen';
+
+    const v = document.createElement('video');
+    v.muted = true;
+    v.playsInline = true;
+    v.setAttribute('playsinline','');
+    v.setAttribute('webkit-playsinline','');
+    v.setAttribute('preload','metadata');
+    v.setAttribute('controls','');
+
+    if (phone.dataset.poster) v.setAttribute('poster', phone.dataset.poster);
+
+    const src = document.createElement('source');
+    src.src = phone.dataset.src;
+    src.type = 'video/mp4';
+    v.appendChild(src);
+
+    wrap.appendChild(v);
+    phone.appendChild(wrap);
+  });
+
+  function tryPlay(v){ if(!v) return; const p=v.play(); if(p&&p.catch) p.catch(()=>{}); }
+  function tryPause(v){ if(!v) return; v.pause(); }
+
+  const slideCount = swiperRoot.querySelectorAll('.swiper-slide').length;
+  const initialSlide = Math.floor(slideCount / 2);
+
+  const swiper = new Swiper('#tiktokPhoneSwiper', {
+    // Layout
+    centeredSlides: true,
+    loop: true,
+    loopAdditionalSlides: 5,   // smoother looping with many/tall slides
+    initialSlide,
+    speed: 500,
+    spaceBetween: 20,
+    grabCursor: true,
+    slideToClickedSlide: true,
+
+    // Access & Input
+    keyboard: { enabled: true },
+
+    // Use selectors so Swiper can (re)bind reliably
+    navigation: {
+      prevEl: '#tiktokPhoneSwiper .swiper-button-prev',
+      nextEl: '#tiktokPhoneSwiper .swiper-button-next'
+    },
+    pagination: {
+      el: '#tiktokPhoneSwiper .swiper-pagination',
+      clickable: true
+    },
+
+    // If the video controls eat touch/drag, this helps Swiper still move when you drag outside the video
+    touchEventsTarget: 'container',
+
+    // Responsive
+    breakpoints: {
+      0:   { slidesPerView: 1.2 },
+      576: { slidesPerView: 2 },
+      992: { slidesPerView: 3 },
+      1280:{ slidesPerView: 5 }
+    },
+
+    on: {
+      slideChange(){
+        const active = swiper.slides[swiper.activeIndex];
+        swiper.slides.forEach(sl=>{
+          const v = sl.querySelector('video');
+          if(!v) return;
+          if(sl !== active) tryPause(v);
+        });
+      }
+    }
+  });
+
+  // Simple click/tap play-pause
+  swiperRoot.addEventListener('click', (e)=>{
+    const p = e.target.closest('.phone');
+    if(!p) return;
+    const v = p.querySelector('video');
+    if(!v) return;
+    v.paused ? tryPlay(v) : tryPause(v);
+  });
+})();
+</script>

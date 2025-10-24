@@ -1,0 +1,32 @@
+{{ $portfolioData := slice
+    (dict "title" "Freshpet" "subtitle" "Product Application Landing Page" "image" "/portfolio-img/freshpet-thumbnail.jpg" "year" "2025" "medium" "Figma" "category" "main-content" "url" "/blog/freshpet-product-applications/")
+    (dict "title" "Yarn Over" "subtitle" "Concept crochet pattern marketplace" "image" "/portfolio-img/yarn-over-large-thumbnail.jpg" "year" "2023-24" "medium" "Figma" "category" "main-content" "url" "/blog/yarn-over/")
+    (dict "title" "The Daily Campus" "subtitle" "News website redesign" "image" "/portfolio-img/dc-main-content.jpg" "year" 2022 "medium" "Adobe XD, Illustrator, InDesign" "category" "main-content" "url" "/blog/the-daily-campus/")
+    (dict "title" "SNAPS" "subtitle" "Gamified habit app" "image" "/portfolio-img/snaps-thumbnail-main-content.jpg" "year" 2024 "medium" "Figma" "category" "main-content" "url" "/blog/snaps/")
+    (dict "title" "UConn Office of Outreach and Engagement" "subtitle" "Website and community based programs map" "image" "/portfolio-img/outreach-engagement-main-content.jpg" "year" "2023-24" "medium" "WordPress, Figma" "category" "main-content" "url" "/blog/dxg/")
+    (dict "title" "Nutmeg Publishing" "subtitle" "Yearbook and magazine spreads" "image" "/portfolio-img/serving-across-the-world-thumbnail-main-content.jpg" "year" "2021-24" "medium" "WordPress, Figma" "category" "main-content" "url" "/blog/nutmeg/")
+}}
+
+<section id="portfolio-content-container" class="bg-light container-fluid header" style="margin-bottom: 2rem;">
+    <div id="portfolio-content" class="container grid">
+        {{ range $portfolioData }}
+            <a style="margin-top: 1rem;" href="{{ .url }}">
+                <article style="margin-top: 1rem;">
+                    <img style="object-fit: cover;" class="portfolio-card-img" src="{{ .image }}" alt="{{ .title }}">
+                    <h3 class="portfolio-card-title">{{ .title }}</h3>
+                    <h3 class="portfolio-card-subtitle body">{{ .subtitle }}</h3>
+                    <h3 class="view-project all-caps-text d-flex align-items-center">
+                        VIEW PROJECT 
+                        <svg class="arrow-icon" width="12" height="12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8h11.793" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <path d="M9 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        </svg>
+                    </h3>
+                </article>
+            </a>
+        {{ end }}
+    </div>
+</section>
+
+<!--    (dict "title" "Simple Steps Fertility" "subtitle" "Strategic Social Content and Creative Marketing" "image" "/portfolio-img/simple-steps-thumbnail.jpg" "year" "2025" "medium" "Figma, CapCut" "category" "main-content" "url" "/blog/simple-steps-fertility/")
+-->

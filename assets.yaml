@@ -1,0 +1,3 @@
+bundle:
+  assets:
+    - "assets/js/featured.js"

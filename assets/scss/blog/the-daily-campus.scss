@@ -1,0 +1,153 @@
+
+#problem-container, #impact-container{
+    background-color: $blue;
+    border-radius: 16px;
+    color: white;
+    padding: 2rem 2rem;
+}
+
+#context-text{
+    color: $brown;
+}
+
+#context-img-container{
+  margin-top: 1rem;
+  align-self: center;
+}
+@include media-breakpoint-up(md) {
+  #context-img-container{
+    margin-top: 0rem;
+  }
+}
+
+#action-text{
+  margin-bottom: 1rem;
+}
+@include media-breakpoint-up(md) {
+  #action-text{
+    margin-bottom: 0rem;
+  }
+}
+
+
+#meta-text-container> *{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#meta-text-container{
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+#dc-title-tags{
+  width: 100%;
+}
+
+#dc-title-links{
+  gap: 2rem;
+}
+
+@include media-breakpoint-up(lg) {
+  #meta-text-container{
+    gap: 2rem;
+  }
+
+  #dc-title-tags{
+    width: initial;
+  }
+
+  #dc-title-links{
+    gap: 0rem;
+  }
+}
+
+.meta-text{
+  background-color: rgba($blue, 0.25);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: default;
+}
+
+.carousel-img-container{
+    width: 302px;
+    height: 201px;
+}
+
+@include media-breakpoint-up(md) {
+  .carousel-img-container{
+    width: 604px;
+    height: 402px;
+}
+}
+
+@include media-breakpoint-up(xl) {
+  .carousel-img-container{
+    width: 907px;
+    height: 603px;
+}
+}
+
+.slide-body{
+  height: 268px;
+}
+@include media-breakpoint-up(md) {
+  .slide-body{
+    height: auto;
+  }
+}
+
+//swiper configuration don't delete this lol even though there's the other scss file!
+.swiper-container {
+    width: 100%; /* Full-width container */
+    overflow: hidden;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Smoother transitions */
+    gap: 1rem;
+  }
+
+  #video-container{
+    gap: 1rem;
+  }
+
+  video.DC-video{
+    width: 100%;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 16px;
+    border: 1px solid rgba(72,124,137,.5)
+  }
+
+  video.DC-video-slideshow{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 16px;
+    border: 1px solid rgba(72,124,137,.5)
+  }
+  
+  
+  .slide-text {
+    // height: 175px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  img.slide-image{
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  
+  
+  

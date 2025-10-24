@@ -1,0 +1,129 @@
+* {
+  font-family: ofelia-text, sans-serif;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+
+//////COLORS//////
+$blue: #487c89;
+$brown: #473d33;
+$beige: #fff3e8;
+$light-blue: #d1f7ff;
+$blue-hover: #38616b;
+
+body{
+  background-color: $beige !important;
+}
+
+//////VARIABLE OVERRIDES//////
+$primary:$blue;
+$light:$beige;
+
+$bs-btn-bg: $blue !important;
+$bs-btn-border-color: $blue !important;
+$bs-btn-hover-bg: $blue-hover !important;
+$bs-btn-hover-border-color: $blue-hover !important;
+$bs-btn-active-bg: $blue-hover !important;
+$bs-btn-active-border-color: $blue-hover !important;
+$bs-btn-disabled-bg: $blue !important;
+$bs-btn-disabled-border-color: $blue !important;
+
+$input-btn-padding-y:.75rem;
+$input-btn-padding-x:1.5rem;
+button, a.btn{
+  font-weight: 500 !important;
+}
+
+/////////TYPEFACE STYLES/////////
+/*#region*/
+
+//title//
+/*#region*/
+.title {
+  display: inline-block;
+  font-family: ofelia-text, sans-serif;
+  font-style: normal;
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 8px solid rgb(255, 255, 255, 0.5);
+}
+
+.portfolio-title{
+  display: inline-block;
+  font-family: ofelia-text, sans-serif;
+  font-style: normal;
+  color: $brown;
+  font-weight: 700;
+  font-size: 2.0rem;
+  margin-bottom: 1rem;
+  border-bottom: 8px solid rgb(71, 61, 51, 0.5);
+}
+
+
+//subtitle
+/*#region*/
+.subtitle {
+  font-family: ofelia-text, sans-serif;
+  font-style: normal;
+  color: $brown;
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem; /*this accounts for a smaller underline*/
+  line-height: 110%;
+}
+/*#endregion*/
+
+//third/tertiary title
+.thirdtitle {
+  font-family: ofelia-text, sans-serif;
+  font-style: normal;
+  color: $brown;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.all-caps-text{
+  font-family: ofelia-display, sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.0rem;
+  margin-top: 1rem;
+  cursor: default;
+}
+
+//body text
+.body {
+  font-family: ofelia-display, sans-serif;
+  font-style: normal;
+  color: $brown;
+  font-weight: 400;
+  font-size: 1.0rem;
+}
+/*#endregion*/
+
+/////////SECTION STYLES/////////
+.header {
+  background-color: $blue;
+  padding: 1.5rem 1rem 1.5rem 1rem !important;
+}
+
+.subheader {
+  background-color: rgba($blue, 0.15);
+  padding: 1.5rem !important;
+}
+
+//This is a medium screen breakpoint. Couldn't use bootstrap here
+@media(min-width: 768px){
+  .header {
+    padding: 3rem !important;
+  }
+  .subtitle{
+    font-size: 2rem;
+  }
+}

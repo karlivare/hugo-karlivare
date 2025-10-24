@@ -1,0 +1,96 @@
+//////CONTACT FORM//////
+#contact-form-section {
+  overflow: hidden;
+  background-color: rgba($color: #E4EFF1, $alpha: 1.0);
+  padding-left: 0;
+  padding-right: 0;
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#contactFlowersSVG{
+  width: 100%;
+}
+#form-graphic-container{
+  overflow: hidden !important;
+  padding: 0;
+}
+@include media-breakpoint-up(md) {
+  #contactFlowersSVG{
+    width: initial;
+    height: 100%;
+  }
+}
+@include media-breakpoint-up(lg) {
+  #form-graphic-container{
+    max-width: 700px;
+  }
+}
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: $brown;
+}
+#contact-form input, textarea#messageInput{
+  padding-left: 0;
+}
+.form-control:focus{
+  padding-left: 1rem !important;
+}
+#contact-form label {
+  padding: 6px 12px;
+}
+#form-graphic-container {
+  height: 200px;
+  overflow: hidden;
+}
+#submit-btn {
+  align-self: start;
+}
+#messageInput {
+  resize: none;
+  height: 8rem;
+}
+
+.form-control {
+  background-color: rgba($color: #E4EFF1, $alpha: 1.0);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid $blue-hover;
+  border-radius: 0;
+}
+
+.form-contactinfo-container{
+  gap: 3rem;
+}
+
+.info-container{
+  padding-top: 1rem;
+}
+
+@include media-breakpoint-up(md) {
+  #form-graphic-container {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 430px){
+  #linkedin-link{
+    width: 181px;
+    word-wrap: break-word;
+  }
+}
+
+.contact-info {
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+#email-link, #linkedin-link{
+  color: $blue;
+  gap: 1rem;
+}
+
+

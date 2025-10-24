@@ -1,0 +1,43 @@
+//any new scss files made in the scss folder need to be imported here to main.scss
+@import "variables.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+/*Importing the files from the partials below*/
+
+/*Common*/
+/*#region*/
+@import "partials/common/header.scss";
+@import "partials/common/footer.scss";
+@import "partials/common/contact-form.scss";
+/*#endregion*/
+
+/*Home*/
+/*#region*/
+@import "partials/home/introNEW.scss";
+@import "partials/home/nutmeg.scss";
+@import "partials/home/skills.scss";
+@import "partials/home/new-featured.scss";
+
+/*#endregion*/
+
+/*Blog*/
+/*#region*/
+@import "partials/blog/portfolio-content.scss";
+/*#endregion*/
+
+/*Blog single content, portfolio items*/
+/*#region*/
+@import "blog/single.scss";
+@import "blog/portfolio-carousel.scss";
+@import "blog/dxg.scss";
+@import "blog/the-daily-campus.scss";
+@import "blog/nutmeg.scss";
+@import "blog/yarn-over.scss";
+@import "blog/snaps.scss";
+@import "blog/simple-steps-fertility.scss";
+@import "blog/freshpet-product-applications.scss";
+@import "blog/portfolio-shortcode.scss";
+
+/*#endregion*/

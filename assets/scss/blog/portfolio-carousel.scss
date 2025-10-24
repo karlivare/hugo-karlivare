@@ -1,0 +1,64 @@
+//adding this html rule so that card overflow on carousel can still be visible but user cannot horizontal scroll
+html, body{
+    overflow-x: hidden;
+  } 
+
+.swiper {
+    width: 100vw;
+    height: auto;
+}
+
+.swiper-container{
+    overflow: visible !important;
+}
+
+div.slide-body{
+    gap: 8px;
+}
+
+div.swiper-slide.swiper-slide-active{
+    text-align: center;
+}
+
+div.swiper-button-prev,
+div.swiper-button-next {
+    display: none;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid rgba(72, 124, 137, 0.50);
+}
+
+div.swiper-button-next, div.swiper-button-prev{
+    color: $blue;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: $blue;
+}
+
+@include media-breakpoint-up(lg) {
+    div.swiper-button-prev,
+    div.swiper-button-next {
+      display: block;
+    }
+
+    .swiper-slide img{
+        // max-width: 1200px;
+        width: auto;
+        // height: 100%;
+        // object-fit: contain;
+    }
+}
+
+@include media-breakpoint-up(sm){
+    .swiper{
+        height: 70vh;
+        width: auto;
+    }
+ }
+

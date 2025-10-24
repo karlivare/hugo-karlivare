@@ -1,0 +1,121 @@
+{{ define "main"}}
+  <!-- Full-Width Case Study Image Section -->
+<section class="w-100">
+  <div class="container-fluid m-0 p-0">
+    <img 
+      src="/portfolio-img/freshpet-hero.jpg" 
+      alt="Case Study Hero Image" 
+      class="img-fluid w-100" 
+      style="max-height: 70vh; object-fit: cover;"
+    >
+  </div>
+</section>
+<div class="container-fluid d-flex flex-column align-items-center" style="gap: 4rem;">
+  <section id="portfolio-header" class="container-fluid" style="margin-top: 4rem;">
+    <div id="title-links" class="container d-flex flex-column flex-lg-row justify-content-between align-items-start mx-auto" style="padding-left: 0; padding-right: 0;">
+      <!-- Title on the left -->
+      <div class="w-100 gap-4 d-flex flex-column flex-md-row justify-content-between">
+        <div>
+          <h1 class="portfolio-title">{{.Title}}</h1>
+        </div>
+        <div id="meta-text-container" class="d-flex flex-column flex-md-row">
+          <!--Something more like below. Specify the meta information-->
+          <div class="d-flex flex-column">
+            <p class="m-0">Category</p>
+            <div class="d-flex gap-3">
+              <p class="meta-text all-caps-text">User Interface Design</p>
+            </div>
+          </div>
+          <div>
+            <p class="">Year</p>
+            <p class="meta-text all-caps-text">2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="problem-container" class="container">
+      <p class="all-caps-text">Challenge</p>
+      <p style="color: white; font-size: 1.25rem;" class="body">{{.Params.problem}}</p>
+  </section>
+  
+  <section class="container" style="padding-left: 0; padding-right: 0;">
+    <div class="row flex-md-row-reverse">
+      <!-- Text on the right -->
+      <div class="col-12 col-md-5 align-self-center" style="padding: 0rem 2rem;">
+        <p id="context-text" class="all-caps-text">Context</p>
+        <p class="body">{{.Params.context}}</p>
+      </div>
+      <!-- Image on the left -->
+      <div style="padding: 0rem 2rem;" class="context-img-container col-12 col-md-7">
+        <img src="/portfolio-img/freshpet-wireframes-shadow.jpg" alt="Description" class="context-img img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <section class="container" style="padding-left: 0; padding-right: 0;">
+    <div class="row">  
+      <!-- Text on the left -->
+      <div id="action-text" class="col-12 col-lg-5" style="padding: 0rem 2rem;">
+        <p class="all-caps-text">Action</p>
+        <p class="body">{{.Params.action1}}</p>
+        <ul>
+          <li class="body"><strong>Case Studies</strong> - Structured three product application stories to highlight how Freshpet food supports different patient needs.</li>
+          <li class="body"><strong>Testimonials</strong> — Featured videos from veterinarians to build credibility and trust.</li>
+          <li class="body"><strong>Navigation</strong> — Integrated anchor links for easy access to each case study.</li>
+          <li class="body"><strong>Product Integration</strong> — Added tailored product recommendations to connect solutions directly to Freshpet offerings.</li>
+        </ul>
+
+      </div>
+
+      <!-- Image on the right -->
+      <div style="padding: 0rem 2rem;" class="context-img-container col-12 col-md-7">
+        <img src="/portfolio-img/freshpet-mockups-shadow.jpg" alt="Description" class="img-fluid context-img">
+      </div>
+    </div>
+  </section>  
+
+  <section class="container" style="padding-left: 0; padding-right: 0;">
+  <!-- Full-width image on top -->
+  <!-- Short, cropped video using Bootstrap ratio -->
+<div class="mb-3"> <!-- mb-5 = 3rem vertical gap --> <video autoplay loop muted playsinline class="w-100 context-img" style="object-fit: contain; border-radius: 16px; background-color: white;"> <source src="/portfolio-img/freshpet-scrolling.mp4" type="video/mp4"> Your browser does not support the video tag. </video>
+</div>
+
+
+  <!-- Row: 1/3 image + 2/3 video -->
+  <div class="row align-items-stretch gx-3 flex-row-reverse"> <!-- gx-5 = 3rem horizontal gap -->
+    <!-- Image column -->
+    <div class="col-12 col-lg-4" style="min-height: 60vh;">
+      <img src="/portfolio-img/freshpet-mobile.jpg"
+           alt="Description"
+           class="img-fluid context-img h-100"
+           style="object-fit: cover; border-radius: 16px;">
+    </div>
+
+    <!-- Video column -->
+    <div class="col-12 col-lg-8" style="min-height: 60vh;">
+      <img src="/portfolio-img/freshpet-desktop-cropped.jpg"
+           alt="Description"
+           class="img-fluid context-img h-100"
+           style="object-fit: cover; border-radius: 16px;">
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+  <section id="impact-container" class="container">
+    <p class="all-caps-text">Impact</p>
+    <p style="font-size: 1.25rem; color: white;" class="body">{{.Params.impact}}</p>
+  </section>
+  
+</div>
+
+
+{{end}}
+
+

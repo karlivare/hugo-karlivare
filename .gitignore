@@ -1,0 +1,7 @@
+
+# large video assets (temp)
+static/simple-steps-tiktok/
+simple-steps-tiktok/
+*.mp4
+*.mov
+

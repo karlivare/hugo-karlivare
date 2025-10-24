@@ -1,0 +1,17 @@
+#portfolio-metadata{
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+}
+
+@include media-breakpoint-up(sm) {
+    #portfolio-metadata{
+        padding-top: 0rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    #portfolio-metadata{
+        gap: 3rem;
+    }
+}

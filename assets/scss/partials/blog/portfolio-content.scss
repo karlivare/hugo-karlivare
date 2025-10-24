@@ -1,0 +1,60 @@
+.portfolio-card-img{
+    max-width: 580px;
+    max-height: 375px;
+    border-radius: 8px;
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    box-shadow: 0px 5px 3px 0px rgba(71, 61, 51, 0.0);
+    border: 1px solid rgba(72,124,137,.5);
+    width: 100%;
+}
+
+.portfolio-card-title{
+    font-family: ofelia-display, sans-serif;
+    font-style: normal;
+    color: $brown;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.project-link-btn{
+  background-color: #595047;
+  border: none;
+}
+.project-link-btn:hover{
+  background-color: #3B342B;
+}
+
+.portfolio-card-img:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 3px 0px rgba(71, 61, 51, 0.25);
+    cursor: pointer;
+}
+
+div#portfolio-content.container.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column by default */
+    gap: 16px; /* Space between grid items */
+}
+
+@include media-breakpoint-up(lg) {
+    div#portfolio-content.container.grid {
+      grid-template-columns: 1fr 1fr; /* Two columns on medium screens and above */
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .portfolio-card-img{
+        height: 375px;
+    }
+}
+
+
+
+
+
+

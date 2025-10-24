@@ -1,0 +1,185 @@
+{{ define "main"}}
+<div class="container-fluid d-flex flex-column align-items-center" style="gap: 4rem;">
+  <section id="portfolio-header" class="container-fluid" style="margin-top: 4rem;">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center mx-auto" style="padding-left: 0; padding-right: 0; gap: 2rem;">
+      <!-- Title on the left -->
+      <div class="d-flex flex-column">
+        <div>
+          <h1 class="portfolio-title">{{.Title}}</h1>
+        </div>
+        <div id="meta-text-container" class="d-flex flex-column flex-md-row">
+          <p class="meta-text all-caps-text">2024</p>
+          <p class="meta-text all-caps-text">UI/UX Designer</p>
+          <p class="meta-text all-caps-text">Figma</p>
+          <p class="meta-text all-caps-text">WordPress</p>
+        </div>
+      </div>
+  
+      <!-- Logo and Project Link on the right -->
+      <div class="d-flex align-items-center justify-content-between justify-content-lg-end col-12 col-lg-4" style="gap: 24px;">
+        <img src="/png/uconn-wordmark-single-blue.png" alt="Logo" style="width: 100px;" class="logo-img" />
+        <a target=”_blank” href="https://outreach.engagement.uconn.edu/" class="btn btn-primary project-link-btn">Visit Website</a>
+      </div>
+    </div>
+  </section>
+  
+  <section id="problem-container" class="container">
+      <p class="all-caps-text">Challenge</p>
+      <p style="color: white; font-size: 1.25rem;" class="body">{{.Params.problem}}</p>
+  </section>
+  
+  <section id="image-text-section" class="container" style="padding-left: 0; padding-right: 0;">
+    <div class="row flex-md-row-reverse">
+      <!-- Text on the right -->
+      <div class="col-12 col-md-5 align-self-center" style="padding: 0rem 2rem;">
+        <p id="context-text" class="all-caps-text">Context</p>
+        <p class="body">{{.Params.context}}</p>
+      </div>
+      <!-- Image on the left -->
+      <div id="context-img-container" style="padding: 0rem 2rem;" class="col-12 col-md-7">
+        <img src="/portfolio-img/outreach-engagement-main-content.jpg" alt="Description" class="img-fluid" style="border-radius: 16px;">
+      </div>
+    </div>
+  </section>
+
+  <section id="image-text-section" class="container" style="padding-left: 0; padding-right: 0;">
+    <div class="row">  
+      <!-- Text on the left -->
+      <div id="action-text" class="col-12 col-md-5" style="padding: 0rem 2rem;">
+        <p class="all-caps-text">Action</p>
+        <p class="body">{{.Params.action1}}<br><br>{{.Params.action2}}<br><br>{{.Params.action3}}</p>
+      </div>
+
+      <!-- Image on the right -->
+      <div id="video-container" style="padding: 0rem 2rem;" class="d-flex justify-content-center col-12 col-md-7">
+        <video class="OE-video" autoplay loop muted playsinline>
+          <source src="/portfolio-img/OE-map-filter.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video class="OE-video" autoplay loop muted playsinline>
+          <source src="/portfolio-img/scholar-directory-mobile.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>         
+      </div>
+    </div>
+  </section>
+
+  <!--Swiper carousel-->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide flex-md-column-reverse">
+        <div class="slide-text d-flex align-items-start" style="gap:2rem;">
+          <p class="portfolio-title" style="display: flex; align-items:flex-end; margin-bottom: 32px;">0.1</p>
+          <div class="slide-body d-flex flex-column align-items-start">
+            <p class="subtitle" style="margin-bottom: 0;">Website Audit</p>
+            <p class="body">A preliminary audit of the Office's website. Utilizing FigJam AI and organized by visual design, user experience, and accessibility. </p>
+          </div>
+        </div>
+        <div class="carousel-img-container">
+          <img src="/portfolio-img/figjam-audit.jpg" alt="Slide 1" class="slide-image">
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide flex-md-column-reverse">
+        <div class="slide-text d-flex align-items-start" style="gap:2rem;">
+          <p class="portfolio-title" style="display: flex; align-items:flex-end; margin-bottom: 32px;">0.2</p>
+          <div class="slide-body d-flex flex-column align-items-start">
+            <p class="subtitle" style="margin-bottom: 0;">Updating the Site</p>
+            <p class="body">A before and after of the banners for the site.</p>
+          </div>
+        </div>
+        <div class="carousel-img-container">
+          <img src="/portfolio-img/OE-before-after-banner.jpg" alt="Slide 1" class="slide-image">
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide flex-md-column-reverse">
+        <div class="slide-text d-flex align-items-start" style="gap:2rem;">
+          <p class="portfolio-title" style="display: flex; align-items:flex-end; margin-bottom: 32px;">0.3</p>
+          <div class="slide-body d-flex flex-column align-items-start">
+            <p class="subtitle" style="margin-bottom: 0;">Community Program Map Mockup</p>
+            <p class="body">Web and mobile mockups of the community program map page created using Figma</p>
+          </div>
+        </div>
+        <div class="carousel-img-container">
+          <img src="/portfolio-img/OE-after-map.png" alt="Slide 1" class="slide-image">
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="swiper-slide flex-md-column-reverse">
+        <div class="slide-text d-flex align-items-start" style="gap:2rem;">
+          <p class="portfolio-title" style="display: flex; align-items:flex-end; margin-bottom: 32px;">0.4</p>
+          <div class="slide-body d-flex flex-column align-items-start">
+            <p class="subtitle" style="margin-bottom: 0;">Scholar Directory Mockup</p>
+            <p class="body">Web and mobile mockups of the scholar directory page created using Figma</p>
+          </div>
+        </div>
+        <div class="carousel-img-container">
+          <img src="/portfolio-img/OE-scholar-directory.png" alt="Slide 1" class="slide-image">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <section id="impact-container" class="container">
+    <p class="all-caps-text">Impact</p>
+    <p style="font-size: 1.25rem; color: white;" class="body">{{.Params.impact}}</p>
+  </section>
+  
+</div>
+
+
+
+
+<script>
+  var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1.25, // Adjust this to control how much of the side slides are visible
+  spaceBetween: 32, // Space between slides in pixels
+  centeredSlides: true, // Centers the active slide
+  loop: true, // Infinite loop
+  // Navigation configuration
+  navigation: {
+    nextEl: '.swiper-button-next', // Default navigation button
+    prevEl: '.swiper-button-prev', // Default navigation button
+  },
+  
+  // Pagination configuration
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true, // Allows pagination bullets to be clickable
+  },
+  
+  breakpoints: {
+    // Adjust settings for larger screens
+    576: {
+      spaceBetween: 32,
+      slidesPerView: 1.5,
+    },
+    768: {
+      spaceBetween: 200,
+      slidesPerView: 1.5,
+    },
+    992: {
+      spaceBetween: 100,
+      slidesPerView: 1.5,
+    },
+    1200:{
+      spaceBetween: 200,
+      slidesPerView: 1.5,
+    },
+    1400:{
+      spaceBetween: 200,
+      slidesPerView: 2.0,
+    }
+  }
+});
+
+</script>
+
+
+{{end}}
+
+

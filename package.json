@@ -1,0 +1,16 @@
+{
+  "name": "hugo-getting-started",
+  "version": "1.0.0",
+  "description": "Watch the video at <https://youtu.be/Vj5zy2q7O9U>",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch assets/scss/main.scss assets/css/bundle.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0",
+    "bootstrap": "^5.3.2"
+  }
+}

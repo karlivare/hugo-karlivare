@@ -1,0 +1,76 @@
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+{{ $bundleCSS := resources.Get "css/bundle.css" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" text="text/css" href="{{ $bundleCSS.RelPermalink}}" integrity="{{ $bundleCSS.Data.Integrity}}">
+<link rel="stylesheet" href="https://use.typekit.net/yxz0ome.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+
+
+<!--Swiper JS links-->
+<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+<link rel="stylesheet" href="https://unpkg.com/swiper@8.4.7/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper@8.4.7/swiper-bundle.min.js"></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<!-- ScrollTrigger plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const contactLink = document.getElementById("contactLink");
+
+    // Handle click on nav link
+    if (contactLink) {
+      contactLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        const path = window.location.pathname;
+
+        if (path.startsWith("/blog")) {
+          // On a blog page → scroll to blog's form
+          const blogForm = document.getElementById("form-container");
+          if (blogForm) {
+            blogForm.scrollIntoView({ behavior: "smooth" });
+          } else {
+            // fallback to homepage
+            window.location.assign("/#form-container");
+          }
+        } else if (path === "/" || path === "") {
+          // Already on homepage → smooth scroll
+          const homeForm = document.getElementById("form-container");
+          if (homeForm) {
+            homeForm.scrollIntoView({ behavior: "smooth" });
+          }
+        } else {
+          // Any other page → go to homepage form
+          window.location.assign("/#form-container");
+        }
+      });
+    }
+
+    // Handle arriving on homepage with #form-container in URL
+    if (window.location.hash === "#form-container") {
+      const form = document.getElementById("form-container");
+      if (form) {
+        setTimeout(() => {
+          form.scrollIntoView({ behavior: "smooth" });
+        }, 100); // allow DOM + browser anchor jump to settle
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+<title>
+  {{- .Title }} - {{ .Site.Title -}}
+</title>
