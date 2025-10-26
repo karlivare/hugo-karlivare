@@ -76,32 +76,31 @@
     </div>
   </section>  
 
-  <section class="container" style="padding-left: 0; padding-right: 0;">
-  <!-- Full-width image on top -->
-  <!-- Short, cropped video using Bootstrap ratio -->
-<div class="mb-3"> <!-- mb-5 = 3rem vertical gap --> <video autoplay loop muted playsinline class="w-100 context-img" style="object-fit: contain; border-radius: 16px; background-color: white;"> <source src="/portfolio-img/freshpet-scrolling.mp4" type="video/mp4"> Your browser does not support the video tag. </video>
-</div>
-
+  <section class="container" style="padding: 0; margin: 0;">
+    <div class="mb-3">
+      <video autoplay loop muted playsinline class="w-100 context-img" style="object-fit: contain; border-radius: 16px; background-color: white;"> <source src="/portfolio-img/freshpet-scrolling.mp4" type="video/mp4"> Your browser does not support the video tag. </video>
+    </div>
 
   <!-- Row: 1/3 image + 2/3 video -->
-  <div class="row align-items-stretch gx-3 flex-row-reverse"> <!-- gx-5 = 3rem horizontal gap -->
-    <!-- Image column -->
-    <div class="col-12 col-lg-4" style="min-height: 60vh;">
-      <img src="/portfolio-img/freshpet-mobile.jpg"
-           alt="Description"
-           class="img-fluid context-img h-100"
-           style="object-fit: cover; border-radius: 16px;">
-    </div>
-
-    <!-- Video column -->
-    <div class="col-12 col-lg-8" style="min-height: 60vh;">
-      <img src="/portfolio-img/freshpet-desktop-cropped.jpg"
-           alt="Description"
-           class="img-fluid context-img h-100"
-           style="object-fit: cover; border-radius: 16px;">
-    </div>
+  <div class="row flex-lg-row-reverse g-4"> <!-- g-4 ≈ 24px gap -->
+  <div class="col-12 col-lg-4">
+    <img
+      src="/portfolio-img/freshpet-mobile.jpg"
+      alt="Description"
+      class="img-fluid context-img w-100 h-100"
+      style="object-fit: cover; border-radius: 16px;"
+    />
   </div>
 
+  <div class="col-12 col-lg-8">
+    <img
+      src="/portfolio-img/freshpet-desktop-cropped.jpg"
+      alt="Description"
+      class="img-fluid context-img w-100 h-100"
+      style="object-fit: cover; border-radius: 16px;"
+    />
+  </div>
+</div>
 </section>
 
 

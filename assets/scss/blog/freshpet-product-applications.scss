@@ -5,7 +5,6 @@
     padding: 2rem 2rem;
 }
 
-
 #context-text{
     color: $brown;
 }
@@ -49,6 +48,7 @@
   gap: 2rem;
 }
 
+
 @include media-breakpoint-up(lg) {
   #meta-text-container{
     gap: 2rem;
@@ -58,6 +58,10 @@
     gap: 0rem;
   }
 }
+
+@media (max-width: 576px) {
+    // .context-img { max-height: 320px; height: auto; }
+  }
 
 .meta-text{
   background-color: rgba($blue, 0.25);
