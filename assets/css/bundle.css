@@ -12551,8 +12551,7 @@ h3.all-caps-text, .all-caps-text.h3 {
 /*Blog*/
 /*#region*/
 .portfolio-card-img {
-  max-width: 580px;
-  max-height: 375px;
+  height: 300px;
   border-radius: 8px;
   transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
   box-shadow: 0px 5px 3px 0px rgba(71, 61, 51, 0);
@@ -12560,6 +12559,12 @@ h3.all-caps-text, .all-caps-text.h3 {
   width: 100%;
 }
 
+@media (min-width: 992px) {
+  .portfolio-card-img {
+    max-width: 580px;
+    max-height: 375px;
+  }
+}
 .portfolio-card-title {
   font-family: ofelia-display, sans-serif;
   font-style: normal;
@@ -13211,6 +13216,12 @@ img.img-nutmeg {
   }
   #title-links {
     gap: 0rem;
+  }
+}
+@media (max-width: 576px) {
+  .context-img {
+    max-height: 320px;
+    height: auto;
   }
 }
 .meta-text {
