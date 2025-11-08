@@ -1,7 +1,7 @@
 {{ define "main"}}
 
   <!-- Gate wrapper: pass front-matter password_hash into data-sha256 -->
-  <div class="password-gate container d-flex justify-content-center" style="margin-top: 8rem; margin-bottom: 8rem; text-align: center;" data-sha256="{{ .Params.password_hash }}">
+  <div class="password-gate" data-sha256="{{ .Params.password_hash }}">
 
     <!-- Optional marker; your script will add noindex when it sees the gate -->
     <meta name="x-protected" content="true">
