@@ -6,6 +6,7 @@ context: "Simple Steps Fertility is a surrogacy and egg donation agency based in
 action1: "I designed content and assets across multiple channels and that would increase Simple Steps Fertility’s visibility and support surrogate recruitment, including:"
 impact: "The multi-channel approach delivered measurable results that exceeded expectations and set Simple Steps Fertility apart in a competitive space."
 draft: false
+password_hash: "b8e00e47514fb3f038a617d4d5584cba56b7f5bdf7993ba8abd117e483e3e659"
 ---
 
 

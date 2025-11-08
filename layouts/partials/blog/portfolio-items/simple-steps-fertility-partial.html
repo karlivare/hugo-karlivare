@@ -1,0 +1,136 @@
+
+  <!-- Full-Width Case Study Image Section -->
+<section class="w-100">
+  <div class="container-fluid m-0 p-0">
+    <img 
+      src="/portfolio-img/simple-steps-case-study-hero.jpg" 
+      alt="Case Study Hero Image" 
+      class="img-fluid w-100" 
+      style="max-height: 70vh; object-fit: cover;"
+    >
+  </div>
+</section>
+<div class="container-fluid d-flex flex-column align-items-center" style="gap: 4rem;">
+  <section id="portfolio-header" class="container-fluid" style="margin-top: 4rem;">
+    <div id="title-links" class="container d-flex flex-column flex-lg-row justify-content-between align-items-start mx-auto" style="padding-left: 0; padding-right: 0;">
+      <!-- Title on the left -->
+      <div class="w-100 gap-4 d-flex flex-column flex-md-row justify-content-between">
+        <div>
+          <h1 class="portfolio-title">{{.Title}}</h1>
+        </div>
+        <div id="meta-text-container" class="d-flex flex-column flex-md-row">
+          <!--Something more like below. Specify the meta information-->
+          <div class="d-flex flex-column">
+            <p class="m-0">Category</p>
+            <div class="d-flex gap-3">
+              <p class="meta-text all-caps-text">Strategic Social Content</p>
+              <p class="meta-text all-caps-text">Creative Marketing Design</p>
+            </div>
+          </div>
+          <div>
+            <p class="">Year</p>
+            <p class="meta-text all-caps-text">2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="problem-container" class="container">
+      <p class="all-caps-text">Challenge</p>
+      <p style="color: white; font-size: 1.25rem;" class="body">{{.Params.problem}}</p>
+  </section>
+  
+  <section class="container" style="padding-left: 0; padding-right: 0;">
+    <div class="row flex-md-row-reverse">
+      <!-- Text on the right -->
+      <div class="col-12 col-md-5 align-self-center" style="padding: 0rem 2rem;">
+        <p id="context-text" class="all-caps-text">Context</p>
+        <p class="body">{{.Params.context}}</p>
+      </div>
+      <!-- Image on the left -->
+      <div style="padding: 0rem 2rem;" class="context-img-container col-12 col-md-7">
+        <img src="/portfolio-img/simple-steps-landing-page.jpg" alt="Description" class="context-img img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <section class="container" style="padding-left: 0; padding-right: 0;">
+    <div class="row">  
+      <!-- Text on the left -->
+      <div id="action-text" class="col-12 col-lg-5" style="padding: 0rem 2rem;">
+        <p class="all-caps-text">Action</p>
+        <p class="body">{{.Params.action1}}</p>
+        <ul>
+          <li class="body"><strong>Paid Advertising</strong> — Designed a suite of ads, including general awareness campaigns and event-specific promotions.</li>
+          <li class="body"><strong>Strategic Organic Content</strong> — Created posts and short-form content for TikTok, Instagram, and Facebook.
+          </li>
+          <li class="body"><strong>Event Support</strong> — Designed and built a WordPress landing page for a San Diego meet-and-greet event, creating a hub for information and direction to the Eventbrite page.</li>
+          <li class="body"><strong>Video Branding</strong> — Produced YouTube intro and outro animations, strengthening the agency’s professional presence across video content.</li>
+          <li class="body"><strong>Print Collateral</strong> — Designed brochures in InDesign to inform prospective surrogates and egg donors and equip doulas and fertility clinics with a shareable and trustworthy resource.</li>
+        </ul>
+
+      </div>
+
+      <!-- Image on the right -->
+      <div style="padding: 0rem 2rem;" class="context-img-container col-12 col-md-7">
+        <img src="/portfolio-img/simple-steps-brochure.jpg" alt="Description" class="img-fluid context-img">
+      </div>
+    </div>
+  </section>  
+
+  {{ partial "blog/portfolio-items/vimeo-carousel.html" . }}
+
+
+
+
+  <section class="container" style="padding-left: 0; padding-right: 0;">
+  <!-- Full-width image on top -->
+  <div class="mb-3"> <!-- mb-5 = 3rem vertical gap -->
+    <img src="/portfolio-img/simple-steps-hand-phone-mockup-large.jpg"
+         alt="Description"
+         class="w-100 img-fluid context-img"
+         style="max-height: 80vh; object-fit: cover; border-radius: 16px;">
+  </div>
+
+  <!-- Row: 1/3 image + 2/3 video -->
+  <div class="row flex-lg-row g-3"> <!-- g-4 ≈ 24px gap -->
+  <div class="col-12 col-lg-4">
+    <img
+      src="/portfolio-img/simple-steps-phone-rock-new.jpg"
+      alt="Description"
+      class="img-fluid context-img w-100 h-100"
+      style="object-fit: cover; border-radius: 16px;"
+    />
+  </div>
+
+  <div class="col-12 col-lg-8">
+    <video autoplay loop muted playsinline
+             class="w-100 h-100 context-img"
+             style="object-fit: contain; border-radius: 16px; background-color: white;">
+        <source src="/portfolio-img/simple-steps-intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  </div>
+</div>
+
+</section>
+
+
+
+
+
+  <section id="impact-container" class="container">
+    <p class="all-caps-text">Impact</p>
+    <p style="font-size: 1.25rem; color: white;" class="body">{{.Params.impact}}</p>
+        <ul style="color: white;">
+          <li><strong>Organic Growth</strong> Grew TikTok following by 157% in under one month through a strategic short-form content approach.</li>
+          <li><strong>Event Success</strong> — Paid ads for a local surrogacy meet-and-greet reached 28,444 people and drove 817 clicks to Eventbrite page in under three weeks.</li>
+          <li><strong>Efficient Media Spend</strong> — Achieved an exceptionally low $0.44 cost-per-click for event paid ads, outperforming the industry benchmark of $1–$3.</li>
+        </ul>
+  </section>
+  
+</div>
+
+
+
