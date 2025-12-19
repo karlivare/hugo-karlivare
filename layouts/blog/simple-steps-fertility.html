@@ -1,18 +1,14 @@
 {{ define "main"}}
 
   <!-- Gate wrapper: pass front-matter password_hash into data-sha256 -->
-  <div class="password-gate" data-sha256="{{ .Params.password_hash }}">
-
-    <!-- Optional marker; your script will add noindex when it sees the gate -->
+  <!-- <div class="password-gate" data-sha256="{{ .Params.password_hash }}">
     <meta name="x-protected" content="true">
-
-    <!-- Your real page content, hidden until unlocked -->
     <template data-slot="content">
       {{ partial "blog/portfolio-items/simple-steps-fertility-partial.html" . }}
     </template>
-  </div>
+  </div> -->
 
-  <!-- Load the JS gate (your corrected partial name/path) -->
-  {{ partial "common/password-gate.html" . }}
+  <!-- {{ partial "common/password-gate.html" . }} -->
 
+  {{ partial "blog/portfolio-items/simple-steps-fertility-partial.html" . }}
 {{ end }}
