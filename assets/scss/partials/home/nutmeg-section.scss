@@ -2,6 +2,7 @@
 
 .nutmeg-section{
   background-color: $beige;
+  padding: 4rem;
 }
 #nutmeg-spreads-bg {
   background-image: url("/jpg/nutmeg-spreads-smaller.jpg");
@@ -9,18 +10,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
-}
-#nutmeg-spreads-title{
-  padding-top: 3rem;
-}
-
-#nutmeg-spreads-button{
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-}
-
-#explore-all-work{
-  margin-top: 1.5rem;
+  margin: 2rem -4rem 3rem -4rem;
 }
 
 // //////MEDIA QUERIES//////
