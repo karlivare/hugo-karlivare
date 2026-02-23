@@ -12457,10 +12457,15 @@ span {
 }
 #featured-section {
   background-color: #E4EFF1;
-  padding: 4rem;
+  padding: 2rem;
   gap: 3rem;
 }
 
+@media (min-width: 768px) {
+  #featured-section {
+    padding: 4rem;
+  }
+}
 #featured-projects-cta {
   width: stretch;
 }
