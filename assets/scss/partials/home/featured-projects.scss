@@ -1,13 +1,17 @@
 #featured-section {
     background-color: #E4EFF1;
+    padding: 4rem;
+    gap: 3rem;
 }
 
-#featured-container{
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 24px;
-    padding-right: 24px;
-} 
+#featured-projects-cta{
+    width: stretch;
+}
+@include media-breakpoint-up(md){
+    #featured-projects-cta{
+        width: fit-content;
+    }
+}
 
 img.card-img-top{
     height: 275px;
