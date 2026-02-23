@@ -12457,13 +12457,14 @@ span {
 }
 #featured-section {
   background-color: #E4EFF1;
-  padding: 2rem;
-  gap: 3rem;
+  padding: 3rem 2rem 3rem 2rem;
+  gap: 2rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #featured-section {
     padding: 4rem;
+    gap: 3rem;
   }
 }
 #featured-projects-cta {
