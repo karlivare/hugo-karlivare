@@ -2,7 +2,12 @@
 
 .nutmeg-section{
   background-color: $beige;
-  padding: 4rem;
+  padding: 3rem 2rem 3rem 2rem;
+}
+@include media-breakpoint-up(lg){
+    .nutmeg-section{
+      padding: 4rem;
+    }
 }
 #nutmeg-spreads-bg {
   background-image: url("/jpg/nutmeg-spreads-smaller.jpg");
@@ -11,6 +16,24 @@
   background-repeat: no-repeat;
   height: 300px;
   margin: 2rem -4rem 3rem -4rem;
+}
+
+#nutmeg-spreads-title{
+  text-align: center;
+}
+@include media-breakpoint-up(lg){
+  #nutmeg-spreads-title{
+    text-align: initial;
+  }
+}
+
+#nutmeg-section-cta{
+  width: 100%;
+}
+@include media-breakpoint-up(md){
+    #nutmeg-section-cta{
+        width: fit-content;
+    }
 }
 
 // //////MEDIA QUERIES//////
