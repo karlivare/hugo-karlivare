@@ -80,7 +80,7 @@ button, a.btn {
 /*#endregion*/
 .header {
   background-color: #487c89;
-  padding: 1.5rem 1rem 1.5rem 1rem !important;
+  padding: 3rem 2rem !important;
 }
 
 .subheader {
@@ -13242,5 +13242,15 @@ img.img-nutmeg {
 }
 
 /*#endregion*/
+/*About Page*/
+#about-section {
+  padding: 3rem 2rem;
+}
+
+@media (min-width: 992px) {
+  #about-div {
+    gap: 1rem;
+  }
+}
 
 /*# sourceMappingURL=bundle.css.map */

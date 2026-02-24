@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+<section class="container-fluid header">
+    <div class="container mx-auto align-items-center">
+      <h1 style="margin-bottom: 0;" class="title">About Me</h1>
+    </div>
+</section>
+
+<section id="about-section" class="container-fluid">
+    
+   <div id="about-div" class="container d-flex flex-column flex-lg-row align-items-center justify-content-center">
+    
+        <!-- Image -->
+        <div class="order-1 d-flex justify-content-center align-items-center col-12 col-md-6">
+        <img src="/svg/about-me-img.svg" alt="About Photo" class="img-fluid rounded">
+        </div>
+
+        <!-- Text -->
+        <div class="order-2 d-flex justify-content-center align-items-center col-md-6">
+            <div class="">
+            <p>{{ .Content }}</p>
+            </div>
+        </div>
+
+
+    </div>
+ 
+    
+
+</section>
+
+{{ end }}

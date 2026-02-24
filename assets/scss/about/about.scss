@@ -1,0 +1,9 @@
+#about-section{
+    padding: 3rem 2rem;
+}
+
+@include media-breakpoint-up(lg) {
+    #about-div{
+        gap: 1rem;
+    }
+}

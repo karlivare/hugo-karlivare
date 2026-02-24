@@ -8,7 +8,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 
-<link rel="stylesheet" text="text/css" href="/css/bundle.min.21d881be14ffd9e74aa842fef71e5010019025afbd70ec01e3e750044bbe8609.css" integrity="sha256-IdiBvhT/2edKqEL&#43;9x5QEAGQJa&#43;9cOwB4&#43;dQBEu&#43;hgk=">
+<link rel="stylesheet" text="text/css" href="/css/bundle.min.6d92613dbc8bddd75be042fc8204ddefc5653b21ea5dcfded708714d6f5bdcbb.css" integrity="sha256-bZJhPbyL3ddb4EL8ggTd78VlOyHqXc/e1whxTW9b3Ls=">
 <link rel="stylesheet" href="https://use.typekit.net/yxz0ome.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <link rel="icon" type="image/png" href="/favicon.png">
@@ -75,8 +75,8 @@
 
 <title>Home - Karli Vare</title>
 </head>
-  <body><nav class="navbar navbar-expand-md p-4">
-  <div class="container-fluid">
+  <body><nav class="navbar navbar-expand-md p-4 py-lg-4 px-lg-5">
+  <div class="container-fluid px-0">
     <a class="navbar-brand logo" href="/">
 
       <svg class="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -139,7 +139,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
+      <div class="offcanvas-header p-4 py-lg-4 px-lg-5">
     
             <svg id="offcanvasNavbarLabel" class="offcanvas-title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 523.1 468.7" style="enable-background:new 0 0 523.1 468.7;" xml:space="preserve">
@@ -196,7 +196,10 @@
                 </g>
       </svg>
     
-      <button type="button" class="btn-close navbar-toggler" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <button class="navbar-toggler" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+       <span class="navbar-toggler-icon close-icon"></span>
+      </button>
+
       </div>
       <div class="offcanvas-body justify-content-end">
         <ul class="navbar-nav align-items-center">
@@ -204,7 +207,10 @@
             <a class="nav-link" href="/blog">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a id="contactLink" style="text-align: center;" class="nav-link" href="/#form-container">Contact</a>
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a id="contactLink" class="nav-link" href="/#form-container">Contact</a>
           </li>
       </div>
     </div>
@@ -214,7 +220,7 @@
     <section id="intro-header" class="container-fluid d-flex align-items-end">
     <div class="mission-statement-container mx-auto">
         <h1 id="mission-statement">
-            <span id="karli-vare">Karli Vare</span> is an interactive media designer who believes in beautifully balanced design with technical feasibility.
+            <span id="karli-vare">Karli Vare</span> is a designer crafting modern, thoughtful digital experiences in NYC.
         </h1>
         
     </div>
@@ -335,11 +341,54 @@
 
 
     
-    
-    <section id="featured-section" class="container-fluid">
-    <div id="featured-container" class="container">
-      <h2 class="subtitle">Featured Work</h2>
+    <section id="featured-section" class="container-fluid d-flex flex-column align-items-center align-items-lg-start">
+      <h2 id="feautred-projects-title" class="m-0 p-0 subtitle">Featured Projects</h2>
       <div id="featured-work-row" class="row">
+        <div class="col-lg-4">
+          <a class="featured-card-hover-state" href="/blog/simple-steps-fertility/">
+            <div class="card h-100">
+              <div class="featured-card">
+                <img src="/portfolio-img/simple-steps-thumbnail.jpg" alt="" class="featured-img card-img-top img-fluid">
+              </div>
+              <div class="featured-card-body card-body p-4 d-flex flex-column justify-content-between"> 
+                <div class="featured-text-container">
+                  <h3 class="featured-title">Simple Steps Fertility</h3>
+                  <h3 class="featured-subtitle body">Strategic Social Content and Creative Marketing</h3>
+                </div>
+                <h3 class="view-project all-caps-text d-flex align-items-center">
+                  VIEW PROJECT 
+                  <svg class="arrow-icon" width="12" height="12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 8h11.793" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                    <path d="M9 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                  </svg>
+                </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+
+          <div class="col-lg-4">
+          <a class="featured-card-hover-state" href="/blog/freshpet-product-applications/">
+            <div class="card h-100">
+              <div class="featured-card">
+                <img src="/portfolio-img/freshpet-thumbnail.jpg" alt="" class="featured-img card-img-top img-fluid">
+              </div>
+              <div class="featured-card-body card-body p-4 d-flex flex-column justify-content-between"> 
+                <div class="featured-text-container">
+                  <h3 class="featured-title">Freshpet</h3>
+                  <h3 class="featured-subtitle body">Product Application Landing Page</h3>
+                </div>
+                <h3 class="view-project all-caps-text d-flex align-items-center">
+                  VIEW PROJECT 
+                  <svg class="arrow-icon" width="12" height="12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 8h11.793" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                    <path d="M9 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                  </svg>
+                </h3>
+              </div>
+            </div>
+          </a>
+        </div>
         
         <div class="col-lg-4">
           <a class="featured-card-hover-state" href="/blog/yarn-over/">
@@ -364,55 +413,10 @@
           </a>
         </div>
         
-        <div class="col-lg-4">
-          <a class="featured-card-hover-state" href="/blog/the-daily-campus"> 
-            <div class="card h-100">
-              <div class="featured-card">
-                <img src="/portfolio-img/dc-main-content.jpg" alt="" class="featured-img card-img-top img-fluid">
-              </div>
-              <div class="card-body p-4 d-flex flex-column justify-content-between"> 
-                <div class="featured-text-container">
-                  <h3 class="featured-title">The Daily Campus</h3>
-                  <h3 class="featured-subtitle body">News website redesign</h3>
-                </div>
-                <h3 class="view-project all-caps-text d-flex align-items-center">
-                  VIEW PROJECT 
-                  <svg class="arrow-icon" width="12" height="12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 8h11.793" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
-                    <path d="M9 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
-                  </svg>
-                </h3>
-              </div>
-            </div>
-          </a>
-        </div>
-        
-        <div class="col-lg-4">
-          <a class="featured-card-hover-state" href="/blog/dxg"> 
-            <div class="card h-100">
-              <div class="featured-card">
-                <img src="/portfolio-img/outreach-engagement-main-content.jpg" alt="" class="featured-img card-img-top img-fluid">
-              </div>
-              <div class="card-body p-4 d-flex flex-column justify-content-between"> 
-                <div class="featured-text-container">
-                  <h3 class="featured-title">UConn Office of Outreach and Engagement</h3>
-                  <h3 class="featured-subtitle body">Website and community based programs map</h3>
-                </div>
-                <h3 class="view-project all-caps-text d-flex align-items-center">
-                  VIEW PROJECT 
-                  <svg class="arrow-icon" width="12" height="12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 8h11.793" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
-                    <path d="M9 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
-                  </svg>
-                </h3>
-              </div>
-            </div>
-          </a>   
-        </div>
         
       </div>
-      <a id="explore-all-work" href="/blog" class="btn btn-primary">Explore All Work</a>
-    </div>
+      <a id="featured-projects-cta" href="/blog" class="btn btn-primary">Explore All Projects</a>
+
   </section>
 
   <script>
@@ -436,19 +440,15 @@
   });
 
   </script>
-    <section class="container-fluid nutmeg-section">
-  <div id="nutmeg-spreads-title" class="container">
-      <h2 class="subtitle">Nutmeg Publishing Spreads</h2>
+    <section class="container-fluid nutmeg-section d-flex flex-column">
+  <div id="nutmeg-spreads-title">
+      <h2 class="m-0 p-0 subtitle">Nutmeg Publishing Spreads</h2>
   </div>
-</section>
-
-    <section id="nutmeg-spreads-bg" class="nutmeg-section container-fluid">
+  <div id="nutmeg-spreads-bg" class="nutmeg-section">
     
-</section>
-
-    <section class="nutmeg-section container-fluid">
-  <div id="nutmeg-spreads-button" class="container">
-    <a id="view-spreads" href="/blog/nutmeg" class="btn btn-primary">View all spreads</a>
+  </div>
+  <div id="nutmeg-spreads-button">
+    <a id="nutmeg-section-cta" href="/blog/nutmeg" class="btn btn-primary">View Project</a>
   </div>
 </section>
 
@@ -529,7 +529,7 @@ gsap.to("#contactFlower2", {
     <img id="footer-graphic" src="/svg/flower-triad.svg" alt="">
     <div id="footer-text">
       <h6 style="font-size: 1rem;" id="footer-text-title">Website designed and developed by Karli Vare</h6>
-      <small id="copyright">©karlivare.com 2024</small>
+      <small id="copyright">© Karli Vare 2026</small>
     </div>
 </footer></body>
 </html>
