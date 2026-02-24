@@ -11982,7 +11982,7 @@ a.navbar-brand.logo {
 }
 
 .offcanvas-header {
-  padding: 2rem !important;
+  padding: 1.5rem !important;
 }
 
 .navbar-nav .nav-link.active {
@@ -11991,17 +11991,12 @@ a.navbar-brand.logo {
 
 button.navbar-toggler {
   border: none !important;
-  padding: 1rem;
+  padding: 0rem;
   background-position: center;
 }
 
-button.btn-close.navbar-toggler {
+#offcanvasNavbar > div.offcanvas-header > button > span {
   background-image: url("/svg/close.svg");
-  opacity: 1;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 1rem !important;
-  margin: 0 !important;
 }
 
 .navbar-toggler:focus {
