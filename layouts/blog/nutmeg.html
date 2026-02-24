@@ -47,7 +47,7 @@
   </section>
 
   <!--Spread container, dynamically importing from json-->
-  <section class="container my-4">
+  <section class="container">
     <div class="d-flex flex-wrap justify-content-center">
       {{ $portfolioData := slice
         (dict "title" "Diving Deeper" "image" "/portfolio-img/diving-deeper-thumbnail.jpg")
@@ -70,9 +70,8 @@
         (dict "title" "Winter Scenery" "image" "/portfolio-img/nutmeg-winter-thumbnail.jpg")
       }}
       
-      
       {{ range $portfolioData }}
-        <div class="p-2">
+        <div class="col-6 col-sm-4 col-lg-2 p-2">
           <img src="{{ .image }}" class="img-nutmeg" alt="{{ .title }}">
         </div>
       {{ end }}

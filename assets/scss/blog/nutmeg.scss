@@ -32,12 +32,6 @@
   }
 }
 
-.p-2 {
-  width: 100%;
-  height: auto; /* Ensure it adapts based on content or set a fixed height */
-  box-sizing: border-box; /* Ensure padding is included in the width calculation */
-}
-
 img.img-nutmeg {
   border-radius: 8px;
   border: 1px solid rgba(72,124,137,.5);
@@ -47,17 +41,6 @@ img.img-nutmeg {
   display: block; /* Make image a block-level element */
   margin: 0; /* Remove any unwanted margins */
   padding: 0; /* Remove any unwanted padding */
-}
-
-@include media-breakpoint-up(sm) {
-  img.img-nutmeg {
-    width: 200px; /* Ensure full width on larger screens */
-  }
-  .p-2 {
-    width: auto;
-    height: auto;
-    box-sizing: initial;
-  }
 }
 
 
