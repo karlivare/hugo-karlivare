@@ -2,29 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://karlivare.com/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2026-02-24T15:14:46-05:00</lastmod>
   </url><url>
-    <loc>https://karlivare.com/categories/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-24T15:14:46-05:00</lastmod>
   </url><url>
-    <loc>https://karlivare.com/blog/freshpet-product-applications/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://karlivare.com/</loc>
+    <loc>http://localhost:1313/blog/freshpet-product-applications/</loc>
   </url><url>
-    <loc>https://karlivare.com/blog/nutmeg/</loc>
+    <loc>http://localhost:1313/blog/nutmeg/</loc>
   </url><url>
-    <loc>https://karlivare.com/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
   </url><url>
-    <loc>https://karlivare.com/blog/simple-steps-fertility/</loc>
+    <loc>http://localhost:1313/blog/simple-steps-fertility/</loc>
   </url><url>
-    <loc>https://karlivare.com/blog/snaps/</loc>
+    <loc>http://localhost:1313/blog/snaps/</loc>
   </url><url>
-    <loc>https://karlivare.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url><url>
-    <loc>https://karlivare.com/blog/the-daily-campus/</loc>
+    <loc>http://localhost:1313/blog/the-daily-campus/</loc>
   </url><url>
-    <loc>https://karlivare.com/blog/dxg/</loc>
+    <loc>http://localhost:1313/blog/dxg/</loc>
   </url><url>
-    <loc>https://karlivare.com/blog/yarn-over/</loc>
+    <loc>http://localhost:1313/blog/yarn-over/</loc>
   </url>
 </urlset>
