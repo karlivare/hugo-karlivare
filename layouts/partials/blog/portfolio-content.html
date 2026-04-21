@@ -10,7 +10,9 @@
         {{ range $portfolioData }}
             <a style="margin-top: 1rem;" href="{{ .url }}">
                 <article style="margin-top: 1rem;">
-                    <img style="object-fit: cover;" class="portfolio-card-img" src="{{ .image }}" alt="{{ .title }}">
+                    <div class="portfolio-card-img-container">
+                        <img style="object-fit: cover;" class="portfolio-card-img" src="{{ .image }}" alt="{{ .title }}">
+                    </div>
                     <h3 class="portfolio-card-title">{{ .title }}</h3>
                     <h3 class="portfolio-card-subtitle body">{{ .subtitle }}</h3>
                     <h3 class="view-project all-caps-text d-flex align-items-center">

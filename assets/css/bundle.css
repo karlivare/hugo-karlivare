@@ -12579,21 +12579,22 @@ h3.all-caps-text, .all-caps-text.h3 {
 /*#endregion*/
 /*Blog*/
 /*#region*/
-.portfolio-card-img {
-  height: 275px;
+.portfolio-card-img-container {
+  overflow: hidden;
   border-radius: 8px;
-  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
-  box-shadow: 0px 5px 3px 0px rgba(71, 61, 51, 0);
   border: 1px solid rgba(72, 124, 137, 0.5);
   width: 100%;
+  aspect-ratio: 116/75;
 }
 
-@media (min-width: 992px) {
-  .portfolio-card-img {
-    max-width: 580px;
-    max-height: 375px;
-  }
+.portfolio-card-img {
+  height: 100%;
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
+
 .portfolio-card-title {
   font-family: ofelia-display, sans-serif;
   font-style: normal;
@@ -12607,35 +12608,29 @@ a {
   text-decoration: none;
 }
 
-.project-link-btn {
-  background-color: #595047;
-  border: none;
-}
-
-.project-link-btn:hover {
-  background-color: #3B342B;
-}
-
-.portfolio-card-img:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 5px 3px 0px rgba(71, 61, 51, 0.25);
+.portfolio-card-img-container:hover .portfolio-card-img {
+  transform: scale(1.1);
   cursor: pointer;
+}
+
+.arrow-icon {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+#portfolio-content a:hover .arrow-icon {
+  transform: translateX(4px);
 }
 
 div#portfolio-content.container.grid {
   display: grid;
   grid-template-columns: 1fr; /* Single column by default */
-  gap: 16px; /* Space between grid items */
+  gap: 16px 64px; /* Space between grid items */
 }
 
 @media (min-width: 992px) {
   div#portfolio-content.container.grid {
     grid-template-columns: 1fr 1fr; /* Two columns on medium screens and above */
-  }
-}
-@media (min-width: 768px) {
-  .portfolio-card-img {
-    height: 375px;
   }
 }
 /*#endregion*/
