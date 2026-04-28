@@ -94,15 +94,19 @@
 
 /* True 9:16 — no gutters if source is 9:16 */
 .vimeo-frame {
+  position: relative;
   width: 100%;
   aspect-ratio: 9 / 16;
-  border-radius: 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(72, 124, 137, .5);
   overflow: hidden;
-  background: #000;
+  background: #FFFFFF;
 }
 .vimeo-iframe {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  inset: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
   border: 0;
   display: block;
 }

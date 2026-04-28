@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 
-<link rel="stylesheet" text="text/css" href="/css/bundle.min.a6b9c8354704e58b35b777fd01d329c51b1580f9cfe05fc8c8477224320df7d9.css" integrity="sha256-prnINUcE5Ys1t3f9AdMpxRsVgPnP4F/IyEdyJDIN99k=">
+<link rel="stylesheet" text="text/css" href="/css/bundle.min.632d5b0df9d89fece0478035260a2acb3ada9c34982c96d97a7f51a05a0ebef2.css" integrity="sha256-Yy1bDfnYn&#43;zgR4A1JgoqyzranDSYLJbZen9RoFoOvvI=">
 <link rel="stylesheet" href="https://use.typekit.net/yxz0ome.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <link rel="icon" type="image/png" href="/favicon.png">
@@ -227,7 +227,7 @@
 <section class="w-100">
   <div class="container-fluid m-0 p-0">
     <img 
-      src="/portfolio-img/simple-steps-case-study-hero.jpg" 
+      src="/portfolio-img/simple-steps-hand-phone-mockup-large.jpg" 
       alt="Case Study Hero Image" 
       class="img-fluid w-100" 
       style="max-height: 70vh; object-fit: cover;"
@@ -266,23 +266,23 @@
   </section>
   
   <section class="container" style="padding-left: 0; padding-right: 0;">
-    <div class="row flex-md-row-reverse">
+    <div class="row flex-md-row-reverse justify-content-around">
       
-      <div class="col-12 col-md-5 align-self-center" style="padding: 0rem 2rem;">
+      <div class="col-12 col-md-5 align-self-center">
         <p id="context-text" class="all-caps-text">Context</p>
         <p class="body">Simple Steps Fertility is a surrogacy and egg donation agency based in Glendale, Los Angeles. They partnered with Digital Surgeons, where I was in my first year as a designer, to help recruit surrogates and expand their reach. Working within the agency’s existing brand system, our team found strategic ways to increase visibility and connect authentically with potential surrogates.</p>
       </div>
       
-      <div style="padding: 0rem 2rem;" class="context-img-container col-12 col-md-7">
-        <img src="/portfolio-img/simple-steps-landing-page.jpg" alt="Description" class="context-img img-fluid">
+      <div class="context-img-container col-12 col-md-6">
+        <img src="/portfolio-img/simple-steps-landing-page.jpg" alt="Description" class="mockup-img img-fluid">
       </div>
     </div>
   </section>
 
   <section class="container" style="padding-left: 0; padding-right: 0;">
-    <div class="row">  
+    <div class="row justify-content-around">  
       
-      <div id="action-text" class="col-12 col-lg-5" style="padding: 0rem 2rem;">
+      <div id="action-text" class="col-12 col-lg-5 align-self-center">
         <p class="all-caps-text">Action</p>
         <p class="body">I designed content and assets across multiple channels and that would increase Simple Steps Fertility’s visibility and support surrogate recruitment, including:</p>
         <ul>
@@ -297,15 +297,15 @@
       </div>
 
       
-      <div style="padding: 0rem 2rem;" class="context-img-container col-12 col-md-7">
-        <img src="/portfolio-img/simple-steps-brochure.jpg" alt="Description" class="img-fluid context-img">
+      <div class="context-img-container col-12 col-lg-6">
+        <img src="/portfolio-img/simple-steps-brochure-mockup.jpg" alt="Description" class="mockup-img img-fluid">
       </div>
     </div>
   </section>  
 
-  <div class="vimeo-carousel" id="wrap-vimeo-carousel-1776785269214930000">
+  <div class="vimeo-carousel" id="wrap-vimeo-carousel-1777413354641342000">
   <div class="vimeo-stage">
-    <div id="vimeo-carousel-1776785269214930000" class="swiper vimeo-swiper">
+    <div id="vimeo-carousel-1777413354641342000" class="swiper vimeo-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="vimeo-frame">
@@ -439,7 +439,7 @@
 
 <style>
    
-[id="wrap-vimeo-carousel-1776785269214930000"] { --slide-w: clamp(220px, 24vw, 360px); }
+[id="wrap-vimeo-carousel-1777413354641342000"] { --slide-w: clamp(220px, 24vw, 360px); }
  
 
 .vimeo-carousel { width: 100%; box-sizing: border-box; }
@@ -461,9 +461,9 @@
 }
 
  
-[id="wrap-vimeo-carousel-1776785269214930000"] .vimeo-swiper,
-[id="wrap-vimeo-carousel-1776785269214930000"] .vimeo-swiper .swiper-wrapper,
-[id="wrap-vimeo-carousel-1776785269214930000"] .vimeo-swiper .swiper-slide {
+[id="wrap-vimeo-carousel-1777413354641342000"] .vimeo-swiper,
+[id="wrap-vimeo-carousel-1777413354641342000"] .vimeo-swiper .swiper-wrapper,
+[id="wrap-vimeo-carousel-1777413354641342000"] .vimeo-swiper .swiper-slide {
   height: auto !important;
 }
 
@@ -477,15 +477,19 @@
 
  
 .vimeo-frame {
+  position: relative;
   width: 100%;
   aspect-ratio: 9 / 16;
-  border-radius: 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(72, 124, 137, .5);
   overflow: hidden;
-  background: #000;
+  background: #FFFFFF;
 }
 .vimeo-iframe {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  inset: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
   border: 0;
   display: block;
 }
@@ -537,7 +541,7 @@ div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swip
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
   (function(){
-    var id = "vimeo-carousel-1776785269214930000";
+    var id = "vimeo-carousel-1777413354641342000";
     function init(){
       var root = document.getElementById("wrap-" + id);
       var el = document.getElementById(id);
@@ -577,7 +581,7 @@ div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swip
   <div class="mb-3"> 
     <img src="/portfolio-img/latimes-magazine.jpg"
          alt="Description"
-         class="w-100 img-fluid context-img"
+         class="w-100 img-fluid mockup-img"
          style="max-height: 80vh; object-fit: cover; border-radius: 16px;">
   </div>
 
@@ -588,14 +592,14 @@ div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swip
     <img
       src="/portfolio-img/simple-steps-phone-rock-new.jpg"
       alt="Description"
-      class="img-fluid context-img w-100 h-100"
+      class="img-fluid mockup-img h-100"
       style="object-fit: cover; border-radius: 16px;"
     />
   </div>
 
   <div class="col-12 col-lg-8">
     <video autoplay loop muted playsinline
-             class="w-100 h-100 context-img"
+            class="w-100 h-100 mockup-img"
              style="object-fit: contain; border-radius: 16px; background-color: white;">
         <source src="/portfolio-img/simple-steps-intro.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -603,9 +607,9 @@ div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swip
   </div>
 
   <div class="mb-3"> 
-    <img src="/portfolio-img/simple-steps-hand-phone-mockup-large.jpg"
+    <img src="/portfolio-img/simple-steps-phone-grid.jpg"
          alt="Description"
-         class="w-100 img-fluid context-img"
+         class="w-100 img-fluid mockup-img"
          style="max-height: 80vh; object-fit: cover; border-radius: 16px;">
   </div>
 </div>
