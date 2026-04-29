@@ -13116,8 +13116,17 @@ img.img-nutmeg {
   color: #473d33;
 }
 
+#simple-steps-brochure-img {
+  height: 350px;
+}
+
+@media (min-width: 992px) {
+  #simple-steps-brochure-img {
+    height: 675px;
+    width: 500px;
+  }
+}
 .mockup-img {
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -13125,6 +13134,11 @@ img.img-nutmeg {
   border-radius: 16px !important;
 }
 
+@media (min-width: 992px) {
+  .context-action-img-height {
+    height: 435px;
+  }
+}
 .context-img-container {
   display: flex;
   margin-top: 1rem;
